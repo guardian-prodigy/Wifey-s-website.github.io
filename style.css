@@ -1,4 +1,4 @@
-body { margin:0;padding:0;width:100%; }
+
 body {
     font-size: 30px;
     background-color: black;
@@ -16,23 +16,22 @@ li {
 }
 .reason1 {
     font-size: 40px;
-    font-weight: bold;
-   
+    font-weight: bolder;
     width:auto;
-    padding: 0 0 0 60px;
+    padding: 0 0 0 5px;
     font-style: italic;
-    border-radius: 250px 0 250px 0;
+    border-radius:125px 0 125px 0;
     height:inherit;
     border: solid 5px aqua
 }
 .reason2 {
     font-size: 40px;
-    font-weight: 400;
+    font-weight: bolder;
     height:inherit;
     width: auto;
-    padding: 0 120px 0 120px;
+    padding: 0 12px 0 12px;
     font-style: italic;
-    border-radius: 250px 0 250px 0;
+    border-radius:125px 0 125px 0;
     border: solid 5px aqua
 }
 .reason3 {
@@ -40,8 +39,8 @@ li {
     font-weight: bolder;
     height:inherit;
     width: auto;
-    padding: 0 60px 0 60px;
+    padding: 0 0 0 15px;
     font-style: italic;
-    border-radius: 250px 0 250px 0;
+    border-radius:125px 0 125px 0;
     border: solid 5px aqua
 }

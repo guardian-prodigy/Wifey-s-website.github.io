@@ -1,15 +1,14 @@
+body { margin:0;padding:0;width:100%; }
 body {
     font-size: 30px;
     background-color: black;
-    color: white;
-    padding-left: 600px;
-    padding-right: 600px;
+    color: white;  
     border: solid red;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+    margin:0;padding:0;width:100%; 
     
-    
-}
-h3 {
-    text-align: center;
 }
 li {
     font-style: italic;
@@ -17,9 +16,9 @@ li {
 }
 .reason1 {
     font-size: 40px;
-    font-weight: 400;
+    font-weight: bold;
    
-    width: 550px;
+    width:auto;
     padding: 0 0 0 60px;
     font-style: italic;
     border-radius: 250px 0 250px 0;
@@ -30,7 +29,7 @@ li {
     font-size: 40px;
     font-weight: 400;
     height:inherit;
-    width: 350px;
+    width: auto;
     padding: 0 120px 0 120px;
     font-style: italic;
     border-radius: 250px 0 250px 0;
@@ -40,7 +39,7 @@ li {
     font-size: 40px;
     font-weight: bolder;
     height:inherit;
-    width: 500px;
+    width: auto;
     padding: 0 60px 0 60px;
     font-style: italic;
     border-radius: 250px 0 250px 0;

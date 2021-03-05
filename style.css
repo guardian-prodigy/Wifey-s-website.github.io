@@ -1,0 +1,48 @@
+body {
+    font-size: 30px;
+    background-color: black;
+    color: white;
+    padding-left: 600px;
+    padding-right: 600px;
+    border: solid red;
+    
+    
+}
+h3 {
+    text-align: center;
+}
+li {
+    font-style: italic;
+    font-size: 30px;
+}
+.reason1 {
+    font-size: 40px;
+    font-weight: 400;
+   
+    width: 550px;
+    padding: 0 0 0 60px;
+    font-style: italic;
+    border-radius: 250px 0 250px 0;
+    height:inherit;
+    border: solid 5px aqua
+}
+.reason2 {
+    font-size: 40px;
+    font-weight: 400;
+    height:inherit;
+    width: 350px;
+    padding: 0 120px 0 120px;
+    font-style: italic;
+    border-radius: 250px 0 250px 0;
+    border: solid 5px aqua
+}
+.reason3 {
+    font-size: 40px;
+    font-weight: bolder;
+    height:inherit;
+    width: 500px;
+    padding: 0 60px 0 60px;
+    font-style: italic;
+    border-radius: 250px 0 250px 0;
+    border: solid 5px aqua
+}

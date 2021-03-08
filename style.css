@@ -10,6 +10,9 @@ body {
     margin:0;padding:0;width:100%; 
     
 }
+h3 {
+    text-align: center;
+}
 li {
     font-style: italic;
     font-size: 30px;
@@ -17,7 +20,7 @@ li {
 .reason1 {
     font-size: 40px;
     font-weight: bolder;
-    width:auto;
+    width: 550px;
     padding: 0 0 0 5px;
     font-style: italic;
     border-radius:125px 0 125px 0;
@@ -28,7 +31,7 @@ li {
     font-size: 40px;
     font-weight: bolder;
     height:inherit;
-    width: auto;
+    width: 350px;
     padding: 0 12px 0 12px;
     font-style: italic;
     border-radius:125px 0 125px 0;
@@ -38,7 +41,7 @@ li {
     font-size: 40px;
     font-weight: bolder;
     height:inherit;
-    width: auto;
+    width: 500px;
     padding: 0 0 0 15px;
     font-style: italic;
     border-radius:125px 0 125px 0;

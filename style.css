@@ -1,5 +1,9 @@
 
-body {
+
+    
+
+div {
+    
     font-size: 30px;
     background-color: black;
     color: white;  
@@ -7,8 +11,7 @@ body {
     display: flex;
   justify-content: center;
   align-items: center;
-    margin:0;padding:0;width:100%; 
-    
+    margin:0;padding:0;width:100%;
 }
 h3 {
     text-align: center;
@@ -16,6 +19,7 @@ h3 {
 li {
     font-style: italic;
     font-size: 30px;
+    
 }
 .reason1 {
     font-size: 40px;
@@ -25,10 +29,12 @@ li {
     font-style: italic;
     border-radius:125px 0 125px 0;
     height:inherit;
-    border: solid 5px aqua
+    border: solid 5px aqua;
+    
 }
 .reason2 {
     font-size: 40px;
+    
     font-weight: bolder;
     height:inherit;
     width: 350px;
@@ -39,6 +45,7 @@ li {
 }
 .reason3 {
     font-size: 40px;
+    
     font-weight: bolder;
     height:inherit;
     width: 500px;

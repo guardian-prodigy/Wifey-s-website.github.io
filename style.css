@@ -23,11 +23,12 @@ h3 {
 li {
     font-style: italic;
     font-size: 30px;
-    
+    display: block;
 }
 .reason1 {
     font-size: 40px;
     font-weight: bolder;
+display: inline-block;
     width: 550px;
     padding: 0 0 0 5px;
     font-style: italic;

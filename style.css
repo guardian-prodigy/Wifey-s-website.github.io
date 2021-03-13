@@ -39,7 +39,7 @@ display: inline-block;
 }
 .reason2 {
     font-size: 40px;
-    
+    display: inline-block;
     font-weight: bolder;
     height:inherit;
     width: 350px;
@@ -50,7 +50,7 @@ display: inline-block;
 }
 .reason3 {
     font-size: 40px;
-    
+    display: inline-block;
     font-weight: bolder;
     height:inherit;
     width: 500px;

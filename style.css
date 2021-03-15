@@ -1,5 +1,8 @@
 body {
     background-color: black;
+border: solid 5px linear-gradient: 45deg, red, green, blue;
+text-align: center; justify-content: center; align-items: center; margin:0;padding:0;width:100%; 
+display: inline-block;
 }
 
     
@@ -10,7 +13,7 @@ div {
     background-color: black;
     color: white;  
     border: solid red;
-    display: flex;
+border-width: 100%;
   justify-content: center;
   align-items: center;
     margin:0;padding:0px;width:100%;
@@ -23,11 +26,12 @@ h3 {
 li {
     font-style: italic;
     font-size: 30px;
-    
+    display: block;
 }
 .reason1 {
     font-size: 40px;
     font-weight: bolder;
+display: inline-block;
     width: 550px;
     padding: 0 0 0 5px;
     font-style: italic;
@@ -38,7 +42,7 @@ li {
 }
 .reason2 {
     font-size: 40px;
-    
+    display: inline-block;
     font-weight: bolder;
     height:inherit;
     width: 350px;
@@ -49,7 +53,7 @@ li {
 }
 .reason3 {
     font-size: 40px;
-    
+    display: inline-block;
     font-weight: bolder;
     height:inherit;
     width: 500px;

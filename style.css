@@ -111,12 +111,12 @@ width: 85%;
 }
 .picture-collection {
     color: chartreuse;
-    position: absolute;
-    top: 2080px;
-    left: 5px;
-    right: 10px;
+    position: relative;
+    bottom: 150px;
+    left: 0px;
     border: dashed 2px;
     padding: 5px;
+    margin: 5px;
    width: 129px; height: 20px;
     background: linear-gradient(90deg, blue, black, green);
 }
@@ -126,6 +126,8 @@ width: 85%;
     width: 460px;
     background: linear-gradient(45deg, green, black, blue);
     width: 460px; height: 125px;
+    
+    
 }
 .paragraph-to-her-website {
     background-color: black;
@@ -150,13 +152,15 @@ width: 85%;
 }
 .text-for-picture-collection {
     position: relative;
-    bottom: 130px;
+    bottom: 140px;
     border: solid red 3px;
     border-radius: 0 20px 20px 20px;
     width: 100px;
     padding: 5px;
     color: white;
     font-weight: bold;
+    left: 6px;
+   
 }
 
 .heading-banner {

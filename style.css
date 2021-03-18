@@ -1,5 +1,7 @@
 body {
-    background: black
+    background: black;
+    width: 50%;
+
 }
 
 .element1 {
@@ -7,13 +9,17 @@ body {
     justify-content: center;
     text-align: center;
     color: white;
-    display:inline-block
+    display:inline-block;
+    width: 470px;
 }
 
 ul {
+    position: relative;
     justify-content: center;
     border: dashed 2px red;
     border-radius: 50px;
+    width: 80%;
+    left: 25px;
 }
 
 .ul1 {
@@ -26,8 +32,8 @@ filter: brightness(110%);
 font-size: 30px;
 border: aqua solid;
 font-style: italic;
-border-radius: 0 100px 0 90px;
-width: 400px;
+border-radius: 0 100px 0 100px;
+width: 85%;
 position: relative;
 left: 20px;
 }
@@ -38,7 +44,7 @@ border: aqua solid;
 font-style: italic;
 border-radius: 0 100px 0 90px;
 padding: 0 0 0 0;
-width: 400px;
+width: 85%;
 margin-top: 20px;
 left: 20px;
 }
@@ -53,6 +59,7 @@ padding: 0 0 0 0;
 width: 400px;
 margin-top: 20px;
 left: 20px;
+width: 85%;
 }
 
 
@@ -65,7 +72,7 @@ left: 20px;
     filter: brightness(150%) saturate(150%);
     width:370px; height: min-content;
     border-radius: 50px;
-    
+    width: 80%;
 }
 
 .li2 {
@@ -78,12 +85,13 @@ left: 20px;
     width:370px; height: min-content;
     border-radius: 50px;
     padding-left: 5px;
+    width: 80%;
 }
 
 .middleImage {
     position: relative;
-    left: 140px;
-    width: 200px; height: 300px;
+    left: 150px;
+    width: 150px; height: 150px;
     border: solid;
     padding: 5px;
     border-radius: 30px 0 30px 0;
@@ -92,9 +100,93 @@ left: 20px;
 
 .picture-collection {
     color: chartreuse;
-    position: relative;
-    bottom: 320px;
+    position: absolute;
+    top: 2075px;
+    left: 10px;
     border: dashed 2px;
     padding: 5px;
     background: linear-gradient(90deg, blue, black, green);
 }
+
+.text-for-picture-collection {
+    position: relative;
+    bottom: 290px;
+    border: solid red 3px;
+    border-radius: 0 20px 20px 20px;
+    width: 55%;
+    padding: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+.heading-banner {
+    font-size: 20px;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    border: chartreuse 3px solid;
+    border-radius: 20px;
+    background: linear-gradient(45deg, green, red, black);
+    position: relative;
+    width: 460px
+}
+
+.first-img {
+    height: 300px; width: 225px;
+    border: solid 3px;
+    padding: 5px;
+    background: linear-gradient(45deg, green, blue, red);
+    border-radius: 150px 0;
+    filter: brightness(110%) saturate(150%);
+}
+
+.second-img {
+    position: absolute;
+    width: 300px;
+    left: 85px;
+    border: solid 3px;
+    padding: 5px;
+    background: linear-gradient(45deg, red, black, orange);
+    filter: brightness(110%) saturate(150%);
+}
+
+.third-img {
+    position: relative;
+    height: 300px; width: 225px;
+    left: 240px;
+    bottom: 333px;
+    border-radius: 0 150px;
+    border: solid 3px;
+    padding: 5px;
+    background: linear-gradient(45deg, green, blue, red);
+    filter: brightness(110%) saturate(150%);
+}
+
+.fourth-img {
+    position: relative;
+    height: 300px; width: 225px;
+    border-radius: 0 150px;
+    bottom: 110px;
+    border: solid 3px;
+    padding: 5px;
+    background: linear-gradient(45deg, green, blue, red);
+filter: brightness(110%) saturate(150%);
+}
+
+.fifth-img {
+    position: relative;
+    height: 300px; width: 225px;
+    border-radius: 150px 0;
+    bottom: 426px;
+    left: 240px;
+    border: solid 3px;
+    padding: 5px;
+    background: linear-gradient(45deg, green, blue, red);
+    filter: brightness(110%) saturate(150%);
+}
+
+.back {
+    font-size: 20px;
+    color: orangered;
+}
+

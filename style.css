@@ -11,6 +11,11 @@ body {
     color: white;
     display:inline-block;
     width: 470px;
+    border: solid 5px red;
+    border-radius: 60px 0 60px 0;
+    border-image: linear-gradient(45deg, red, green, purple);
+    border-image-slice: 1;
+    width: 400px;
 }
 
 ul {
@@ -99,11 +104,12 @@ width: 85%;
     background: linear-gradient(45deg, green, blue, orange);
 }
 .images {
-    border: dotted 2px red;
-    border-radius: 20px;
     width: 449px; height: 850px;
     justify-content: center;
     padding:5px;
+    border: solid 3px transparent;
+    border-image: linear-gradient(45deg, red, black, blue);
+    border-image-slice: 1;
 }
 .body-pic-html {
     
@@ -171,11 +177,12 @@ width: 85%;
     justify-content: center;
     text-align: center;
     color: white;
-    border: chartreuse 3px solid;
-    border-radius: 20px;
     background: linear-gradient(45deg, green, red, black);
     position: relative;
-    width: 440px
+    width: 440px;
+   border: solid 3px transparent;
+    border-image: linear-gradient(45deg, red, green, purple);
+    border-image-slice: 1;
 }
 
 .first-img {
@@ -205,7 +212,7 @@ width: 85%;
     position: absolute;
     height: 300px; 
     left: 250px;
-    top: 201px;
+    top: 203px;
     border-radius: 0 150px;
     border: solid 3px;
     padding: 5px;
@@ -244,3 +251,8 @@ filter: brightness(110%) saturate(150%);
     color: orangered;
 }
 
+.header {
+    color: white;
+    justify-content: center;
+    text-align: center;
+}

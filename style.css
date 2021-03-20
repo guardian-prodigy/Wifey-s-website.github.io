@@ -175,6 +175,8 @@ width: 85%;
 
 .heading-banner {
     font-size: 20px;
+    margin-left: 10px;
+    display: inline-block;
     justify-content: center;
     text-align: center;
     color: white;

@@ -3,7 +3,6 @@ body {
     width: 50%;
 
 }
-
 .element1 {
     position: relative;
     justify-content: center;
@@ -18,7 +17,6 @@ body {
     width: 400px;
     margin-left: 25px;
 }
-
 ul {
     position: relative;
     justify-content: center;
@@ -27,13 +25,10 @@ ul {
     width: 80%;
     left: 25px;
 }
-
 .ul1 {
 background: linear-gradient();
 filter: brightness(110%);
 }
-
-
 .reason1 {
 font-size: 30px;
 border: aqua solid;
@@ -54,7 +49,6 @@ width: 85%;
 margin-top: 20px;
 left: 20px;
 }
-
 .reason3 {
     position: relative;
     font-size: 30px;
@@ -67,8 +61,6 @@ margin-top: 20px;
 left: 20px;
 width: 85%;
 }
-
-
 .li1 {
     position: relative;
     color: black;
@@ -80,7 +72,6 @@ width: 85%;
     border-radius: 50px;
     width: 90%;
 }
-
 .li2 {
     position: relative;
     color: black;
@@ -93,7 +84,6 @@ width: 85%;
     padding-left: 5px;
     width: 90%;
 }
-
 .middleImage {
     position: relative;
     left: 270px;
@@ -103,20 +93,6 @@ width: 85%;
     padding: 5px;
     border-radius: 30px 0 30px 0;
     background: linear-gradient(45deg, green, blue, orange);
-}
-.images {
-    width: 449px; height: 870px;
-    justify-content: center;
-    padding:10px;
-    border: solid 3px transparent;
-    border-image: linear-gradient(45deg, red, black, blue);
-    border-image-slice: 1;
-}
-.body-pic-html {
-    
-    justify-content: center;
-    border: solid, red, 3px;
-    border-radius: 24px;
 }
 .picture-collection {
     color: chartreuse;
@@ -173,7 +149,23 @@ width: 85%;
    
 }
 
+.body-pics-html {
+    width: 100%;
+    justify-content: center;
+    border: solid red 3px;
+    border-radius: 25px;
+}
+.images {
+    width: 50%; height: 500px;
+    padding: 10px;
+    margin-left: 5px;
+    border: solid 3px transparent;
+    border-image: linear-gradient(45deg, red, black, blue);
+    filter: brightness(110%) saturate(150%);
+    border-image-slice: 1;
+}
 .heading-banner {
+
     font-size: 20px;
     margin-left: 10px;
     display: inline-block;
@@ -182,78 +174,66 @@ width: 85%;
     color: white;
     background: linear-gradient(45deg, green, red, black);
     position: relative;
-    width: 440px;
+    width: 450px;
    border: solid 3px transparent;
     border-image: linear-gradient(45deg, red, green, purple);
     border-image-slice: 1;
 }
-
 .first-img {
-    position: absolute;
-    height: 300px; width: 200px;
+    width: 100px; height: 150px;
     border: solid 3px;
-    padding: 5px;
     background: linear-gradient(45deg, green, blue, red);
-    border-radius: 150px 0;
-    filter: brightness(110%) saturate(150%);
-    
+    filter: brightness(110%) saturate(130%);
+    border-radius: 75px 0;
+    padding: 3px;
 }
-
 .second-img {
-    position: absolute;
-    width: 300px;
-    left: 85px;
-    border: solid 3px;
-    padding: 5px;
-    background: linear-gradient(45deg, red, black, orange);
-    filter: brightness(110%) saturate(150%);
-    top: 525px;
-
-}
-
-.third-img {
+    width: 100px; height: 150px;
     position: relative;
-    bottom: 18px;
-    height: 300px; width: 200px;
-    left: 235px;
-    border-radius: 0 150px;
+    left: 135px;
+    bottom: 162px;
     border: solid 3px;
-    padding: 5px;
     background: linear-gradient(45deg, green, blue, red);
-    filter: brightness(110%) saturate(150%);
-    
+    filter: brightness(110%) saturate(130%);
+    border-radius: 0 75px;
+    padding: 3px;
+    margin-right: 5px;
 }
-
+.third-img {
+    width: 175px; height: 110px;
+    position: relative;
+    bottom: 140px;
+    left: 25px;
+    border: solid 3px;
+    background: linear-gradient(45deg, green, blue, red);
+    filter: brightness(110%) saturate(130%);
+    padding: 3px;
+}
 .fourth-img {
-    position: absolute;
-    height: 300px; width: 200px;
-    border-radius: 0 150px;
-    top: 725px;
+    width: 100px; height: 150px;
+    position: relative;
+    bottom: 120px;
     border: solid 3px;
-    padding: 5px;
     background: linear-gradient(45deg, green, blue, red);
-    filter: brightness(110%) saturate(150%);
-
+    filter: brightness(110%) saturate(130%);
+    border-radius: 0 75px;
+    padding: 3px;
 }
-
 .fifth-img {
-    position: absolute;
-    height: 300px; width: 200px;
-    border-radius: 150px 0;
-    top: 725px;
-    left: 250px;
+    width: 100px; height: 150px;
+    position: relative;
+    bottom: 282px;
+    left: 135px;
     border: solid 3px;
-    padding: 5px;
     background: linear-gradient(45deg, green, blue, red);
-    filter: brightness(110%) saturate(150%);
-    
+    filter: brightness(110%) saturate(130%);
+    border-radius: 75px 0;
+    padding: 3px;
 }
-
 .back {
     font-size: 20px;
     color: orangered;
 }
-
 .header {
     position: relative;
     color: white;
@@ -266,7 +246,7 @@ width: 85%;
     border-image: linear-gradient(45deg, red, green, purple);
     border-image-slice: 1;
     background: center linear-gradient(90deg, skyBlue, black, purple);
-    
+
 }
 .sect1 {
     color: white;
@@ -292,3 +272,4 @@ width: 85%;
     margin-top: 20px;
     width: 440px;
 }
+

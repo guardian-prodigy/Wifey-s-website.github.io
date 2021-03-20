@@ -105,7 +105,7 @@ width: 85%;
     background: linear-gradient(45deg, green, blue, orange);
 }
 .images {
-    width: 449px; height: 850px;
+    width: 449px; height: 870px;
     justify-content: center;
     padding:10px;
     border: solid 3px transparent;
@@ -213,7 +213,7 @@ width: 85%;
 
 .third-img {
     position: relative;
-    bottom: 15px;
+    bottom: 18px;
     height: 300px; width: 200px;
     left: 235px;
     border-radius: 0 150px;

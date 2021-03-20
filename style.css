@@ -255,18 +255,18 @@ width: 85%;
 }
 
 .header {
+    position: relative;
     color: white;
     justify-content: center;
     text-align: center;
     font-size: 20px;
     width: 400px;
     margin-left: 35px;
-    position: relative;
     border: solid 3px transparent;
     border-image: linear-gradient(45deg, red, green, purple);
     border-image-slice: 1;
     background: center linear-gradient(90deg, skyBlue, black, purple);
-
+    
 }
 .sect1 {
     color: white;

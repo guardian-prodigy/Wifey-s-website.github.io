@@ -210,16 +210,16 @@ width: 85%;
 }
 
 .third-img {
-    position: absolute;
-    height: 300px; 
+    position: relative;
+    bottom: 17px;
+    height: 300px; width: 200px;
     left: 250px;
-    bottom: 317px;
     border-radius: 0 150px;
     border: solid 3px;
     padding: 5px;
     background: linear-gradient(45deg, green, blue, red);
     filter: brightness(110%) saturate(150%);
-    width: 200px;
+    
 }
 
 .fourth-img {
@@ -230,7 +230,7 @@ width: 85%;
     border: solid 3px;
     padding: 5px;
     background: linear-gradient(45deg, green, blue, red);
-filter: brightness(110%) saturate(150%);
+    filter: brightness(110%) saturate(150%);
 
 }
 

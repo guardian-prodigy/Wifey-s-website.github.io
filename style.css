@@ -213,7 +213,7 @@ width: 85%;
     position: absolute;
     height: 300px; 
     left: 250px;
-    top: 203px;
+    bottom: 317px;
     border-radius: 0 150px;
     border: solid 3px;
     padding: 5px;
@@ -257,11 +257,36 @@ filter: brightness(110%) saturate(150%);
     justify-content: center;
     text-align: center;
     font-size: 20px;
-    width: 480px;
+    width: 400px;
+    margin-left: 35px;
     position: relative;
     border: solid 3px transparent;
     border-image: linear-gradient(45deg, red, green, purple);
     border-image-slice: 1;
     background: center linear-gradient(90deg, skyBlue, black, purple);
-}
 
+}
+.sect1 {
+    color: white;
+    width: 100%;
+    margin: 20px 0 0 100px;
+    font-size: 15px;
+    text-align: center;
+    border: solid 3px transparent;
+    border-image: linear-gradient(45deg, yellow, green, blue );
+    border-image-slice: 1;
+}
+.type1 {
+    color: white;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    width: 440px;
+}
+.type2 {
+    color: white;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    width: 440px;
+}

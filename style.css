@@ -107,7 +107,7 @@ width: 85%;
 .images {
     width: 449px; height: 850px;
     justify-content: center;
-    padding:5px;
+    padding:10px;
     border: solid 3px transparent;
     border-image: linear-gradient(45deg, red, black, blue);
     border-image-slice: 1;
@@ -213,7 +213,7 @@ width: 85%;
     position: relative;
     bottom: 17px;
     height: 300px; width: 200px;
-    left: 250px;
+    left: 235px;
     border-radius: 0 150px;
     border: solid 3px;
     padding: 5px;

@@ -188,6 +188,8 @@ width: 85%;
     border-image-slice: 1;
 }
 .first-img {
+    position: relative;
+    bottom: 2px;
     width: 100px; height: 150px;
     border: solid 3px;
     background: linear-gradient(45deg, green, blue, red);
@@ -199,7 +201,7 @@ width: 85%;
     width: 100px; height: 150px;
     position: relative;
     left: 135px;
-    bottom: 160px;
+    bottom: 162px;
     border: solid 3px;
     background: linear-gradient(45deg, green, blue, red);
     filter: brightness(110%) saturate(130%);

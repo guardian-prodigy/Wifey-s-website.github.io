@@ -149,13 +149,21 @@ width: 85%;
    
 }
 
+
+
 .body-pics-html {
     width: 100%;
     justify-content: center;
     border: solid red 3px;
     border-radius: 25px;
 }
-.images {
+.paragraph-above-pics {
+    color: white;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+}
+.images1 {
     width: 50%; height: 500px;
     padding: 10px;
     margin-left: 5px;
@@ -191,7 +199,7 @@ width: 85%;
     width: 100px; height: 150px;
     position: relative;
     left: 135px;
-    bottom: 162px;
+    bottom: 160px;
     border: solid 3px;
     background: linear-gradient(45deg, green, blue, red);
     filter: brightness(110%) saturate(130%);
@@ -206,7 +214,7 @@ width: 85%;
     left: 25px;
     border: solid 3px;
     background: linear-gradient(45deg, green, blue, red);
-    filter: brightness(110%) saturate(130%);
+    filter: brightness(110%) saturate(110%);
     padding: 3px;
 }
 .fourth-img {
@@ -230,6 +238,9 @@ width: 85%;
     border-radius: 75px 0;
     padding: 3px;
 }
+
+
+
 .back {
     font-size: 20px;
     color: orangered;

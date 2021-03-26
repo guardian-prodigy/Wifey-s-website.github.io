@@ -1,7 +1,8 @@
 body {
     background: black;
     justify-content: center;
-    width: 90%;
+    align-content: center;
+    width: 100%;
     margin-right: auto;
     margin-left: auto;
 }
@@ -9,9 +10,10 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-content: center;
     text-align: center;
     color: white;
-    width: 100%;
+    width: fit-content;
     border: solid 5px red;
     border-radius: 60px 0 60px 0;
     border-image: linear-gradient(45deg, red, green, purple);
@@ -47,7 +49,7 @@ border-radius: 0 100px 0 100px;
 width: 85%;
 position: relative;
 left: 20px;
-text-decoration:wavy;
+text-decoration:none;
 }
 .reason2 {
     position: relative;
@@ -135,7 +137,7 @@ width: 85%;
     margin-left: 5px;
     color: white;
     width: 40%;
-    align-content: stretch;
+    align-content: flex-start;
 }
 .paragraph-to-my-website {
     background-color: black;
@@ -147,6 +149,7 @@ width: 85%;
     position: relative;
     left: 235px;
     bottom: 90px;
+    align-content: flex-end;
 }
 .text-for-picture-collection {
     position: relative;
@@ -343,6 +346,8 @@ width: 85%;
     background: linear-gradient(45deg, grey, darkgrey);
     margin: 20px auto;
     border-radius: 10px 0;
+    width: fit-content;
+    
 }
 .ww-nav1:before, .ww-nav1:after {
     content: '';
@@ -352,8 +357,8 @@ width: 85%;
     right: -5px;
     bottom: -5px;
     background: linear-gradient(45deg, green, yellow, blue, red, orange, yellow, purple, green);
-    background-size: 400%;
-    width: calc(100% + 10px); height: calc(100% + 10px);
+    background-size: 500%;
+    width: calc(100%+10px); height: calc(100%+10px);
     z-index: -1;
     animation: animate 20s linear infinite;
     }

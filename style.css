@@ -1,485 +1,497 @@
-index.body {
-    background: black;
-    justify-content: center;
-    align-content: center;
-    margin-right: auto;
-    margin-left: auto;
+body {
+  background: black;
+  justify-content: center;
+  align-content: center;
+  margin-right: auto;
+  margin-left: auto;
 }
 .element1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    text-align: center;
-    color: white;
-    width: fit-content;
-    border: solid 5px red;
-    border-radius: 60px 0 60px 0;
-    border-image: linear-gradient(45deg, red, green, purple);
-    border-image-slice: 1;
-    
-    
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  color: white;
+  width: fit-content;
+  border: solid 5px red;
+  border-radius: 60px 0 60px 0;
+  border-image: linear-gradient(45deg, red, green, purple);
+  border-image-slice: 1;
 }
 .element2 {
-    width: 400px;
-
+  width: 400px;
 }
 ol {
-    text-decoration: none;
+  text-decoration: none;
 }
 ul {
-    position: relative;
-    justify-content: center;
-    border: dashed 2px red;
-    border-radius: 50px;
-    width: 80%;
-    left: 25px;
-    
+  position: relative;
+  justify-content: center;
+  border: dashed 2px red;
+  border-radius: 50px;
+  width: 80%;
+  left: 25px;
 }
 .ul1 {
-filter: brightness(110%);
-text-decoration: none;
+  filter: brightness(110%);
+  text-decoration: none;
 }
 .reason1 {
-font-size: 30px;
-border: aqua solid;
-font-style: italic;
-border-radius: 0 100px 0 100px;
-width: 85%;
-position: relative;
-left: 20px;
-text-decoration:none;
+  font-size: 30px;
+  border: aqua solid;
+  font-style: italic;
+  border-radius: 0 100px 0 100px;
+  width: 85%;
+  position: relative;
+  left: 20px;
+  text-decoration: none;
 }
 .reason2 {
-    position: relative;
-    font-size: 30px;
-border: aqua solid;
-font-style: italic;
-border-radius: 0 100px 0 90px;
-padding: 0 0 0 0;
-width: 85%;
-margin-top: 20px;
-left: 20px;
+  position: relative;
+  font-size: 30px;
+  border: aqua solid;
+  font-style: italic;
+  border-radius: 0 100px 0 90px;
+  padding: 0 0 0 0;
+  width: 85%;
+  margin-top: 20px;
+  left: 20px;
 }
 .reason3 {
-    position: relative;
-    font-size: 30px;
-border: aqua solid;
-font-style: italic;
-border-radius: 0 100px 0 90px;
-padding: 0 0 0 0;
-width: 400px;
-margin-top: 20px;
-left: 20px;
-width: 85%;
+  position: relative;
+  font-size: 30px;
+  border: aqua solid;
+  font-style: italic;
+  border-radius: 0 100px 0 90px;
+  padding: 0 0 0 0;
+  width: 400px;
+  margin-top: 20px;
+  left: 20px;
+  width: 85%;
 }
 .li1 {
-    position: relative;
-    color: black;
-    font-size: 30px;
-    margin: 10px;
-    background: linear-gradient(45deg, red, green, orange);
-    filter: brightness(150%) saturate(150%);
-    width:370px; height: min-content;
-    border-radius: 50px;
-    width: 90%;
-    text-decoration: none;
+  position: relative;
+  color: black;
+  font-size: 30px;
+  margin: 10px;
+  background: linear-gradient(45deg, red, green, orange);
+  filter: brightness(150%) saturate(150%);
+  width: 370px;
+  height: min-content;
+  border-radius: 50px;
+  width: 90%;
+  text-decoration: none;
 }
 .li2 {
-    position: relative;
-    color: black;
-    font-size: 30px;
-    margin: 10px;
-    background: linear-gradient(45deg, orange, green, red);
-    filter: brightness(150%) saturate(150%);
-    width:370px; height: min-content;
-    border-radius: 50px;
-    padding-left: 5px;
-    width: 90%;
-    text-decoration: none;
+  position: relative;
+  color: black;
+  font-size: 30px;
+  margin: 10px;
+  background: linear-gradient(45deg, orange, green, red);
+  filter: brightness(150%) saturate(150%);
+  width: 370px;
+  height: min-content;
+  border-radius: 50px;
+  padding-left: 5px;
+  width: 90%;
+  text-decoration: none;
 }
 .middleImage {
-    position: relative;
-    left: 270px;
-    top: 40px;
-    width: 150px; height: 200px;
-    border: solid;
-    padding: 5px;
-    border-radius: 30px 0 30px 0;
-    background: linear-gradient(45deg, green, blue, orange);
+  position: relative;
+  left: 270px;
+  top: 40px;
+  width: 150px;
+  height: 200px;
+  border: solid;
+  padding: 5px;
+  border-radius: 30px 0 30px 0;
+  background: linear-gradient(45deg, green, blue, orange);
 }
 .picture-collection {
-    color: chartreuse;
-    position: relative;
-    bottom: 150px;
-    left: 0px;
-    border: dashed 2px;
-    padding: 5px;
-    margin: 5px;
-   width: 129px; height: 20px;
-    background: linear-gradient(90deg, blue, black, green);
-
+  color: chartreuse;
+  position: relative;
+  bottom: 150px;
+  left: 0px;
+  border: dashed 2px;
+  padding: 5px;
+  margin: 5px;
+  width: 129px;
+  height: 20px;
+  background: linear-gradient(90deg, blue, black, green);
 }
 .border-bottom-websites {
-    border: solid 5px red;
-    border-radius: 20px;
-    background: linear-gradient(45deg, green, black, blue);
-    width: 440px; height: 125px;
-   
-    
+  border: solid 5px red;
+  border-radius: 20px;
+  background: linear-gradient(45deg, green, black, blue);
+  width: 440px;
+  height: 125px;
 }
 .paragraph-to-her-website {
-    background-color: black;
-    border: solid 5px;
-    border-radius: 20px;
-    padding: 5px;
-    margin-left: 5px;
-    color: white;
-    width: 40%;
-    align-content: flex-start;
+  background-color: black;
+  border: solid 5px;
+  border-radius: 20px;
+  padding: 5px;
+  margin-left: 5px;
+  color: white;
+  width: 40%;
+  align-content: flex-start;
 }
 .paragraph-to-my-website {
-    background-color: black;
-    border: solid 5px;
-    border-radius: 20px;
-    padding: 5px;
-    color: white;
-    width: 40%;
-    position: relative;
-    left: 235px;
-    bottom: 90px;
-    align-content: flex-end;
+  background-color: black;
+  border: solid 5px;
+  border-radius: 20px;
+  padding: 5px;
+  color: white;
+  width: 40%;
+  position: relative;
+  left: 235px;
+  bottom: 90px;
+  align-content: flex-end;
 }
 .text-for-picture-collection {
-    position: relative;
-    bottom: 140px;
-    border: solid red 3px;
-    border-radius: 0 20px 20px 20px;
-    width: 100px;
-    padding: 5px;
-    color: white;
-    font-weight: bold;
-    left: 6px;
-   
+  position: relative;
+  bottom: 140px;
+  border: solid red 3px;
+  border-radius: 0 20px 20px 20px;
+  width: 100px;
+  padding: 5px;
+  color: white;
+  font-weight: bold;
+  left: 6px;
 }
-
-
 
 .body-pics-html {
-    width: 100%; height: 825px;
-    justify-content: center;
-    display: flex;
+  width: 100%;
+  height: 825px;
+  justify-content: center;
+  display: flex;
 }
 .back {
-    font-size: 20px;
-    color: orangered;
+  font-size: 20px;
+  color: orangered;
 }
 .paragraph-above-pics {
-    color: white;
-    position: relative;
-    justify-content: center;
-    text-align: center;
+  color: white;
+  position: relative;
+  justify-content: center;
+  text-align: center;
 }
 .images1 {
-    width: 250px; height: 500px;
-    position: relative;
-    justify-content: center;
-    align-content: center;
-    padding: 10px;
-    margin-left: 0px;
-    border: solid 3px transparent;
-    border-image: linear-gradient(45deg, red, black, blue);
-    filter: brightness(110%) saturate(150%);
-    border-image-slice: 1;
+  width: 250px;
+  height: 500px;
+  position: relative;
+  justify-content: center;
+  align-content: center;
+  padding: 10px;
+  margin-left: 0px;
+  border: solid 3px transparent;
+  border-image: linear-gradient(45deg, red, black, blue);
+  filter: brightness(110%) saturate(150%);
+  border-image-slice: 1;
 }
 .heading-banner {
-    width: 100%;
-    font-size: 20px;
-    display: inline-block;
-    justify-content: center;
-    text-align: center;
-    color: white;
-    background: linear-gradient(45deg, green, red, black);
-    position: relative;
-    
-   border: solid 3px transparent;
-    border-image: linear-gradient(45deg, red, green, purple);
-    border-image-slice: 1;
+  width: 100%;
+  font-size: 20px;
+  display: inline-block;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  background: linear-gradient(45deg, green, red, black);
+  position: relative;
+
+  border: solid 3px transparent;
+  border-image: linear-gradient(45deg, red, green, purple);
+  border-image-slice: 1;
 }
 .first-img {
-    position: relative;
-    bottom: 1px;
-    width: 110px; height: 150px;
-    border: solid 3px;
-    background: linear-gradient(45deg, green, blue, red);
-    filter: brightness(110%) saturate(110%);
-    border-radius: 75px 0;
-    padding: 3px;
+  position: relative;
+  bottom: 1px;
+  width: 110px;
+  height: 150px;
+  border: solid 3px;
+  background: linear-gradient(45deg, green, blue, red);
+  filter: brightness(110%) saturate(110%);
+  border-radius: 75px 0;
+  padding: 3px;
 }
 .second-img {
-    width: 110px; height: 150px;
-    position: relative;
-    left: 135px;
-    bottom: 162px;
-    border: solid 3px;
-    background: linear-gradient(45deg, green, blue, red);
-    filter: brightness(110%) saturate(110%);
-    border-radius: 0 75px;
-    padding: 3px;
-    margin-right: 5px;
+  width: 110px;
+  height: 150px;
+  position: relative;
+  left: 135px;
+  bottom: 162px;
+  border: solid 3px;
+  background: linear-gradient(45deg, green, blue, red);
+  filter: brightness(110%) saturate(110%);
+  border-radius: 0 75px;
+  padding: 3px;
+  margin-right: 5px;
 }
 .third-img {
-    width: 175px; height: 110px;
-    position: relative;
-    bottom: 140px;
-    left: 25px;
-    border: solid 3px;
-    background: linear-gradient(45deg, green, blue, red);
-    filter: brightness(110%) saturate(110%);
-    padding: 3px;
+  width: 175px;
+  height: 110px;
+  position: relative;
+  bottom: 140px;
+  left: 25px;
+  border: solid 3px;
+  background: linear-gradient(45deg, green, blue, red);
+  filter: brightness(110%) saturate(110%);
+  padding: 3px;
 }
 .fourth-img {
-    width: 110px; height: 150px;
-    position: relative;
-    bottom: 120px;
-    border: solid 3px;
-    background: linear-gradient(45deg, green, blue, red);
-    filter: brightness(110%) saturate(110%);
-    border-radius: 0 75px;
-    padding: 3px;
+  width: 110px;
+  height: 150px;
+  position: relative;
+  bottom: 120px;
+  border: solid 3px;
+  background: linear-gradient(45deg, green, blue, red);
+  filter: brightness(110%) saturate(110%);
+  border-radius: 0 75px;
+  padding: 3px;
 }
 .fifth-img {
-    width: 110px; height: 150px;
-    position: relative;
-    bottom: 282px;
-    left: 135px;
-    border: solid 3px;
-    background: linear-gradient(45deg, green, blue, red);
-    filter: brightness(110%) saturate(110%);
-    border-radius: 75px 0;
-    padding: 3px;
+  width: 110px;
+  height: 150px;
+  position: relative;
+  bottom: 282px;
+  left: 135px;
+  border: solid 3px;
+  background: linear-gradient(45deg, green, blue, red);
+  filter: brightness(110%) saturate(110%);
+  border-radius: 75px 0;
+  padding: 3px;
 }
-
 
 .guardian-body {
-    display: flex;
-    width: 100%; height: 500px;
-    position: absolute;
-    text-align: left;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: right;
+  display: flex;
+  width: 100%;
+  height: 500px;
+  position: absolute;
+  text-align: left;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: right;
 }
 .div-1 {
-    border: solid 3px transparent;
-    border-image: linear-gradient(45deg, red, green, purple);
-    border-image-slice: 1;
-    width: 100;
-    margin: 0px;
-    padding: 0px;
-    position: relative;
-    justify-content: center;
-    
-    
+  border: solid 3px transparent;
+  border-image: linear-gradient(45deg, red, green, purple);
+  border-image-slice: 1;
+  width: 100;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  justify-content: center;
 }
 .back-guardian {
-    color: orangered;
-    margin: 5px;
-    
+  color: orangered;
+  margin: 5px;
 }
 .header {
-    width: 250px;
-    font-size: 20px;
-    justify-content: center;
-    text-align: center;
-    color: white;
-    padding: 10px;
-    margin: 10px 0 0 20px;
-    position: relative;
-    border: solid 3px transparent;
-    border-image: linear-gradient(45deg, red, green, purple);
-    border-image-slice: 1;
-    background: linear-gradient(90deg, skyBlue, black, purple);
-
+  width: 250px;
+  font-size: 20px;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 10px;
+  margin: 10px 0 0 20px;
+  position: relative;
+  border: solid 3px transparent;
+  border-image: linear-gradient(45deg, red, green, purple);
+  border-image-slice: 1;
+  background: linear-gradient(90deg, skyBlue, black, purple);
 }
 .sect1 {
-    position: relative;
-    color: white;
-    width: 250px;
-    margin: 20px 0 0 30px;
-    font-size: 15px;
-    text-align: center;
-    justify-content: center;
-    border: solid 3px transparent;
-    border-image: linear-gradient(45deg, yellow, green, blue );
-    border-image-slice: 1;
+  position: relative;
+  color: white;
+  width: 250px;
+  margin: 20px 0 0 30px;
+  font-size: 15px;
+  text-align: center;
+  justify-content: center;
+  border: solid 3px transparent;
+  border-image: linear-gradient(45deg, yellow, green, blue);
+  border-image-slice: 1;
 }
 .sect2 {
-    color: white;
-    justify-content: center;
-    text-align: center;
-    margin: 20px 0 0 10px;
-    width: 300px;
+  color: white;
+  justify-content: center;
+  text-align: center;
+  margin: 20px 0 0 10px;
+  width: 300px;
 }
 .sect3 {
-    color: white;
-    justify-content: center;
-    text-align: center;
-    margin: 20px 0px 0 60px;
-    width: 200px;
+  color: white;
+  justify-content: center;
+  text-align: center;
+  margin: 20px 0px 0 60px;
+  width: 200px;
 }
-
-
+.ww-body {
+  background: black;
+}
 
 .ww-nav1 {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    text-align: center;
-    align-content: center;
-    background: linear-gradient(45deg, grey, darkgrey);
-    margin: 20px auto 20px auto;
-    border-radius: 10px 0;
-    width: 90%;
-    
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  align-content: center;
+  background: linear-gradient(45deg, grey, darkgrey);
+  margin: 20px auto 20px auto;
+  border-radius: 10px 0;
+  width: 90%;
 }
 .button-background {
-    background: transparent;
-    width: 40%;
-    
-} 
-.ww-nav1:before, .ww-nav1:after {
-    content: '';
-    position: absolute;
-    top: -4px;
-    left: -4px;
-    right: -4px;
-    bottom: -4px;
-    background: linear-gradient(45deg, green, yellow, blue, red, orange, yellow, purple, green);
-    background-size: 500%;
-    
-    z-index: -1;
-    animation: animate 20s linear infinite;
-    } .ww-nav1:after {
-        filter: blur(50px);
-        border: transparent;
-    
+  background: transparent;
+  width: 40%;
 }
-@keyframes animate 
-{ 
-    0%
-    {
-        background-position: 0 0;
-    }
-    50% {
-        background-position: 400% 0;
-    }
-    100%
-    {
-        background-position: 0 0;
-    }
+.ww-nav1:before,
+.ww-nav1:after {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  right: -4px;
+  bottom: -4px;
+  background: linear-gradient(
+    45deg,
+    green,
+    yellow,
+    blue,
+    red,
+    orange,
+    yellow,
+    purple,
+    green
+  );
+  background-size: 500%;
 
+  z-index: -1;
+  animation: animate 20s linear infinite;
+}
+.ww-nav1:after {
+  filter: blur(50px);
+  border: transparent;
+}
+@keyframes animate {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
 }
 .ww-p1 {
-    font-size: 20px;
-    color: black;
-    padding: 10px; 
-    background: transparent;
-    border: transparent;
-    cursor: pointer;
-    margin: 5px; }
-    .ww-p1:hover {
-        background: transparent;
-        justify-content: center;
-        align-content: center;
-        text-align: center;
-        border: dotted 3px red;
-        transition: ease-in-out 0.3s;
-        
+  font-size: 20px;
+  color: black;
+  padding: 10px;
+  background: transparent;
+  border: transparent;
+  cursor: pointer;
+  margin: 5px;
+}
+.ww-p1:hover {
+  background: transparent;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  border: dotted 3px red;
+  transition: ease-in-out 0.3s;
 }
 .after-nav {
-    
-    width: 70%; 
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 5px;
-    margin: 0 auto;} 
-        .after-nav-column1 {
-            color: white;
-            text-align: center;
-            width: fit-content;
-            justify-content: center;
-        } .after-nav-column1-img {
-            justify-content: center;
-            align-content: center;
-            width: 100%;
-        } .after-nav-column2 {
-            color: white;
-            text-align: center;
-            width: 100%;
-        } .after-nav-column2-img {
-            justify-content: center;
-            align-content: center;
-            width: 100%;
-        } .border-after-nav-column1 {
-            border: solid 3px;
-            border-radius: 60px 0 60px 0;
-            border-image: linear-gradient(45deg, black, white, black);
-            border-image-slice: 1;
-            padding: 5px;
-            width: 40%;
-        } .border-after-nav-column2 {
-            border: solid 3px;
-            border-radius: 60px 0 60px 0;
-            border-image: linear-gradient(135deg, black, white, black);
-            border-image-slice: 1;
-            padding: 5px;
-            width: 40%;
-        }
-        
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5px;
+  margin: 0 auto;
+}
+.after-nav-column1 {
+  color: white;
+  text-align: center;
+  width: fit-content;
+  justify-content: center;
+}
+.after-nav-column1-img {
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+}
+.after-nav-column2 {
+  color: white;
+  text-align: center;
+  width: 100%;
+}
+.after-nav-column2-img {
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+}
+.border-after-nav-column1 {
+  border: solid 3px;
+  border-radius: 60px 0 60px 0;
+  border-image: linear-gradient(45deg, black, white, black);
+  border-image-slice: 1;
+  padding: 5px;
+  width: 40%;
+}
+.border-after-nav-column2 {
+  border: solid 3px;
+  border-radius: 60px 0 60px 0;
+  border-image: linear-gradient(135deg, black, white, black);
+  border-image-slice: 1;
+  padding: 5px;
+  width: 40%;
+}
 
 .test-body {
-    background: black;
+  background: black;
 }
 .div1-test {
-    background: greenyellow;
-    text-align: center;
-    justify-content: center;
-    align-content: center;
-    width: fit-content;
-    margin: auto;
-} .test-button {
-    background: linear-gradient(45deg, black, red, black);
-     width: fit-content;
-    padding: px;
-} #test-img {
-    width: 300px;
-    height: 500px;
-} .if-id-class {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    text-align: center;
-    color: white;
-    width: 50%;
-    border: solid 5px red;
-    border-radius: 60px 0 60px 0;
-    border-image: linear-gradient(45deg, red, green, purple);
-    border-image-slice: 1;
+  background: greenyellow;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  width: fit-content;
+  margin: auto;
 }
-} .work {
-    background: greenyellow;
-    display: block;
-    text-align: center;
-    justify-content: center;
-    align-content: center;
+.test-button {
+  background: linear-gradient(45deg, black, red, black);
+  width: fit-content;
+  padding: 0px;
+}
+#test-img {
+  width: 300px;
+  height: 500px;
+}
+.if-id-class {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  color: white;
+  width: 50%;
+  border: solid 5px red;
+  border-radius: 60px 0 60px 0;
+  border-image: linear-gradient(45deg, red, green, purple);
+  border-image-slice: 1;
+}
+.work {
+  background: greenyellow;
+  display: block;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
 
-    width: fit-content;
-    margin: auto;
-} .testlol {
-    cursor: pointer;
-    text-decoration: underline;
+  width: fit-content;
+  margin: auto;
+}
+.testlol {
+  cursor: pointer;
+  text-decoration: underline;
 }

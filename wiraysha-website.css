@@ -4,17 +4,36 @@
 
 .ww-nav1 {
     position: relative;
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
     justify-content: space-between;
-    text-align: center;
-    align-content: center;
     background: linear-gradient(45deg, grey, darkgrey);
-    margin: 20px auto;
+    margin: 20px 10px;
     border-radius: 10px 0;
-    width: 90%;
+    width: auto;
+}
+.ww-p1 {
+    
+    font-size: 20px;
+    color: black;
+    padding: 3px;
+    background: transparent;
+    border: transparent;
+    cursor: pointer;
+    margin: 5px;
+    width: 10%;
 }
 
+.ww-p1:hover {
+    background: transparent;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    border: dotted 3px red;
+    transition: ease-in-out 0.3s;
+    background-color: rgb(133, 132, 132);
+    width: fit-content;
+}
 .button-background {
     background: transparent;
     width: 40%;
@@ -62,25 +81,7 @@
     }
 }
 
-.ww-p1 {
-    font-size: 20px;
-    color: black;
-    padding: 10px;
-    background: transparent;
-    border: transparent;
-    cursor: pointer;
-    margin: 5px;
-}
 
-.ww-p1:hover {
-    background: transparent;
-    justify-content: center;
-    align-content: center;
-    text-align: center;
-    border: dotted 3px red;
-    transition: ease-in-out 0.3s;
-    background-color: rgb(128, 126, 126);
-}
 
 .after-nav {
     width: 70%;

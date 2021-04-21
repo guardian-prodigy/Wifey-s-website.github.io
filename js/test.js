@@ -10,11 +10,10 @@ function buttonforimg(button) {
     }
     document.getElementById("test-img").src = newImage;
 }
-
 function mode(button)  {
-        let name = document.getElementById("if-id-id");
-        let age = document.getElementById("if-id-id");
-        let location = document.getElementById("if-id-id");
+        let name;
+        let age;
+        let location;
         let paragraph;
     if (button === "wiraysha") {
         name = "Wiraysha"

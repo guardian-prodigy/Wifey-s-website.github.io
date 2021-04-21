@@ -1,7 +1,6 @@
 .ww-body {
     background: black;
 }
-
 .ww-nav1 {
     position: relative;
     display: grid;
@@ -13,17 +12,16 @@
     width: auto;
 }
 .ww-p1 {
-    
+    position: relative;
     font-size: 20px;
     color: black;
     padding: 3px;
     background: transparent;
     border: transparent;
     cursor: pointer;
-    margin: 5px;
+    margin: 5px 15px;
     width: 10%;
 }
-
 .ww-p1:hover {
     background: transparent;
     justify-content: center;
@@ -38,7 +36,6 @@
     background: transparent;
     width: 40%;
 }
-
 .ww-nav1::before,
 .ww-nav1::after {
     content: "";
@@ -61,12 +58,10 @@
     z-index: -1;
     animation: animate 20s linear infinite;
 }
-
 .ww-nav1:after {
     filter: blur(50px);
     border: transparent;
 }
-
 @keyframes animate {
     0% {
         background-position: 0 0;
@@ -80,9 +75,6 @@
         background-position: 0 0;
     }
 }
-
-
-
 .after-nav {
     width: 70%;
     display: flex;
@@ -91,32 +83,27 @@
     padding: 5px;
     margin: 0 auto;
 }
-
 .after-nav-column1 {
     color: white;
     text-align: center;
     width: fit-content;
     justify-content: center;
 }
-
 .after-nav-column1-img {
     justify-content: center;
     align-content: center;
     width: 100%;
 }
-
 .after-nav-column2 {
     color: white;
     text-align: center;
     width: 100%;
 }
-
 .after-nav-column2-img {
     justify-content: center;
     align-content: center;
     width: 100%;
 }
-
 .border-after-nav-column1 {
     border: solid 3px;
     border-radius: 60px 0 60px 0;
@@ -125,7 +112,6 @@
     padding: 5px;
     width: 40%;
 }
-
 .border-after-nav-column2 {
     border: solid 3px;
     border-radius: 60px 0 60px 0;

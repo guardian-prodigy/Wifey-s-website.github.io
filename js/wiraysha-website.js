@@ -31,3 +31,18 @@ function mode(nav) {
         document.getElementById("ww-nav1-pp").innerHTML = Location;
     }
 }
+
+function modePic(Mode) {
+    let image;
+    if (Mode === "pics-show1") {
+        document.getElementById('button-img1').style.display = "inline";
+        document.getElementById('button-img2').style.display = "inline";
+        document.getElementById('pics-button1').style.display = "none"
+        document.getElementById('pics-button2').style.display = "inline"
+    } else if (Mode === 'pics-show2') {
+        document.getElementById('pics-button2').style.display = "none"
+        document.getElementById('pics-button1').style.display = "inline"
+        document.getElementById('button-img1').style.display = "none";
+        document.getElementById('button-img2').style.display = "none";
+    }
+}

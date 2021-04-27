@@ -171,24 +171,72 @@
     border-image-slice: 1;
 } #pics-button1 {
     
-    background: linear-gradient(45deg, black, green, yellow, black); filter: brightness(150%) saturate(200%);
+    background: linear-gradient(45deg, black, yellow, black); filter: brightness(150%) saturate(200%);
     font-size: 18px;
 } #pics-button2 {
     display: none;
     background: linear-gradient(45deg, black, green, yellow, black); filter: brightness(150%) saturate(200%);
     font-size: 18px;
-    
+} #pics-button1:hover,
+#pics-button2:hover {
+    filter: brightness(200%);
+
     
 } .bottom-nav { 
-    display: grid;
-    grid-template-rows: auto auto;
     border: blue 4px solid;
     position: absolute;
     bottom: 0px;
     margin: 0px auto;
     color: aqua;
-    width: auto;
+    width: 95%; 
     text-align: center;
-} .bottom-nav-para {
+     background: linear-gradient(90deg, black, rgb(65, 61, 61));
     
+}
+
+.bottom-nav-para1,
+.bottom-nav-para2 {
+    
+    position: relative;
+    background: transparent;
+    
+} .bottom-nav-para2 {
+    width: 90%; height: 70%; 
+    text-align: center;
+    margin: 10px;
+    position: relative;
+    border: 2px dotted red;
+    font-size: 17px;
+    
+} .bottom-nav-para1 {
+    width: fit-content;
+    margin: 10px auto;
+    position: relative;
+    
+} .img-footer {
+    border-radius: 1000px;
+    height: 100px; width: 100px;
+    border: 4px dotted red;
+    border-radius: 200px;
+}
+    
+ #contact-id {
+    color: white;
+    text-align: center;
+} .paragraph-footer {
+    display: grid;
+    grid-template-columns: auto auto;
+    
+} .footer-heading {
+    color: green;
+    font-size: 30px;
+}
+
+.phone-number-footer{
+    text-decoration: underline;
+    color: white;
+    
+} .insta-footer {
+    text-decoration: underline;
+    color: white;
 }

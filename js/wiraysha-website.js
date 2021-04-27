@@ -13,21 +13,20 @@ function mode(nav) {
         document.getElementById('ww-nav1-pp').style.display = "none"
     } else if (nav === "about") {
         name = "Wiraysha Sahebdin";
-        information = "I make: <li>cute ponponetjes</li> <li>more things</li> <li>More things</li>";
-        
+        information = "I make: <li>cute ponponetjes</li> <li>More things</li> <li>More things</li>";
         let About = `My name is ${name} <br> ${information}`;
         document.getElementById('ww-nav1-pp').innerHTML = About;
         location = document.getElementById('map').style.display = "none";
     } else if (nav === "contact") {
         phoneNumber = "+597 897-9639";
-        instagram = "https-coming";
+        instagram = "Wiraysha_workshop";
         let Contact = `Phone Number: ${phoneNumber} <br> Instagram: ${instagram}`
         document.getElementById('ww-nav1-pp').innerHTML = Contact;
         location = document.getElementById('map').style.display = "none";
     } else if (nav === "location") {
-        address = "chitoestraat 40";
+        address = "";
         document.getElementById('map').style.display = "inline";
-        let Location = `address: ${address}`
+        let Location = `Pick up Address/afhaal plaats:  ${address}`
         document.getElementById("ww-nav1-pp").innerHTML = Location;
     }
 }

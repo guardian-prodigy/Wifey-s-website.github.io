@@ -10,6 +10,13 @@ html, body {
     
 }
 
+.header-top {
+    color: chartreuse;
+    justify-content: center;
+    text-align: center;
+    margin: 5px;
+}
+
 .nav-beginning {
     min-height: 100%;
     overflow: auto;
@@ -73,7 +80,7 @@ html, body {
     animation: animate 20s linear infinite;
 }
 .ww-nav1:after {
-    filter: blur(50px);
+    filter: blur(70px);
     border: transparent;
 }
 @keyframes animate {
@@ -251,9 +258,4 @@ html, body {
 } .insta-footer {
     text-decoration: underline;
     color: white;
-}
-.header-top {
-    color: chartreuse;
-    justify-content: center;
-    text-align: center;
 }

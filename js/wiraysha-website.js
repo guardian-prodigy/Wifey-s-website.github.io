@@ -1,12 +1,10 @@
-function mode(nav, prize) {
+function mode(nav) {
     let name;
     let information;
     let address;
     let location;
     let prizes
     let items
-    let image
-    let bodyImg
     document.getElementById('ww-nav1-pp').style.display = "grid"
     if (nav === "home") {
         let content = "";
@@ -22,21 +20,16 @@ function mode(nav, prize) {
     } else if (nav === "prizes") {
         prizes = ['10srd', '12.50srd', '15srd', '12.50srd', '15srd', '17.50srd']
         items = `
-        <li onclick="Prize('prize1')" id="text-img-prizes1" class="text-img-prizes"> Small size = ${prizes[0]}</li>
-        <li id="text-img-prizes2" class="text-img-prizes">Medium size = ${prizes[1]}</li>
-        <li id="text-img-prizes3" class="text-img-prizes">Large size = ${prizes[2]}</li>
-        <li id="text-img-prizes4" class="text-img-prizes">Small 2 coloured = ${prizes[3]}</li>
-        <li id="text-img-prizes5" class="text-img-prizes">Medium 2 coloured = ${prizes[4]}</li>
-        <li id="text-img-prizes6" class="text-img-prizes">Large 2 coloured = ${prizes[5]}</li>`
+        <li onclick="Prize('prize1')" id="text-img-prizes1" class="text-img-prizes"> Small Pon size = ${prizes[0]}</li>
+        <li onclick="Prize('prize2')" id="text-img-prizes2" class="text-img-prizes">Medium Pon size = ${prizes[1]}</li>
+        <li onclick="Prize('prize3')" id="text-img-prizes3" class="text-img-prizes">Large size = ${prizes[2]}</li>
+        <li onclick="Prize('prize4')" id="text-img-prizes4" class="text-img-prizes">Small 2 coloured = ${prizes[3]}</li>
+        <li onclick="Prize('prize5')" id="text-img-prizes5" class="text-img-prizes">Medium 2 coloured = ${prizes[4]}</li>
+        <li onclick="Prize('prize6')" id="text-img-prizes6" class="text-img-prizes">Large 2 coloured = ${prizes[5]}</li>`
         items.textContent = ""
         document.getElementById("ww-nav1-pp").innerHTML = items;
         location = document.getElementById('map').style.display = "none";
-    } else if (prizes === "text-img-prizes1" ){
-            let bodyImg = document.getElementById('nav-top');
-            let image = document.createElement('img')
-            image.setAttribute('src', 'https://www.bing.com/images/search?view=detailV2&ccid=zJufwwvI&id=4FF9F1487B510F3BAE7C8155D2D3C0C824EE6502&thid=OIP.zJufwwvIsPoEYwp9lXhizgHaFi&mediaurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fRcc9b9fc30bc8b0fa04630a7d957862ce%3frik%3dAmXuJMjA09JVgQ%26riu%3dhttp%253a%252f%252fwww.imgrus.ru%252fimages%252fIMG_logo.jpg%26ehk%3dzV1j80lSRgKMVpbdaWVaqeyuiyIBeH2S8KzB6VaKCec%253d%26risl%3d%26pid%3dImgRaw&exph=176&expw=235&q=img&simid=608003000801126065&ck=26F8EC31B646207A3E5C2CC8719B6CB8&selectedIndex=16&FORM=IRPRST')
-            bodyImg.appendChild(image);
-        } 
+    } 
       else if (nav === "location") {
         address = "";
         document.getElementById('map').style.display = "inline";
@@ -44,7 +37,94 @@ function mode(nav, prize) {
         document.getElementById("ww-nav1-pp").innerHTML = Location;
     }
 }
-
+function Prize(prize) {
+            let image;
+            let bodyImg;
+            let Prize1 = document.getElementById("prize1-example");
+            let Prize2 = document.getElementById("prize2-example");
+            let Prize3 = document.getElementById("prize3-example");
+            let Prize4 = document.getElementById("prize4-example");
+            let Prize5 = document.getElementById("prize5-example");
+            let Prize6 = document.getElementById("prize6-example");
+        if (prize === "prize1" ){
+            bodyImg = document.getElementById('prize-paragraph');
+            image = document.createElement('img');
+            image.id = "prize1-example"
+            image.setAttribute('src', 'wifey-pics/cute.jpg')
+            bodyImg.appendChild(image);
+            Prize1.style.display = "inline"
+            Prize2.style.display = "none"
+            Prize3.style.display = "none"
+            Prize4.style.display = "none"
+            Prize5.style.display = "none"
+            Prize6.style.display = "none"
+        }
+        else if (prize === "prize2" ){
+            bodyImg = document.getElementById('prize-paragraph');
+            image = document.createElement('img');
+            image.id = "prize2-example"
+            image.setAttribute('src', 'wifey-pics/kissing.jpg')
+            bodyImg.appendChild(image);
+            Prize1.style.display = "none"
+            Prize2.style.display = "inline"
+            Prize3.style.display = "none"
+            Prize4.style.display = "none"
+            Prize5.style.display = "none"
+            Prize6.style.display = "none"
+        }
+        else if (prize === "prize3" ){
+            bodyImg = document.getElementById('prize-paragraph');
+            image = document.createElement('img');
+            image.id = "prize3-example"
+            image.setAttribute('src', 'wifey-pics/cute.jpg')
+            bodyImg.appendChild(image);
+            Prize1.style.display = "none"
+            Prize2.style.display = "none"
+            Prize3.style.display = "inline"
+            Prize4.style.display = "none"
+            Prize5.style.display = "none"
+            Prize6.style.display = "none"
+        }
+        else if (prize === "prize4" ){
+            bodyImg = document.getElementById('prize-paragraph');
+            image = document.createElement('img');
+            image.id = "prize4-example"
+            image.setAttribute('src', 'wifey-pics/2-colored-pon-small.jpg')
+            bodyImg.appendChild(image);
+            Prize1.style.display = "none"
+            Prize2.style.display = "none"
+            Prize3.style.display = "none"
+            Prize4.style.display = "inline"
+            Prize5.style.display = "none"
+            Prize6.style.display = "none"
+        }
+        else if (prize === "prize5" ){
+            bodyImg = document.getElementById('prize-paragraph');
+            image = document.createElement('img');
+            image.id = "prize5-example"
+            image.setAttribute('src', 'wifey-pics/cute.jpg')
+            bodyImg.appendChild(image);
+            Prize1.style.display = "none"
+            Prize2.style.display = "none"
+            Prize3.style.display = "none"
+            Prize4.style.display = "none"
+            Prize5.style.display = "inline"
+            Prize6.style.display = "none"
+        }
+        else if (prize === "prize6" ){
+            bodyImg = document.getElementById('prize-paragraph');
+            image = document.createElement('img');
+            image.id = "prize6-example"
+            image.setAttribute('src', 'wifey-pics/cute.jpg')
+            bodyImg.appendChild(image);
+            Prize1.style.display = "none"
+            Prize2.style.display = "none"
+            Prize3.style.display = "none"
+            Prize4.style.display = "none"
+            Prize5.style.display = "none"
+            Prize6.style.display = "inline"
+        }
+    } 
 
 
 function modePic(Mode) {

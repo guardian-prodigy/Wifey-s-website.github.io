@@ -272,3 +272,13 @@ html, body {
     cursor: pointer;
 
 }
+
+#prize1-example,
+#prize2-example,
+#prize3-example,
+#prize4-example,
+#prize5-example,
+#prize6-example {
+    width: 40%; height: 40%;
+    display: none;
+}

@@ -236,7 +236,7 @@ html, body {
     
 } .img-footer {
     border-radius: 100px;
-    height: 80%; width:50%;
+    height: auto; width: 60%;
     border: 2px dotted red;
     border-radius: 200px;   
 } #contact-id {
@@ -258,4 +258,17 @@ html, body {
 } .insta-footer {
     text-decoration: underline;
     color: white;
+}
+#prize-images {
+    width: 10%;
+    height: 60%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.text-img-prizes {
+    text-decoration: underline;
+    cursor: pointer;
+
 }

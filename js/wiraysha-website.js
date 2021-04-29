@@ -5,27 +5,45 @@ function mode(nav) {
     let location;
     let prizes
     let items
+    let Prize1 = document.getElementById("price1-example");
+    let Prize2 = document.getElementById("price2-example");
+    let Prize3 = document.getElementById("price3-example");
+    let Prize4 = document.getElementById("price4-example");
+    let Prize5 = document.getElementById("price5-example");
+    let Prize6 = document.getElementById("price6-example");
     document.getElementById('ww-nav1-pp').style.display = "grid"
     if (nav === "home") {
         let content = "";
         document.getElementById('ww-nav1-pp').innerHTML = content;
         location = document.getElementById('map').style.display = "none";
         document.getElementById('ww-nav1-pp').style.display = "none"
+        Prize1.style.display = "none"
+            Prize2.style.display = "none"
+            Prize3.style.display = "none"
+            Prize4.style.display = "none"
+            Prize5.style.display = "none"
+            Prize6.style.display = "none"
     } else if (nav === "about") {
         name = "Wiraysha Sahebdin";
         information = "I make: <li>cute ponponetjes</li> <li>More things</li> <li>More things</li>";
         let About = `My name is ${name} <br> ${information}`;
         document.getElementById('ww-nav1-pp').innerHTML = About;
         location = document.getElementById('map').style.display = "none";
+        Prize1.style.display = "none"
+            Prize2.style.display = "none"
+            Prize3.style.display = "none"
+            Prize4.style.display = "none"
+            Prize5.style.display = "none"
+            Prize6.style.display = "none"
     } else if (nav === "prizes") {
         prizes = ['10srd', '12.50srd', '15srd', '12.50srd', '15srd', '17.50srd']
         items = `
-        <li onclick="Prize('prize1')" id="text-img-prizes1" class="text-img-prizes"> Small Pon size = ${prizes[0]}</li>
-        <li onclick="Prize('prize2')" id="text-img-prizes2" class="text-img-prizes">Medium Pon size = ${prizes[1]}</li>
-        <li onclick="Prize('prize3')" id="text-img-prizes3" class="text-img-prizes">Large size = ${prizes[2]}</li>
-        <li onclick="Prize('prize4')" id="text-img-prizes4" class="text-img-prizes">Small 2 coloured = ${prizes[3]}</li>
-        <li onclick="Prize('prize5')" id="text-img-prizes5" class="text-img-prizes">Medium 2 coloured = ${prizes[4]}</li>
-        <li onclick="Prize('prize6')" id="text-img-prizes6" class="text-img-prizes">Large 2 coloured = ${prizes[5]}</li>`
+        <p><button id="text-img-prizes1" onclick="Prize('prize1')" class="text-img-prizes"> Small Pon</button> = ${prizes[0]}</p><br>
+        <p   ><button id="text-img-prizes2" onclick="Prize('prize2')" class="text-img-prizes">Medium Pon</button>  = ${prizes[1]}</p><br>
+        <p   ><button id="text-img-prizes3" onclick="Prize('prize3')" class="text-img-prizes">Large Pon </button> = ${prizes[2]}</p><br>
+        <p  ><button id="text-img-prizes4" onclick="Prize('prize4')" class="text-img-prizes">Small 2 coloured Pon </button> = ${prizes[3]}</p><br>
+        <p  ><button id="text-img-prizes5" onclick="Prize('prize5')" class="text-img-prizes">Medium 2 coloured Pon </button> = ${prizes[4]}</p><br>
+        <p  ><button id="text-img-prizes6" onclick="Prize('prize6')" class="text-img-prizes">Large 2 coloured Pon</button> = ${prizes[5]}</p>`
         items.textContent = ""
         document.getElementById("ww-nav1-pp").innerHTML = items;
         location = document.getElementById('map').style.display = "none";
@@ -35,36 +53,67 @@ function mode(nav) {
         document.getElementById('map').style.display = "inline";
         let Location = `Pick up Address/afhaal plaats:  ${address}`
         document.getElementById("ww-nav1-pp").innerHTML = Location;
+        Prize1.style.display = "none"
+            Prize2.style.display = "none"
+            Prize3.style.display = "none"
+            Prize4.style.display = "none"
+            Prize5.style.display = "none"
+            Prize6.style.display = "none"
     }
 }
-function Prize(prize) {
+function Prize(prizeParam) {
             let image;
             let bodyImg;
-            let Prize1 = document.getElementById("prize1-example");
-            let Prize2 = document.getElementById("prize2-example");
-            let Prize3 = document.getElementById("prize3-example");
-            let Prize4 = document.getElementById("prize4-example");
-            let Prize5 = document.getElementById("prize5-example");
-            let Prize6 = document.getElementById("prize6-example");
-        if (prize === "prize1" ){
-            bodyImg = document.getElementById('prize-paragraph');
+            let newButton;
+            let newButton1;
+            let newID;
+            let Prize1 = document.getElementById("prize-pargraph")
+            let Prize2 = document.getElementById("prize-pargraph")
+            let Prize3 = document.getElementById("prize-pargraph")
+            let Prize4 = document.getElementById("prize-pargraph")
+            let Prize5 = document.getElementById("prize-pargraph")
+            let Prize6 = document.getElementById("prize-pargraph")
+            let Prize1Imp = document.getElementById("price1-example")
+            let Prize2Imp = document.getElementById("price2-example")
+            let Prize3Imp = document.getElementById("price3-example")
+            let Prize4Imp = document.getElementById("price4-example")
+            let Prize5Imp = document.getElementById("price5-example")
+            let Prize6Imp = document.getElementById("price6-example")
+
+
+        if (prizeParam === "prize1" ){
+            bodyImg = document.getElementById('div-price-para');
             image = document.createElement('img');
-            image.id = "prize1-example"
+            image.id = "price1-example"
             image.setAttribute('src', 'wifey-pics/cute.jpg')
             bodyImg.appendChild(image);
+
+            Prize1Imp.style.display = "inline"
+            Prize2Imp.style.display = "none"
+            Prize3Imp.style.display = "none"
+            Prize4Imp.style.display = "none"
+            Prize5Imp.style.display = "none"
+            Prize6Imp.style.display = "none"
             Prize1.style.display = "inline"
             Prize2.style.display = "none"
             Prize3.style.display = "none"
             Prize4.style.display = "none"
             Prize5.style.display = "none"
             Prize6.style.display = "none"
+
         }
-        else if (prize === "prize2" ){
-            bodyImg = document.getElementById('prize-paragraph');
+        else if (prizeParam === "prize2" ){
+            bodyImg = document.getElementById('div-price-para');
             image = document.createElement('img');
-            image.id = "prize2-example"
+            image.id = "price2-example"
             image.setAttribute('src', 'wifey-pics/kissing.jpg')
             bodyImg.appendChild(image);
+            Prize1Imp.style.display = "none"
+            Prize2Imp.style.display = "inline"
+            Prize3Imp.style.display = "none"
+            Prize4Imp.style.display = "none"
+            Prize5Imp.style.display = "none"
+            Prize6Imp.style.display = "none"
             Prize1.style.display = "none"
             Prize2.style.display = "inline"
             Prize3.style.display = "none"
@@ -72,12 +121,19 @@ function Prize(prize) {
             Prize5.style.display = "none"
             Prize6.style.display = "none"
         }
-        else if (prize === "prize3" ){
-            bodyImg = document.getElementById('prize-paragraph');
+        else if (prizeParam === "prize3" ){
+            bodyImg = document.getElementById('div-price-para');
             image = document.createElement('img');
-            image.id = "prize3-example"
+            image.id = "price3-example"
             image.setAttribute('src', 'wifey-pics/cute.jpg')
             bodyImg.appendChild(image);
+            
+            Prize1Imp.style.display = "none"
+            Prize2Imp.style.display = "none"
+            Prize3Imp.style.display = "inline"
+            Prize4Imp.style.display = "none"
+            Prize5Imp.style.display = "none"
+            Prize6Imp.style.display = "none"
             Prize1.style.display = "none"
             Prize2.style.display = "none"
             Prize3.style.display = "inline"
@@ -85,12 +141,18 @@ function Prize(prize) {
             Prize5.style.display = "none"
             Prize6.style.display = "none"
         }
-        else if (prize === "prize4" ){
-            bodyImg = document.getElementById('prize-paragraph');
+        else if (prizeParam === "prize4" ){
+            bodyImg = document.getElementById('div-price-para');
             image = document.createElement('img');
-            image.id = "prize4-example"
+            image.id = "price4-example"
             image.setAttribute('src', 'wifey-pics/2-colored-pon-small.jpg')
             bodyImg.appendChild(image);
+            Prize1Imp.style.display = "none"
+            Prize2Imp.style.display = "none"
+            Prize3Imp.style.display = "none"
+            Prize4Imp.style.display = "inline"
+            Prize5Imp.style.display = "none"
+            Prize6Imp.style.display = "none"
             Prize1.style.display = "none"
             Prize2.style.display = "none"
             Prize3.style.display = "none"
@@ -98,12 +160,18 @@ function Prize(prize) {
             Prize5.style.display = "none"
             Prize6.style.display = "none"
         }
-        else if (prize === "prize5" ){
-            bodyImg = document.getElementById('prize-paragraph');
+        else if (prizeParam === "prize5" ){
+            bodyImg = document.getElementById('div-price-para');
             image = document.createElement('img');
-            image.id = "prize5-example"
+            image.id = "price5-example"
             image.setAttribute('src', 'wifey-pics/cute.jpg')
             bodyImg.appendChild(image);
+            Prize1Imp.style.display = "none"
+            Prize2Imp.style.display = "none"
+            Prize3Imp.style.display = "none"
+            Prize4Imp.style.display = "none"
+            Prize5Imp.style.display = "inline"
+            Prize6Imp.style.display = "none"
             Prize1.style.display = "none"
             Prize2.style.display = "none"
             Prize3.style.display = "none"
@@ -111,12 +179,18 @@ function Prize(prize) {
             Prize5.style.display = "inline"
             Prize6.style.display = "none"
         }
-        else if (prize === "prize6" ){
-            bodyImg = document.getElementById('prize-paragraph');
+        else if (prizeParam === "prize6" ){
+            bodyImg = document.getElementById('div-price-para');
             image = document.createElement('img');
-            image.id = "prize6-example"
+            image.id = "price6-example"
             image.setAttribute('src', 'wifey-pics/cute.jpg')
             bodyImg.appendChild(image);
+            Prize1Imp.style.display = "none"
+            Prize2Imp.style.display = "none"
+            Prize3Imp.style.display = "none"
+            Prize4Imp.style.display = "none"
+            Prize5Imp.style.display = "none"
+            Prize6Imp.style.display = "inline"
             Prize1.style.display = "none"
             Prize2.style.display = "none"
             Prize3.style.display = "none"

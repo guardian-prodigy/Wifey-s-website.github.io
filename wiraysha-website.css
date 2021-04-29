@@ -266,19 +266,30 @@ html, body {
     align-items: center;
 
 }
-
 .text-img-prizes {
-    text-decoration: underline;
-    cursor: pointer;
-
+   text-decoration: underline;
+   font-size: 17px;
+   background: transparent;
+   color: white;
+   border-radius: 20px;
+   width: fit-content;
+   padding: 5px 5px;
+   cursor: pointer;
+   display: inline;
+} .text-img-prizes:hover {
+    background: darkblue;
 }
-
-#prize1-example,
-#prize2-example,
-#prize3-example,
-#prize4-example,
-#prize5-example,
-#prize6-example {
-    width: 40%; height: 40%;
+#prize-paragraph {
     display: none;
-}
+} 
+#price1-example,
+#price2-example,
+#price3-example,
+#price4-example,
+#price5-example,
+#price6-example {
+    width: 250px; height: 250px;
+    
+
+} 
+

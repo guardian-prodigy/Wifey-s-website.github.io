@@ -1,0 +1,11 @@
+* {
+    background: black;
+}
+#ponpon-heading {
+    font-size: 3em;
+    text-align: center;
+    border: aqua dotted 3px;
+    border-radius: 60px;
+    color: white;
+    font-style: oblique;
+}

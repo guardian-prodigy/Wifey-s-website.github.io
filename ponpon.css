@@ -1,12 +1,11 @@
 html {
     scroll-behavior: smooth;
 }
-
 * {
     background-color: black;
     padding: 0; margin: 0;
 } .back {
-    margin: 5px;
+    margin: 15px;
     
 } .h1-div1 {
     color: aqua;
@@ -23,33 +22,36 @@ html {
     margin: 0 auto;
     width: 95%;
 } 
-
 #nav {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto auto auto;
     justify-content: space-around;
     margin: 40px auto;
-    border: dotted 3px red;
     border: dotted 2px red;
+    border-radius: 0 30px;
     width: 95%;
 }
 #nav1,
 #nav2,
-#nav3 {
+#nav3,
+#nav4 {
     color: white;
-    margin: 10px;
+    margin: 10px auto;
     font-size: small;
     text-decoration: none;
+    width: 100%;
+    text-align: center;
+    border-radius: 30px;
+    background: linear-gradient(45deg, black, green, black);
 }
-#nav1:hover, #nav2:hover, #nav3:hover {
-    background-color: aliceblue;
+#nav1:hover, #nav2:hover, #nav3:hover, #nav4:hover {
+    background-color: rgb(19, 21, 22);
 }
 .total {
     height: 100%;
 }
-
 .main-div {
-    border: 3px rgb(0, 255, 0) solid;
+    border: 3px darkblue solid;
     width: 95%;
     margin: 10px auto;
     height: 50%;
@@ -65,17 +67,16 @@ html {
 }
 .third-div {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto;
     justify-content: center;
+    text-align: center;
     padding: 10px;
     margin: 0 auto;
-    
     margin-bottom: 10px;
 }
-
 .first-div,
 .second-div, .div-3 {
-    margin: 5px auto;
+    
     text-align: center;
     border: solid 2px aqua;
     border-radius: 30px;
@@ -83,7 +84,10 @@ html {
     height: fit-content;
     padding: 10px 5px;
     margin: 5px;
+    width: fit-content;
+    margin: 5px 10px;
 }
+
 .p {
     color: white;
     text-align: center;
@@ -106,12 +110,10 @@ html {
     margin: 0;
 }
 .ponpon-img3 {
-    width: 90%; height: 90%;
+    width: 80%; height: 80%;
     border-radius: 20px;
     margin: 0 auto;
 }
-
-
 #main-div3 {
     border: rgb(2, 255, 2) solid 3px;
     width: 95%;
@@ -124,14 +126,12 @@ html {
     justify-content: center;
     
 }
-
 .h1-div3 {
     color: aqua;
     display: block;
     width: 100%;
     text-align: center;
 }
-
 .p3 {
     color: white;
     text-align: center;
@@ -175,15 +175,13 @@ html {
      background: black;;
      position: relative;
      clear: both;
-     margin: 10px auto;
+     margin: 40px auto 0 auto;
  }
-
  .bottom-nav-para1,
  .bottom-nav-para2 {
      position: relative;
      background: transparent;
  }
-
  .bottom-nav-para2 {
      width: fit-content;
      height: fit-content;
@@ -195,14 +193,12 @@ html {
      font-size: 1em;
 
  }
-
  .bottom-nav-para1 {
      width: fit-content;
      margin: 10px auto;
      position: relative;
 
  }
-
  .img-footer {
      border-radius: 100px;
      height: auto;
@@ -210,29 +206,24 @@ html {
      border: 2px dotted red;
      border-radius: 200px;
  }
-
  #contact-id {
      color: white;
      text-align: center;
  }
-
  .paragraph-footer {
      display: grid;
      grid-template-columns: auto auto;
 
  }
-
  .footer-heading {
      color: green;
      font-size: 23px;
  }
-
  .phone-number-footer {
      text-decoration: underline;
      color: white;
 
  }
-
  .insta-footer {
      text-decoration: underline;
      color: white;

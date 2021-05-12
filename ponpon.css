@@ -23,24 +23,26 @@ html {
     margin: 0 auto;
     width: 95%;
 } 
+
 #nav {
     display: grid;
     grid-template-columns: auto auto auto;
     justify-content: space-around;
-    margin: 20px auto 40px auto;
-    border: dotted 2px red;width: 95%;
+    margin: 40px auto;
+    border: dotted 3px red;
+    border: dotted 2px red;
+    width: 95%;
 }
-.nav1, .nav2, .nav3 {
+#nav1,
+#nav2,
+#nav3 {
     color: white;
-    padding: 10px;
+    margin: 10px;
+    font-size: small;
     text-decoration: none;
-    width: fit-content;
 }
-.nav1:hover,
-.nav2:hover,
-.nav3:hover {
-    width: fit-content;
-    background-color: rgb(41, 37, 37);
+#nav1:hover, #nav2:hover, #nav3:hover {
+    background-color: aliceblue;
 }
 .total {
     height: 100%;
@@ -52,35 +54,35 @@ html {
     margin: 10px auto;
     height: 50%;
 }
-#parent-1-2 {
+.parent-1-2 {
     display: grid;
     grid-template-columns: auto auto;
     justify-content: center;
     padding: 10px;
     margin: 0 auto;
-    width: 95%;
+    
     margin-bottom: 10px;
 }
-#third-div {
+.third-div {
     display: grid;
     grid-template-columns: auto auto;
     justify-content: center;
     padding: 10px;
     margin: 0 auto;
-    width: 95%;
+    
     margin-bottom: 10px;
 }
 
-#first-div,
-#second-div, .div-3,
-.div-4 {
+.first-div,
+.second-div, .div-3 {
     margin: 5px auto;
     text-align: center;
     border: solid 2px aqua;
     border-radius: 30px;
     height: -moz-fit-content;
     height: fit-content;
-    padding: 10px;
+    padding: 10px 5px;
+    margin: 5px;
 }
 .p {
     color: white;
@@ -90,6 +92,7 @@ html {
     width: fit-content;
     margin: 3px auto;
     background: linear-gradient(45deg, black, red, black);
+    
 }
 .ponpon-img1 {
     width: 90%; height: 90%;
@@ -100,7 +103,7 @@ html {
     width: 90%;
     height: 90%;
     border-radius: 20px;
-    margin: 0 auto;
+    margin: 0;
 }
 .ponpon-img3 {
     width: 90%; height: 90%;
@@ -138,13 +141,14 @@ html {
     margin: 3px auto;
     background: linear-gradient(45deg, black, red, black);
     border-radius: 30px;
+    padding: 3px;
 }
 .ponpon-img1-3,
 .ponpon-img2-3,
 .ponpon-img3-3,
 .ponpon-img4-3 {
-    width: 175px;
-    height: 200px;
+    width: 90%;
+    height: 90%;
     border-radius: 20px;
     margin: 10px auto;
 }

@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     background-color: black;
     padding: 0; margin: 0;
@@ -18,7 +22,31 @@
     font-style: oblique;
     margin: 0 auto;
     width: 95%;
-} .main-div {
+} 
+#nav {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
+    margin: 20px auto 40px auto;
+    border: dotted 2px red;width: 95%;
+}
+.nav1, .nav2, .nav3 {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    width: fit-content;
+}
+.nav1:hover,
+.nav2:hover,
+.nav3:hover {
+    width: fit-content;
+    background-color: rgb(41, 37, 37);
+}
+.total {
+    height: 100%;
+}
+
+.main-div {
     border: 3px rgb(0, 255, 0) solid;
     width: 95%;
     margin: 10px auto;
@@ -27,36 +55,29 @@
 #parent-1-2 {
     display: grid;
     grid-template-columns: auto auto;
-    text-align: center;
-    margin: 0 auto;
-    width: 95%;
-    height: 50%;
-    padding: 1%;
-}
-#first-div, #second-div {
-    padding: 10px;
-    width: 70%;
-    margin: 0
-     auto;
-    border: solid 2px aqua;
-    border-radius: 30px;
-    height: max-content;
-}
-#third-div {
-    display: grid;
     justify-content: center;
     padding: 10px;
     margin: 0 auto;
-    width: 50%;
+    width: 95%;
     margin-bottom: 10px;
-    
-    
-} .div-3 {
+}
+#third-div {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    padding: 10px;
+    margin: 0 auto;
+    width: 95%;
+    margin-bottom: 10px;
+}
+
+#first-div,
+#second-div, .div-3,
+.div-4 {
     margin: 5px auto;
     text-align: center;
     border: solid 2px aqua;
     border-radius: 30px;
-    
     height: -moz-fit-content;
     height: fit-content;
     padding: 10px;
@@ -71,17 +92,144 @@
     background: linear-gradient(45deg, black, red, black);
 }
 .ponpon-img1 {
-    width: 80%; height: 80%;
+    width: 90%; height: 90%;
     border-radius: 20px;
     margin: 0 auto;
 }
 .ponpon-img2 {
-    width: 80%; height: 80%;
+    width: 90%;
+    height: 90%;
     border-radius: 20px;
-    margin: 0 auto; 
+    margin: 0 auto;
 }
 .ponpon-img3 {
     width: 90%; height: 90%;
     border-radius: 20px;
     margin: 0 auto;
 }
+
+
+#main-div3 {
+    border: rgb(2, 255, 2) solid 3px;
+    width: 95%;
+    margin: 0 auto;
+}
+.main-div-3 {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 0 auto;
+    justify-content: center;
+    
+}
+
+.h1-div3 {
+    color: aqua;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.p3 {
+    color: white;
+    text-align: center;
+    font-size:80%;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 3px auto;
+    background: linear-gradient(45deg, black, red, black);
+    border-radius: 30px;
+}
+.ponpon-img1-3,
+.ponpon-img2-3,
+.ponpon-img3-3,
+.ponpon-img4-3 {
+    width: 175px;
+    height: 200px;
+    border-radius: 20px;
+    margin: 10px auto;
+}
+.div-1-1,
+.div-2-2,
+.div-3-3,
+.div-4-4 {
+    margin: 10px 15px;
+    text-align: center;
+    border: solid 2px aqua;
+    border-radius: 30px;
+    height: fit-content;
+    padding: 5px;
+}
+ .bottom-nav {
+     display: grid;
+     align-items: center;
+     justify-content: center;
+     border: blue 4px solid;
+     color: aqua;
+     width: 95%;
+     height: auto;
+     text-align: center;
+     background: black;;
+     position: relative;
+     clear: both;
+     margin: 10px auto;
+ }
+
+ .bottom-nav-para1,
+ .bottom-nav-para2 {
+     position: relative;
+     background: transparent;
+ }
+
+ .bottom-nav-para2 {
+     width: fit-content;
+     height: fit-content;
+     padding: 5px;
+     text-align: center;
+     margin: 10px;
+     position: relative;
+     border: 2px dotted red;
+     font-size: 1em;
+
+ }
+
+ .bottom-nav-para1 {
+     width: fit-content;
+     margin: 10px auto;
+     position: relative;
+
+ }
+
+ .img-footer {
+     border-radius: 100px;
+     height: auto;
+     width: 60%;
+     border: 2px dotted red;
+     border-radius: 200px;
+ }
+
+ #contact-id {
+     color: white;
+     text-align: center;
+ }
+
+ .paragraph-footer {
+     display: grid;
+     grid-template-columns: auto auto;
+
+ }
+
+ .footer-heading {
+     color: green;
+     font-size: 23px;
+ }
+
+ .phone-number-footer {
+     text-decoration: underline;
+     color: white;
+
+ }
+
+ .insta-footer {
+     text-decoration: underline;
+     color: white;
+ }

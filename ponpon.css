@@ -43,13 +43,13 @@
 }  #third-div {
     display: grid;
     justify-content: center;
-    padding: 15px;
+    padding: 10px;
     margin: 0 auto;
     width: 50%;
     margin-bottom: 10px;
     border: solid 2px aqua;
     border-radius: 30px;
-    height: fit-content;
+    height: 100%;
 }
 .p {
     color: white;

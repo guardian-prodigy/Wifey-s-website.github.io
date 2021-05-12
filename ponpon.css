@@ -22,7 +22,7 @@
     border: 3px rgb(0, 255, 0) solid;
     width: 95%;
     margin: 10px auto;
-    height: fit-content;
+    height: 50%;
 }
 #parent-1-2 {
     display: grid;
@@ -55,6 +55,7 @@
     color: white;
     text-align: center;
     font-size: 90%;
+    width: -moz-fit-content;
     width:fit-content;
     margin: 3px auto;
     background: linear-gradient(45deg, black, red, black);

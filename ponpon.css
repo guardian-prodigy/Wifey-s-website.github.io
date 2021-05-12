@@ -42,7 +42,17 @@
     border-radius: 30px;
     height: max-content;
 }
-
+#third-div {
+    display: grid;
+    justify-content: center;
+    padding: 10px;
+    margin: 0 auto;
+    width: 50%;
+    margin-bottom: 10px;
+    border: solid 2px aqua;
+    border-radius: 30px;
+    height: 50%;
+}
 .p {
     color: white;
     text-align: center;

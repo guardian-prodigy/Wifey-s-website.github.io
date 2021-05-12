@@ -1,11 +1,64 @@
 * {
-    background: black;
+    background-color: black;
+    padding: 0; margin: 0;
+} .back {
+    margin: 5px;
+    
 }
 #ponpon-heading {
-    font-size: 3em;
+    font-size: 2em;
     text-align: center;
     border: aqua dotted 3px;
     border-radius: 60px;
     color: white;
     font-style: oblique;
+    display:grid;
+    margin: 0 auto;
+    width: 95%;
+} .main-div {
+    border: 3px red solid;
+    width: 95%;
+    margin: 10px auto;
+
+}
+#parent-1-2 {
+    display: grid;
+    grid-template-columns: auto auto;
+    text-align: center;
+    margin: 0 auto;
+    width: 95%;
+    height: 50%;
+    padding: 1%;
+    
+}
+#first-div, #second-div {
+    
+    padding: 10px;
+    width: fit-content;
+    margin: 10px;
+    border: solid 2px aqua;
+    border-radius: 30px;
+}  #third-div {
+    display: grid;
+    justify-content: center;
+    padding: 20px;
+    margin: 0 auto;
+    width: 40%;
+    margin-bottom: 10px;
+    border: solid 2px aqua;
+    border-radius: 30px;
+}
+.p {
+    color: white;
+    text-align: center;
+}
+
+.ponpon-img1 {
+    width: 80%; height: 80%;
+}
+.ponpon-img2 {
+    width: 80%; height: 80%;
+}
+.ponpon-img3 {
+    width: 100%; height: 100%;
 }

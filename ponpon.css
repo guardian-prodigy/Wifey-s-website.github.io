@@ -79,7 +79,6 @@ html {
 }
 .first-div,
 .second-div, .div-3 {
-    
     text-align: center;
     border: solid 2px aqua;
     border-radius: 30px;
@@ -90,7 +89,6 @@ html {
     width: fit-content;
     margin: 5px 10px;
 }
-
 .p {
     color: white;
     text-align: center;
@@ -116,6 +114,7 @@ html {
     width: 80%; height: 80%;
     border-radius: 20px;
     margin: 0 auto;
+    filter: brightness(100%) saturate(200%);
 }
 #main-div3 {
     border: darkblue solid 3px;
@@ -151,10 +150,12 @@ html {
 .ponpon-img3-3,
 .ponpon-img4-3 {
     width: 90%;
-    height: 90%;
+    height: 200px;
     border-radius: 20px;
     margin: 10px auto;
 }
+
+
 .div-1-1,
 .div-2-2,
 .div-3-3,

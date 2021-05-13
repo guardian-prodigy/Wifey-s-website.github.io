@@ -56,21 +56,18 @@ function Item() {
             a1.setAttribute('href', 'ponponetjes.html');
             paragraph.appendChild(a1);
             a2 = document.createElement('a');
-            a2.id = "a1-id2"; a2.textContent = "Pon Letters/Prizes";
+            a2.id = "a1-id2"; a2.textContent = "Pon Shapes/Prizes";
             a2.className = "buttons"
             paragraph.appendChild(a2);
             a3 = document.createElement('a');
-            a3.id = "a1-id3"; a3.textContent = "Pon Shapes/Prizes";
+            a3.id = "a1-id3"; a3.textContent = "Pon wristbands/Prizes";
             a3.className = "buttons"
             paragraph.appendChild(a3);
             a4 = document.createElement('a');
-            a4.id = "a1-id4"; a4.textContent = "Pon wristbands/Prizes";
+            a4.id = "a1-id4"; a4.textContent = "Pon Headbands/Prizes";
             a4.className = "buttons"
             paragraph.appendChild(a4);
-            a5 = document.createElement('a');
-            a5.id = "a1-id5"; a5.textContent = "Pon Headbands/Prizes";
-            a5.className = "buttons"
-            paragraph.appendChild(a5);
+            
             paragraph.style.display = "grid";document.getElementById('ww-nav1-pp').style.display = "none"
             location = document.getElementById('map').style.display = "none";
         }
@@ -79,7 +76,6 @@ function Item() {
             paragraph.removeChild(a2)
             paragraph.removeChild(a3)
             paragraph.removeChild(a4)
-            paragraph.removeChild(a5)
             paragraph.style.display = "none"
             button = 1;
             document.getElementById('ww-nav1-pp').style.display = "none";

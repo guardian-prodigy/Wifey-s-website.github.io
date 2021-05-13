@@ -181,7 +181,7 @@ html {
     width: 95%;
     display: none;
     margin: 10px auto;
-    height: fit-content;
+    height: 70%;
 }
 #show-more-images {
     display: grid;
@@ -189,6 +189,7 @@ html {
     justify-content: center;
     margin: 0 auto;
     width: 90%;
+    height: fit-content;
 } .group-images {
     margin: 10px auto;
     padding: 10px;
@@ -202,6 +203,7 @@ html {
     display: grid;
     justify-content:center;
     margin: 0 auto;
+    height: fit-content;
 }
  .bottom-nav {
      display: grid;
@@ -212,7 +214,7 @@ html {
      width: 95%;
      height: auto;
      text-align: center;
-     background: black;;
+     background: black;
      position: relative;
      clear: both;
      margin: 40px auto 0 auto;
@@ -230,7 +232,7 @@ html {
      margin: 10px;
      position: relative;
      border: 2px dotted red;
-     font-size: 1em;
+     font-size: medium;
 
  }
  .bottom-nav-para1 {
@@ -257,7 +259,7 @@ html {
  }
  .footer-heading {
      color: green;
-     font-size: 23px;
+     font-size: large;
  }
  .phone-number-footer {
      text-decoration: underline;

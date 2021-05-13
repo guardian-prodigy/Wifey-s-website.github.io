@@ -181,6 +181,7 @@ html {
     width: 95%;
     display: none;
     margin: 10px auto;
+    height: fit-content;
 }
 #show-more-images {
     display: grid;

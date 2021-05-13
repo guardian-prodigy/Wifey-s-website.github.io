@@ -165,9 +165,41 @@ html {
     height: fit-content;
     padding: 5px;
 }
-
-
-
+#div-button-show-more-img {
+    display: grid;
+    justify-content: center;
+    margin: 20px auto;
+}
+#button-show-more-img {
+    color: white;
+    padding: 5px;
+}
+#more-images {
+    border: solid red 2px;
+    width: 95%;
+    display: none;
+    margin: 10px auto;
+}
+#show-more-images {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    margin: 0 auto;
+    width: 90%;
+} .group-images {
+    margin: 10px auto;
+    padding: 10px;
+    width: 80%;
+    height: 80%;
+    border: aqua 2px dotted;
+    border-radius: 0 20px;
+}
+.prices3 {
+    width: 60%;
+    display: grid;
+    justify-content:center;
+    margin: 0 auto;
+}
  .bottom-nav {
      display: grid;
      align-items: center;

@@ -5,7 +5,6 @@ function ButtonForShowMorePon() {
     let button1 = document.getElementById('button-show-more-img');
     button1.style.background = "linear-gradient(45deg, black, red)";
     button1.addEventListener('click', function(e) {
-        
         if (e.target == button1 && button == 1) {
             paragraph.style.display = "inherit";
             button1.style.background = "linear-gradient(45deg, black, green)";

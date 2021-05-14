@@ -222,11 +222,12 @@ html {
     display: grid;
     justify-content: center;
     margin: 20px auto;
+    
 }
 #button-show-more-img {
     color: white;
     padding: 5px;
-
+    
 }
 
 #more-images {
@@ -235,17 +236,28 @@ html {
     display: none;
     margin: 10px auto;
     height: fit-content;
-    animation: nav-load-div-button 1000ms ease-in-out 1 forwards;
-} 
+    animation: nav-load-div-button 1000ms ease-in-out forwards;
+}
 @keyframes nav-load-div-button {
     0% {
         transform: translateX(-300%) translateY(-200%);
+        opacity: 0%;
     }
     33% {
         transform: translateX(0) translateY(0);
+        opacity: 40%;
     }
-    50% {
-        transform: translateX(40%) translateY(50%);
+    60% {
+        transform: translateX(0) translateY(0);
+        opacity: 70%;
+    }
+    80% {
+        transform: translateX(0) translateY(0);
+        opacity: 90%;
+    }
+    90% {
+        transform: translateX(0) translateY(0);
+        opacity: 100%;
     }
     100% {
         transform: translateX(0) translateY(0);
@@ -261,7 +273,17 @@ html {
     border: 2px transparent;
     height: fit-content;
     margin: 10px auto;
+    animation: nav-load-div-buttonimg1-4 1200ms ease-in-out forwards;
 } 
+@keyframes nav-load-div-buttonimg1-4 {
+    0% {
+        transform: translateX(-500%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
 .group-images {
     margin: 10px auto;
     padding: 10px;
@@ -277,7 +299,15 @@ html {
     margin: 0 auto 10px auto;
     height: fit-content;
     border: 2px transparent;
-
+    animation: nav-load-div-button-img5 1300ms ease-in-out forwards;
+}
+@keyframes nav-load-div-button-img5 {
+    0% {
+        transform: translateX(-500%);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
 
 

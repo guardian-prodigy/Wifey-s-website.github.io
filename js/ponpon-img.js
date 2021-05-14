@@ -11,8 +11,10 @@ function ButtonForShowMorePon() {
             button1.style.background = "linear-gradient(45deg, black, green)";
             button = 0;
             button1.textContent = "Show Less";
+            
         } else if ( e.target == button1 && button == 0) {
-            paragraph.style.display = "none";
+            paragraph.style.display
+             = "none";
             button1.style.background = "linear-gradient(45deg, black, red)"
             button = 1;
             button1.textContent = "Show More Pon";

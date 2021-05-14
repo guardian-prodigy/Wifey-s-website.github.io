@@ -279,7 +279,7 @@ html {
     height: fit-content;
     margin: 10px auto;
 } #show-more-images, #prices3 {
-    animation: nav-load-div-buttonimg1-5 1200ms ease-out forwards;
+    animation: nav-load-div-buttonimg1-5 1100ms ease-out forwards;
 }
 @keyframes nav-load-div-buttonimg1-5 {
     0% {

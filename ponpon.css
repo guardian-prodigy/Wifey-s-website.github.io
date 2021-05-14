@@ -75,6 +75,23 @@ html {
 .total {
     height: 100%;
 }
+#main-div1 {
+    animation: nav-load-div1 1300ms ease-out;
+}
+#main-div2 {
+    animation: nav-load-div1 1700ms ease-out;
+}
+#main-div3 {
+    animation: nav-load-div1 2000ms ease-out;
+}
+@keyframes nav-load-div1 {
+    0% {
+        transform: translateX(-1000%) translateY(-500%);
+    }
+    100% {
+        transform: translateX(0) translateY(0);
+    }
+}
 .main-div {
     border: 2px rgb(0, 255, 0) dotted;
     width: 95%;
@@ -204,18 +221,27 @@ html {
 #button-show-more-img {
     color: white;
     padding: 5px;
-    
 
 }
 #more-images {
-    border: solid red 2px;
+    border: dotted red 2px;
     width: 95%;
     display: none;
     margin: 10px auto;
     height: fit-content;
-    
-    
+    animation: nav-load-div-button 1000ms ease-out;
 } 
+@keyframes nav-load-div-button {
+    0% {
+        transform: translateX(-500%) translateY(-300%);
+    }
+    50% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0) translateY(0);
+    }
+}
 
 #show-more-images {
     display: grid;

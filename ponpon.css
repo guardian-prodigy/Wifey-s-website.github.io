@@ -181,7 +181,7 @@ html {
     width: 95%;
     display: none;
     margin: 10px auto;
-    height: auto;
+    height: fit-content;
 }
 #show-more-images {
     display: grid;
@@ -189,23 +189,26 @@ html {
     justify-content: center;
     margin: 0 auto;
     width: 90%;
-    height: auto;
+    height: 10%;
+    
+    height: fit-content;
     margin: 10px auto;
 } 
 .group-images {
     margin: 10px auto;
     padding: 10px;
     width: 80%;
-    height: 80%;
+    height: calc(min-content - 10px);
     border: aqua 2px dotted;
     border-radius: 0 20px;
 }
 #prices3 {
-    width: 60%; height: auto;
+    width: 60%; height: 1%;
     display: grid;
     justify-content:center;
     margin: 0 auto 10px auto;
-    height: auto;
+    height: fit-content;
+    
 
 }
  .bottom-nav {

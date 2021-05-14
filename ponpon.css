@@ -124,8 +124,10 @@ html {
 .first-div,
 .second-div, .div-3 {
     text-align: center;
-    border: solid 2px aqua;
-    border-radius: 30px;
+    border: solid 2px red;
+    border-radius: 60px 0 60px 0;
+    border-image: linear-gradient(45deg, red, green, purple);
+    border-image-slice: 1;
     height: -moz-fit-content;
     height: fit-content;
     padding: 10px 5px;
@@ -209,7 +211,10 @@ html {
 .div-4-4 {
     margin: 10px 15px;
     text-align: center;
-    border: solid 2px aqua;
+    border: solid 2px red;
+    border-radius: 60px 0 60px 0;
+    border-image: linear-gradient(45deg, red, green, purple);
+    border-image-slice: 1;
     border-radius: 30px;
     height: fit-content;
     padding: 5px;
@@ -299,7 +304,7 @@ html {
     margin: 0 auto 10px auto;
     height: fit-content;
     border: 2px transparent;
-    animation: nav-load-div-button-img5 1300ms ease-in-out forwards;
+    animation: nav-load-div-button-img5 1400ms ease-in-out forwards;
 }
 @keyframes nav-load-div-button-img5 {
     0% {

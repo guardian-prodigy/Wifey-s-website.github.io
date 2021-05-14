@@ -278,11 +278,11 @@ html {
     border: 2px transparent;
     height: fit-content;
     margin: 10px auto;
-    animation: nav-load-div-buttonimg1-4 1200ms ease-in-out forwards;
+    animation: nav-load-div-buttonimg1-5 1100ms ease-in-out forwards;
 } 
-@keyframes nav-load-div-buttonimg1-4 {
+@keyframes nav-load-div-buttonimg1-5 {
     0% {
-        transform: translateX(-500%);
+        transform: translateX(-100%);
     }
 
     100% {
@@ -304,15 +304,7 @@ html {
     margin: 0 auto 10px auto;
     height: fit-content;
     border: 2px transparent;
-    animation: nav-load-div-button-img5 1400ms ease-in-out forwards;
-}
-@keyframes nav-load-div-button-img5 {
-    0% {
-        transform: translateX(-500%);
-    }
-    100% {
-        transform: translateX(0);
-    }
+    animation: nav-load-div-buttonimg1-5 1200ms ease-in-out forwards;
 }
 
 

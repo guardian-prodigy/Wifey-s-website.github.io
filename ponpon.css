@@ -165,6 +165,9 @@ html {
     height: fit-content;
     padding: 5px;
 }
+
+
+
 #div-button-show-more-img {
     display: grid;
     justify-content: center;
@@ -189,9 +192,9 @@ html {
     justify-content: center;
     margin: 0 auto;
     width: 90%;
+    border: 2px transparent;
     height: fit-content;
     margin: 10px auto;
-    border: 2px transparent solid;
 } 
 .group-images {
     margin: 10px auto;
@@ -202,14 +205,17 @@ html {
     border-radius: 0 20px;
 }
 #prices3 {
-    width: 60%; height: 1%;
+    width: 60%; height: fit-content;
     display: grid;
     justify-content:center;
     margin: 0 auto 10px auto;
     height: fit-content;
-    border: 2px transparent solid;
+    border: 2px transparent;
 
 }
+
+
+
  .bottom-nav {
      display: grid;
      align-items: center;

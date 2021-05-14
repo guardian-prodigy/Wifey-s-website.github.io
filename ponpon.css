@@ -189,8 +189,12 @@ html {
     justify-content: center;
     margin: 0 auto;
     width: 90%;
+    height: 50%;
+    border: red solid 2px;
     height: fit-content;
-} .group-images {
+    margin: 10px auto;
+} 
+.group-images {
     margin: 10px auto;
     padding: 10px;
     width: 80%;
@@ -198,12 +202,14 @@ html {
     border: aqua 2px dotted;
     border-radius: 0 20px;
 }
-.prices3 {
-    width: 60%;
+#prices3 {
+    width: 60%; height: 50%;
     display: grid;
     justify-content:center;
-    margin: 0 auto;
+    margin: 0 auto 10px auto;
     height: fit-content;
+    border: 2px red solid;
+
 }
  .bottom-nav {
      display: grid;
@@ -244,7 +250,7 @@ html {
  .img-footer {
      border-radius: 100px;
      height: auto;
-     width: 60%;
+     width: 70%; 
      border: 2px dotted red;
      border-radius: 200px;
  }
@@ -259,7 +265,7 @@ html {
  }
  .footer-heading {
      color: green;
-     font-size: large;
+     font-size: 30px;
  }
  .phone-number-footer {
      text-decoration: underline;

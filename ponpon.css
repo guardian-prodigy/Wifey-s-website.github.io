@@ -189,10 +189,9 @@ html {
     justify-content: center;
     margin: 0 auto;
     width: 90%;
-    height: 10%;
-    
     height: fit-content;
     margin: 10px auto;
+    border: 2px transparent solid;
 } 
 .group-images {
     margin: 10px auto;
@@ -208,7 +207,7 @@ html {
     justify-content:center;
     margin: 0 auto 10px auto;
     height: fit-content;
-    
+    border: 2px transparent solid;
 
 }
  .bottom-nav {

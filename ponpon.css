@@ -11,8 +11,20 @@ html {
     color: aqua;
     text-align: center;
     margin: 10px auto;
-    transition: transform 0.7s ease-in;
+ 
 } 
+.heading {
+    animation: nav-load 500ms ease-out ;
+}
+@keyframes nav-load {
+    0% {
+        transform: translateY(-1000%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
 #ponpon-heading {
     font-size: 2em;
     text-align: center;
@@ -32,6 +44,7 @@ html {
     border: dotted 2px red;
     border-radius: 0 0 30px 30px;
     width: 95%;
+    animation: nav-load 900ms ease-out;
 }
 #nav1,
 #nav2,
@@ -45,7 +58,15 @@ html {
     width: 100%;
     text-align: center;
     border-radius: 30px;
-    
+    animation: nav-children 1100ms ease-out;
+}
+@keyframes nav-children {
+    0% {
+        transform: translateX(-1000%);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
 #nav1:hover, #nav2:hover, #nav3:hover, #nav4:hover {
     background: linear-gradient(45deg, black, rgb(8, 243, 8), black);

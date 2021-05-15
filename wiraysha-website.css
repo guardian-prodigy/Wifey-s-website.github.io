@@ -21,6 +21,9 @@ html, body {
     min-height: 100%;
     overflow: auto;
     
+} .ponponetjes, li {
+    font-style: italic;
+    list-style:circle;
 }
 .ww-nav1 {
     position: relative;
@@ -190,7 +193,7 @@ html, body {
 }
 .addressMap {
     display: grid;
-    margin: 20px auto;
+    margin: 10px auto;
     text-align: center;
     justify-content: center;
 } 
@@ -333,15 +336,47 @@ html, body {
     border: transparent;
     color: white;
     font-style: oblique;
-    
 }
 
 
 #a1-id1, #a1-id2, #a1-id3, #a1-id4, #a1-id5{
-    display: block;
+    display: grid;
+    grid-template-rows: auto auto auto auto;
     text-align: center;
+    margin: 3px auto;
     justify-content: center;
     align-content: center;
     border: 2px red solid;
     text-decoration: none;
+}
+.div-para-intro {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    transform: translateY(100%);
+
+}
+.intro-para {
+    color: green;
+    font-size: large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: 2px solid red;
+    padding: 10px;
+    animation: Paragraph-intro 1000ms ease-out forwards;
+}
+@keyframes Paragraph-intro {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0%;
+    }
+    50% {
+        opacity:40%;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 100%;
+    }
 }

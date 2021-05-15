@@ -13,19 +13,19 @@ function mode(nav) {
         location = document.getElementById('map').style.display = "none";
         document.getElementById('ww-nav1-pp').style.display = "none"
         let paragraph = document.getElementById('ww-nav1-pp1').style.display = "none";
-    } else if (nav === "about") {
-        name = "Wiraysha Sahebdin";
-        information = `I make: <li class="ponponetjes">Ponponetjes</li> <li>Pon Letters</li> <li>Pon Shapes</li>`;
-        let About = `My name is ${name} <br> ${information}`;
+    } else if (nav === "about") {;
+        information = `I make: <li class="ponponetjes">Ponponetjes</li> <li class="ponponetjes">Pon Headbands(coming soon)</li> <li class="ponponetjes">Pon Wristbands (coming soon)</li> <li class="ponponetjes"> Pon Shapes(coming soon)`;
+        
+        let About = `${information}`;
         document.getElementById('ww-nav1-pp').innerHTML = About;
         location = document.getElementById('map').style.display = "none";
         let paragraph = document.getElementById('ww-nav1-pp1').style.display = "none";
             
     }
       else if (nav === "location") {
-        address = "";
-        document.getElementById('map').style.display = "inline";
-        let Location = `Pick up Address/afhaal plaats:  ${address}`
+        let map = document.getElementById('map');
+        map.style.display = "grid";
+        let Location = `Pick up Address/afhaal plaats:`;
         document.getElementById("ww-nav1-pp").innerHTML = Location;
         let paragraph = document.getElementById('ww-nav1-pp1').style.display = "none";
     }
@@ -56,19 +56,18 @@ function Item() {
             a1.setAttribute('href', 'ponponetjes.html');
             paragraph.appendChild(a1);
             a2 = document.createElement('a');
-            a2.id = "a1-id2"; a2.textContent = "Pon Shapes/Prizes";
-            a2.className = "buttons"
+            a2.id = "a1-id2"; a2.textContent = "Pon Headbands(coming soon)";
+            a2.className = "buttons";
             paragraph.appendChild(a2);
             a3 = document.createElement('a');
-            a3.id = "a1-id3"; a3.textContent = "Pon wristbands/Prizes";
+            a3.id = "a1-id3"; a3.textContent = "Pon wristbands(coming soon)";
             a3.className = "buttons"
             paragraph.appendChild(a3);
             a4 = document.createElement('a');
-            a4.id = "a1-id4"; a4.textContent = "Pon Headbands/Prizes";
+            a4.id = "a1-id4"; a4.textContent = "Pon Shapes(coming sooon)";
             a4.className = "buttons"
             paragraph.appendChild(a4);
-            
-            paragraph.style.display = "grid";document.getElementById('ww-nav1-pp').style.display = "none"
+            paragraph.style.display = "grid";document.getElementById('ww-nav1-pp').style.display = "none";
             location = document.getElementById('map').style.display = "none";
         }
          else if (e.target != Items || button == 0) {
@@ -133,18 +132,3 @@ function Item() {
 }
 Item()
 
-function modePic(Mode) {
-
-    let image;
-    if (Mode === "pics-show1") {
-        document.getElementById('button-img1').style.display = "inline";
-        document.getElementById('button-img2').style.display = "inline";
-        document.getElementById('pics-button1').style.display = "none"
-        document.getElementById('pics-button2').style.display = "inline"
-    } else if (Mode === 'pics-show2') {
-        document.getElementById('pics-button2').style.display = "none"
-        document.getElementById('pics-button1').style.display = "inline"
-        document.getElementById('button-img1').style.display = "none";
-        document.getElementById('button-img2').style.display = "none";
-    }
-}

@@ -4,6 +4,7 @@
 }
 html, body {
     height:100%;
+    scroll-behavior: smooth;
 }
 .ww-body {
     background: black;
@@ -45,6 +46,8 @@ html, body {
     cursor: pointer;
     margin: 5px 2px;
     width: 10%;
+} #item-button-id3, a {
+    text-decoration: none;
 }
 .ww-p1:hover {
     background: transparent;
@@ -233,7 +236,7 @@ html, body {
 } #pics-button1:hover,
 #pics-button2:hover {
     filter: brightness(200%);    
-} .bottom-nav { 
+} #bottom-nav { 
     display: grid;
     align-items: center;
     justify-content: center;

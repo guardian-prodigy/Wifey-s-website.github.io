@@ -237,15 +237,15 @@ html, body {
     display: grid;
     align-items: center;
     justify-content: center;
-    border: blue 4px solid;
+    border: blue 3px solid;
     margin: 0 auto;
     color: aqua;
     width: fit-content; height: auto;
     text-align: center;
     background: linear-gradient(90deg, black, rgb(65, 61, 61));
-    position: relative;
+    
     clear: both;
-    margin: -120px auto;
+    margin: 0px auto 0 auto;
 }
 
 .bottom-nav-para1,

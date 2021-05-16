@@ -13,21 +13,13 @@ function mode(nav) {
         location = document.getElementById('map').style.display = "none";
         document.getElementById('ww-nav1-pp').style.display = "none"
         let paragraph = document.getElementById('ww-nav1-pp1').style.display = "none";
-    } else if (nav === "about") {;
-        information = `I make: <li class="ponponetjes">Ponponetjes</li> <li class="ponponetjes">Pon Headbands(coming soon)</li> <li class="ponponetjes">Pon Wristbands (coming soon)</li> <li class="ponponetjes"> Pon Shapes(coming soon)`;
-        
-        let About = `${information}`;
-        document.getElementById('ww-nav1-pp').innerHTML = About;
-        location = document.getElementById('map').style.display = "none";
-        let paragraph = document.getElementById('ww-nav1-pp1').style.display = "none";
-            
     }
       else if (nav === "location") {
         let map = document.getElementById('map');
         map.style.display = "grid";
         let Location = `Pick up Address/afhaal plaats:`;
         document.getElementById("ww-nav1-pp").innerHTML = Location;
-        let paragraph = document.getElementById('ww-nav1-pp1').style.display = "none";
+        let paragraph = document.querySelector('.ww-nav1-pp1').style.display = "none";
     }
 }
 
@@ -39,7 +31,7 @@ function Item() {
     let location = document.getElementById('item-button-id3')
     
     let Items = document.getElementById('item-button-id4');
-    let paragraph = document.getElementById('ww-nav1-pp1');
+    let paragraph = document.querySelector('.ww-nav1-pp1');
     
     let button = 1;
 
@@ -128,7 +120,6 @@ function Item() {
         }
     })
 })
-    
 }
 Item()
 

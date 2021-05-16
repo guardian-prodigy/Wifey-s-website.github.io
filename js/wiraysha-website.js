@@ -36,6 +36,7 @@ function Item() {
     let button = 1;
 
     let a1; let a2; let a3; let a4; let a5;
+    
     let a = [a1, a2, a3, a4, a5]
  
     Items.addEventListener('click', function Button(e) {

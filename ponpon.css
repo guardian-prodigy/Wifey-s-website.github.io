@@ -237,16 +237,19 @@ html {
 
 .more-images {
     border: dotted red 2px;
-    transition: all 1.5s ease-out;
-    transform: translate(-550px, -500px);
-    width: 0px;
+    transition: all 1s ease-out;
+    transform: translate(-100%, -100%) scaleY(-1);
+    visibility: hidden;
+    width: 95%;
     height: 0px;
+    
 } 
 .more-images.open {
-    transform: translate(0px, 0px);
+    transform: translate(0%,  0%);
     width: 95%;
-    height: fit-content;
+    height: 80%;
     margin: 10px auto;
+    visibility:visible;
 }
 
 

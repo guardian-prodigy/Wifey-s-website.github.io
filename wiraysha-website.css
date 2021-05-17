@@ -235,7 +235,7 @@ html, body {
     top: -2px;
     left: -2px;
     border-radius: 30px;
-    z-index: -1000;
+    z-index: -999;
     background: linear-gradient(45deg, green, orange, red, blue, green, orange, red, blue);
     width: calc(100% + 4px);
     height: calc(100% + 4px);

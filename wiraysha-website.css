@@ -209,18 +209,59 @@ html, body {
 #a1-id3,
 #a1-id4 {
     display: grid;
+    position: relative;
     grid-template-rows: auto auto auto auto;
     text-align: center;
-    margin: 0 auto;
+    margin: 5px auto;
     justify-content: center;
     font-size: medium;
-    align-content: center;
-    border: 2px red solid;
     border-radius: 20px;
-    padding: 10px;
+    padding: 5px;
     text-decoration: none;
     width: fit-content;
-    height: 10%;
+    height: fit-content;
+    background: black;
+}
+#a1-id1:before,
+#a1-id2:before,
+#a1-id3:before,
+#a1-id4:before,
+#a1-id1:after,
+#a1-id2:after,
+#a1-id3:after,
+#a1-id4:after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    border-radius: 30px;
+    z-index: -1000;
+    background: linear-gradient(45deg, green, orange, red, green, orange, red);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: a-animation 20s linear infinite forwards alternate;
+    background-size: 400%;
+}
+@keyframes a-animation {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 400% 0;
+    }
+    0% {
+        background-position: 0 0;
+    }
+}
+#a1-id1:before:hover,
+#a1-id2:before:hover,
+#a1-id3:before:hover,
+#a1-id4:before:hover,
+#a1-id1:after:hover,
+#a1-id2:after:hover,
+#a1-id3:after:hover,
+#a1-id4:after:hover {
+    background: transparent;
 }
 #ww-nav1-pp2 {
     display: none;
@@ -374,10 +415,7 @@ html, body {
     cursor: pointer;
     display: block;
     margin: 5px;
-} .buttons:hover {
-    background: rgba(255, 0, 0, 0.452);
-    filter: brightness(200%) saturate(300%)
-} 
+}  
 #item1-id {
     text-decoration: none;
     border: transparent;

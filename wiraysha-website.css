@@ -225,11 +225,7 @@ html, body {
 #a1-id1:before,
 #a1-id2:before,
 #a1-id3:before,
-#a1-id4:before,
-#a1-id1:after,
-#a1-id2:after,
-#a1-id3:after,
-#a1-id4:after {
+#a1-id4:before {
     content: '';
     position: absolute;
     top: -2px;

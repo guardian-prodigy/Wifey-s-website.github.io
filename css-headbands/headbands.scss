@@ -1,45 +1,168 @@
-.body {
+* {
     margin: 0;
     padding: 0;
-    background: linear-gradient(90deg, rgba(0, 255, 255, 0.1), rgba(25, 0, 255, 0.3));
-    animation: body 20s linear infinite alternate-reverse;
-    background-size: 400%;
-    height: 100%;
 }
-@keyframes body {
-    0% {
-        background-position: 0 0;
-    }
-    50% {
-        background-position: 200% 0;
-    }
-    100% {
-        background-position: 400% 0;
-    }
+html {
+    scroll-behavior: smooth;
+}
+.body {
+    background: black;
+}
+
+.total {
+    min-height: 100vh;
+.back {
+    color: green;
+    margin: 10px;
 }
 .div-headbands-heading {
-    display: grid;
-    grid-template-columns: auto;
+    display: flex;
     justify-content: center;
-    text-align: center;
     margin: 10px auto;
     width: 95%;
-    border: blue solid 2px;
+    padding: 0;
     height: fit-content;
 
-    .headbands-heading {
-        width: 100%;
-        position: relative;
-        font-size: xx-large;
-        height: fit-content;
-        background: linear-gradient(45deg, black, red, black);
-
+        .headbands-heading {
+            width: 100%;
+            position: relative;
+            font-size: xx-large;
+            height: fit-content;
+            background: black;
+            padding: 3px;
+            margin: 5px auto;
+            color: white;
+            text-align: center;
+            border-radius: 30px 30px 0 0;
+        }
         .headbands-heading:before {
             content: '';
+            border-radius: 30px 30px 0 0;
             position: absolute;
-            background: linear-gradient(45deg, green, black, green);
+            top: -2px;
+            left: -2px;
+            z-index: -1;
+            background: linear-gradient(45deg, green, orange, red, blue, green, orange, red, blue);
             width: calc(100% + 4px);
             height: calc(100% + 4px);
+            animation: headbands-heading 20s linear infinite alternate-reverse;
+            background-size: 400%;
+            @keyframes headbands-heading {
+                0% {
+                    background-position: 0 0;
+                }
+                50% {
+                    background-position: 400% 0;
+                }
+                100% {
+                    background-position: 0 0;
+                }
+            }
+        }
+}
+.navbar {
+    border: red dotted 2px;
+    border-radius: 0 0 30px 30px;
+    margin: 0 auto;
+    width: 95%;
+
+        .nav-headbands {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            justify-content: space-around;
+            text-align: center;
+
+            .sect {
+                color: white;
+                text-decoration:none;
+                padding: 5px;
+                margin: 3px auto;
+                border-radius: 30px;
+            }
+            .sect:hover {
+                background: linear-gradient(45deg, black, blue, black);
+                border-radius: 30px;
+            }
+        }
+    
+
+}
+.div-button-display-headbands {
+    display: grid;
+    justify-content: center;
+    margin: 10px auto;
+    border-radius: 30px;
+} .button-display-headbands {
+    padding: 5px;
+    background: black;
+    color: white;
+    border-radius: 30px;
+    box-shadow: 0px 0px 20px red;
+}
+}
+
+.bottom-nav {
+    justify-content: center;
+    border: blue 2px solid;
+    color: aqua;
+    width: 95%;
+    max-width: 95%;
+    height: fit-content;
+    background: black;
+    clear: both;
+    margin: 0 auto;
+
+    .paragraph-footer {
+        display: grid;
+        grid-template-columns: auto auto;
+        height: auto;
+        text-align: start;
+        margin: 0 20px;
+
+        .bottom-nav-para1 {
+            width: fit-content;
+            margin: 10px auto;
+            position: relative;
+            height: 50%;
+            min-width: 30px;
+            min-height: 30px;
+            .img-footer {
+                width: 80%;
+                max-width: 80%;
+                border: 2px dotted red;
+                border-radius: 200px;
+            }
+        }
+        .bottom-nav-para2 {
+            display: grid;
+            width: fit-content;
+            height: fit-content;
+            padding: 5px;
+            margin: 10px auto;
+            border: 2px dotted red;
+
+            .p {
+                min-height: 5px;
+                min-width: 5px;
+                text-align: center;
+            }
+                .footer-heading {
+                    color: green;
+                    font-size: x-large;
+                    width: 100%;
+                    text-align: center;
+                }
+                .phone-number-footer {
+                    text-decoration: underline;
+                    color: white;
+                    
+                }
+                .insta-footer {
+                    text-decoration: underline;
+                    color: white;
+                    
+                    }
+                
         }
     }
 }

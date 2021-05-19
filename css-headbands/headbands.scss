@@ -1,0 +1,45 @@
+.body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(90deg, rgba(0, 255, 255, 0.1), rgba(25, 0, 255, 0.3));
+    animation: body 20s linear infinite alternate-reverse;
+    background-size: 400%;
+    height: 100%;
+}
+@keyframes body {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 200% 0;
+    }
+    100% {
+        background-position: 400% 0;
+    }
+}
+.div-headbands-heading {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    text-align: center;
+    margin: 10px auto;
+    width: 95%;
+    border: blue solid 2px;
+    height: fit-content;
+
+    .headbands-heading {
+        width: 100%;
+        position: relative;
+        font-size: xx-large;
+        height: fit-content;
+        background: linear-gradient(45deg, black, red, black);
+
+        .headbands-heading:before {
+            content: '';
+            position: absolute;
+            background: linear-gradient(45deg, green, black, green);
+            width: calc(100% + 4px);
+            height: calc(100% + 4px);
+        }
+    }
+}

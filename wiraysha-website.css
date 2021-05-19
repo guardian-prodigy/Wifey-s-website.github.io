@@ -16,6 +16,7 @@ html, body {
     justify-content: center;
     text-align: center;
     margin: 5px;
+    font-family:cursive;
 }
 
 .nav-beginning {
@@ -81,7 +82,7 @@ html, body {
             purple,
             green);
     background-size: 500%;
-
+    filter: contrast(300%);
     z-index: -1;
     animation: animate 20s linear infinite;
 }
@@ -159,7 +160,7 @@ html, body {
     border: 2px dotted greenyellow;
     width: fit-content; padding: 10px;
     margin: 0 auto 10px auto;
-    
+    filter: contrast(300%);
 }
  #ww-nav1-pp,
  .ww-nav1-pp1,
@@ -169,6 +170,7 @@ html, body {
     -ms-animation: ww-nav-pp-animation 300ms ease-out forwards alternate;
     -moz-animation: ww-nav-pp-animation 300ms ease-out forwards alternate;
     -o-animation: ww-nav-pp-animation 300ms ease-out forwards alternate;
+    
 }
 
 @keyframes ww-nav-pp-animation {
@@ -232,11 +234,12 @@ html, body {
     left: -2px;
     border-radius: 30px;
     z-index: -1000;
-    background: linear-gradient(45deg, green, orange, red, blue, green, orange, red, blue);
+    background: linear-gradient(70deg, green, orange, red, blue, green, orange, red, blue);
     width: calc(100% + 4px);
     height: calc(100% + 4px);
     animation: a-animation 20s linear infinite forwards alternate;
     background-size: 400%;
+    filter: contrast(300%);
 }
 @keyframes a-animation {
     0% {
@@ -436,7 +439,8 @@ html, body {
 
 }
 .intro-para {
-
+    backdrop-filter: blur(100rem);
+    background:linear-gradient(45deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.1));
     color: green;
     font-size: large;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -444,6 +448,7 @@ html, body {
     border: 2px solid red;
     border-radius: 20px;
     padding: 10px;
+    margin: 20px auto;
     animation: Paragraph-intro 1000ms ease-out both;
     
 }
@@ -452,7 +457,6 @@ html, body {
         transform: translateY(200%) scaleX(-1);
         opacity: 0%;
         font: 0px;
-        opacity: 0;
     }
     100% {
         transform: translateY(0);

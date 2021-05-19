@@ -122,16 +122,22 @@ html {
 .paragraph-for-prices {
     color: white;
     position: absolute;
-    animation: display-for-all2 1s ease-out 1 alternate both;
+    
     margin: 10px auto;
+    transform: translateX(-1000px);
 }
 
-.paragraph-for-prices.open {
-    transition: transform 1s ease-in;
+.paragraph-for-prices.open1 {
     color: white;
     position: relative;
     margin: 10px auto;
     animation: display-for-all1 1s ease-out 1 both;
+}
+.paragraph-for-prices.open2 {
+    color: white;
+    position: relative;
+    margin: 10px auto;
+    animation: display-for-all2 1s ease-out 1 both;
 }
 .paragraph-for-prices, .paragraph-for-prices.open {
     display: grid;

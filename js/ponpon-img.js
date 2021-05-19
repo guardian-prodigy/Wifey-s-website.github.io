@@ -18,3 +18,22 @@ function ButtonForShowMorePon() {
     })
 }
 ButtonForShowMorePon()
+
+function ButtontoDisplayPrices() {
+    let paragraph = document.querySelector('.paragraph-for-prices');
+    let button1 = document.querySelector(".button-to-display-prices");
+    let button = 1
+    button1.addEventListener('click', (e) => {
+        if (e.target == button1 && button == 1){
+           paragraph.classList.toggle('open');
+           button = 0 
+           button1.textContent = "Close Prices";
+        } else if (e.target == button1 && button == 0) {
+            paragraph.classList.remove('open');
+            button = 1
+            button1.textContent = "Display Prices";
+        }
+        
+    })
+}
+ButtontoDisplayPrices()

@@ -51,7 +51,7 @@ function Item() {
             a2 = document.createElement('a');
             a2.id = "a1-id2"; a2.textContent = "Pon Headbands(coming soon)";
             a2.className = "buttons";
-            a2.setAttribute('href', 'headbands.html');
+            a2.setAttribute('href', '/');
             paragraph.appendChild(a2);
             a3 = document.createElement('a');
             a3.id = "a1-id3"; a3.textContent = "Pon wristbands(coming soon)";

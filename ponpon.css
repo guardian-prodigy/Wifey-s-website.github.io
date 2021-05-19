@@ -104,8 +104,96 @@ html {
     text-align: center;
     
 }
+.display-prices {
+    display: grid;
+    grid-template-columns: auto;
+    justify-self: center;
+    width: fit-content;
+    margin: 0 auto;
+} .button-to-display-prices {
+    color: orange;
+    padding: 5px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 20px orangered;
+}
 
 
+
+.paragraph-for-prices {
+    color: white;
+    position: absolute;
+    animation: display-for-all2 1s ease-out 1 alternate both;
+    margin: 10px auto;
+}
+
+.paragraph-for-prices.open {
+    transition: transform 1s ease-in;
+    color: white;
+    position: relative;
+    margin: 10px auto;
+    animation: display-for-all1 1s ease-out 1 both;
+}
+.paragraph-for-prices, .paragraph-for-prices.open {
+    display: grid;
+    grid-column: auto;
+    justify-content: center;
+    background: linear-gradient(to right top, rgba(0, 225, 255, 0.3), rgba(0, 255, 255, 0.1));
+    backdrop-filter: blur(5rem);
+    width: fit-content;
+    border-radius: 30px;
+    padding: 5px;
+    
+}
+@keyframes display-for-all1 {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0%;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 100%;
+        
+    }
+}
+@keyframes display-for-all2 {
+    0% {
+        transform: translateX(0);
+        opacity: 100%;
+        position: relative;
+    }
+    90% {
+        position: relative;
+    }
+    100% {
+        position: absolute;
+        transform: translateX(-100%);
+        opacity: 0%;
+        
+    }
+}
+.price-for-all {
+    color: rgb(179, 179, 179);
+    background: rgba(0, 255, 255, 0.05);
+    padding: 3px;
+    text-align:center;
+    filter: contrast(200%);
+    backdrop-filter: blur(10rem);
+    border-radius: 30px;
+    width: fit-content;
+    margin: 3px auto;
+    font-size:medium;
+} .price-for-all-extra-para {
+    font-size: large;
+    margin: 3px auto;
+    color: rgb(179, 179, 179);
+    background: rgba(0, 255, 255, 0.05);
+    padding: 3px;
+    width: fit-content;
+    text-align:center;
+    filter: contrast(200%);
+    backdrop-filter: blur(10rem);
+    border-radius: 30px;
+}
 
 .total {
     height: 100%;

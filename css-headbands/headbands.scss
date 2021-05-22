@@ -99,10 +99,10 @@ html {
             .sect:hover {
                 background: linear-gradient(45deg, black, blue, black);
                 border-radius: $border-radius30;
+                margin: 3px 3px;
+                text-decoration:none;
             }
         }
-    
-
 }
 .div-button-display-headbands {
     display: grid;

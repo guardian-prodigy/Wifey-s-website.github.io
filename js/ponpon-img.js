@@ -38,10 +38,11 @@ function ButtontoDisplayPrices() {
     })
 }
 ButtontoDisplayPrices()
-function More2coloredLargePon() {
-    let button1 = document.getElementById('button-for-more-large-pon');
+
+function More2coloredLargePon1() {
+    let button1 = document.getElementById('button-for-more-large-pon1');
     let button = 1;
-    let paragraph = document.querySelector('.p-for-large-pons');
+    let paragraph = document.querySelector('.p-for-large-pons1');
     button1.addEventListener('click', (e) => {
         if (e.target == button1 && button == 1) {
             paragraph.classList.toggle('open1');
@@ -51,7 +52,7 @@ function More2coloredLargePon() {
         } else if (e.target == button1 && button == 0) {
             paragraph.classList.remove('open1');
             paragraph.classList.toggle('open2');
-            button1.textContent = "Show More";
+            button1.textContent = "More Examples";
             button = 1;
         } else if (e.target != button1) {
             paragraph.classList.remove('open2');
@@ -60,4 +61,52 @@ function More2coloredLargePon() {
         }
     })
 }
-More2coloredLargePon()
+More2coloredLargePon1()
+
+function More2coloredLargePon2() {
+    let button1 = document.getElementById('button-for-more-large-pon2');
+    let button = 1;
+    let paragraph = document.querySelector('.p-for-large-pons2');
+    button1.addEventListener('click', (e) => {
+        if (e.target == button1 && button == 1) {
+            paragraph.classList.toggle('open1');
+            paragraph.classList.remove('open2');
+            button1.textContent = "Show Less";
+            button = 0;
+        } else if (e.target == button1 && button == 0) {
+            paragraph.classList.remove('open1');
+            paragraph.classList.toggle('open2');
+            button1.textContent = "More Examples";
+            button = 1;
+        } else if (e.target != button1) {
+            paragraph.classList.remove('open2');
+            paragraph.classList.toggle('open1');
+
+        }
+    })
+}
+More2coloredLargePon2()
+
+function More2coloredLargePon3() {
+    let button1 = document.getElementById('button-for-more-large-pon3');
+    let button = 1;
+    let paragraph = document.querySelector('.p-for-large-pons3');
+    button1.addEventListener('click', (e) => {
+        if (e.target == button1 && button == 1) {
+            paragraph.classList.toggle('open1');
+            paragraph.classList.remove('open2');
+            button1.textContent = "Show Less";
+            button = 0;
+        } else if (e.target == button1 && button == 0) {
+            paragraph.classList.remove('open1');
+            paragraph.classList.toggle('open2');
+            button1.textContent = "More Examples";
+            button = 1;
+        } else if (e.target != button1) {
+            paragraph.classList.remove('open2');
+            paragraph.classList.toggle('open1');
+
+        }
+    })
+}
+More2coloredLargePon3()

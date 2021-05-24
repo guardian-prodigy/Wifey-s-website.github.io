@@ -1,0 +1,86 @@
+@mixin border-around-images {
+    border: solid 2px red;
+    border-radius: 20px;
+    border-image: linear-gradient(45deg, red, green, purple);
+    border-image-slice: 1;
+}
+@mixin p-for-large-pons {
+    transform: translateX(-2000px);
+    position: absolute;
+    @include border-around-images();
+    margin: 0 5px;
+}
+@mixin added-large-2col-pons {
+    margin: 5px auto;
+}
+@mixin added-large-2col-pons-images {
+    height: 90%;
+    width: 90%;
+    border: solid 2px red;
+    border-radius: 20px;
+    border-image: linear-gradient(45deg, aqua, black, aqua);
+    border-image-slice: 2;
+}
+@mixin p-for-large-pons-open1 {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto;
+    animation: open-more-large-pon-by-animation 500ms ease-out both;
+    @keyframes open-more-large-pon-by-animation {
+        0% {
+            transform: translateX(-50%);
+            opacity: 0%;
+        }
+        50% {
+            opacity: 70%;
+        }
+        100% {
+            transform: translateX(0);
+            opacity: 100%;
+        }
+    }
+}
+@mixin p-for-large-pons-open2 {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto;
+    animation: close-more-large-pon-by-animation 500ms ease-out both;
+    @keyframes close-more-large-pon-by-animation {
+        0% {
+            transform: translateX(0);
+            position: relative;
+            opacity: 100%;
+        }
+        50% {
+            opacity: 30%;
+        }
+        90% {
+            position: relative;
+        }
+        100% {
+            opacity: 0%;
+            position: absolute;
+            transform: translateX(-100%);
+        }
+    }
+}
+@mixin button-for-more-large-pon {
+    color: white;
+    padding: 5px;
+    margin: 5px auto;
+    border-radius: 30px;
+    background: linear-gradient(45deg, black, blue, black);
+    animation: button-for-more-large-pon3 20s linear infinite alternate-reverse;
+    background-size: 400%;
+    @keyframes button-for-more-large-pon3 {
+        0% {
+            background-position: 0 0;
+        }
+        50% {
+            background-position: 400% 0;
+        }
+        100% {
+            background-position: 0 0;
+        }
+    }
+}

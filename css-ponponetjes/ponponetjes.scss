@@ -236,6 +236,30 @@ html {
         } .p-for-large-pons2.open2 {
             @include p-for-large-pons-open2();
         }
+        .p-for-large-pons4 {
+            @include p-for-large-pons();
+            .added-large-2col-pons4 {
+                @include added-large-2col-pons();
+            .added-large-2col-pons-images4 {
+                @include added-large-2col-pons-images();
+            }}
+        } .p-for-large-pons4.open1 {
+            @include p-for-large-pons-open1();
+        } .p-for-large-pons4.open2 {
+            @include p-for-large-pons-open2();
+        }
+        .p-for-large-pons5 {
+            @include p-for-large-pons();
+            .added-large-2col-pons5 {
+                @include added-large-2col-pons();
+            .added-large-2col-pons-images5 {
+                @include added-large-2col-pons-images();
+            }}
+        } .p-for-large-pons5.open1 {
+            @include p-for-large-pons-open1();
+        } .p-for-large-pons5.open2 {
+            @include p-for-large-pons-open2();
+        }
         .first-div, .second-div {
             text-align: center;
             @include border-around-images();
@@ -249,6 +273,12 @@ html {
                 @include button-for-more-large-pon();
             }
             #button-for-more-large-pon2 {
+                @include button-for-more-large-pon();
+            }
+            #button-for-more-large-pon4 {
+                @include button-for-more-large-pon();
+            }
+            #button-for-more-large-pon5 {
                 @include button-for-more-large-pon();
             }
             .ponpon-img1 {
@@ -319,6 +349,9 @@ html {
              }#button-for-more-large-pon3 {
                 @include button-for-more-large-pon();
             }
+             #button-for-more-large-pon6 {
+                @include button-for-more-large-pon();
+            }
             } .p-for-large-pons3 {
                 @include p-for-large-pons();
                 .added-large-2col-pons3 {
@@ -331,7 +364,19 @@ html {
             } .p-for-large-pons3.open2 {
                 @include p-for-large-pons-open2();
             }
-        }
+            } .p-for-large-pons6 {
+                @include p-for-large-pons();
+                .added-large-2col-pons6 {
+                    @include added-large-2col-pons();
+                .added-large-2col-pons-images6 {
+                    @include added-large-2col-pons-images();
+                }}
+            } .p-for-large-pons6.open1 {
+                @include p-for-large-pons-open1();
+            } .p-for-large-pons6.open2 {
+                @include p-for-large-pons-open2();
+            }
+        
         
 }
 #main-div1 {

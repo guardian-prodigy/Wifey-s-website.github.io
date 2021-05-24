@@ -110,3 +110,74 @@ function More2coloredLargePon3() {
     })
 }
 More2coloredLargePon3()
+function More2coloredLargePon4() {
+    let button1 = document.getElementById('button-for-more-large-pon4');
+    let button = 1;
+    let paragraph = document.querySelector('.p-for-large-pons4');
+    button1.addEventListener('click', (e) => {
+        if (e.target == button1 && button == 1) {
+            paragraph.classList.toggle('open1');
+            paragraph.classList.remove('open2');
+            button1.textContent = "Show Less";
+            button = 0;
+        } else if (e.target == button1 && button == 0) {
+            paragraph.classList.remove('open1');
+            paragraph.classList.toggle('open2');
+            button1.textContent = "More Examples";
+            button = 1;
+        } else if (e.target != button1) {
+            paragraph.classList.remove('open2');
+            paragraph.classList.toggle('open1');
+
+        }
+    })
+}
+More2coloredLargePon4()
+
+function More2coloredLargePon5() {
+    let button1 = document.getElementById('button-for-more-large-pon5');
+    let button = 1;
+    let paragraph = document.querySelector('.p-for-large-pons5');
+    button1.addEventListener('click', (e) => {
+        if (e.target == button1 && button == 1) {
+            paragraph.classList.toggle('open1');
+            paragraph.classList.remove('open2');
+            button1.textContent = "Show Less";
+            button = 0;
+        } else if (e.target == button1 && button == 0) {
+            paragraph.classList.remove('open1');
+            paragraph.classList.toggle('open2');
+            button1.textContent = "More Examples";
+            button = 1;
+        } else if (e.target != button1) {
+            paragraph.classList.remove('open2');
+            paragraph.classList.toggle('open1');
+
+        }
+    })
+}
+More2coloredLargePon5()
+
+function More2coloredLargePon6() {
+    let button1 = document.getElementById('button-for-more-large-pon6');
+    let button = 1;
+    let paragraph = document.querySelector('.p-for-large-pons6');
+    button1.addEventListener('click', (e) => {
+        if (e.target == button1 && button == 1) {
+            paragraph.classList.toggle('open1');
+            paragraph.classList.remove('open2');
+            button1.textContent = "Show Less";
+            button = 0;
+        } else if (e.target == button1 && button == 0) {
+            paragraph.classList.remove('open1');
+            paragraph.classList.toggle('open2');
+            button1.textContent = "More Examples";
+            button = 1;
+        } else if (e.target != button1) {
+            paragraph.classList.remove('open2');
+            paragraph.classList.toggle('open1');
+
+        }
+    })
+}
+More2coloredLargePon6()

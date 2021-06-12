@@ -1,4 +1,4 @@
-function displayHeadbandsPrices(e) {
+function displayHeadbandsPrices() {
     let buttonClicked = document.querySelector('.button-display-headbands-prices');
     let paragraph = document.querySelector('.prices-for-headbands');
     let button = 1
@@ -12,5 +12,4 @@ function displayHeadbandsPrices(e) {
         paragraph.classList.remove('open1');
         paragraph.classList.toggle('open2');
     }})
-}
-displayHeadbandsPrices();
+}displayHeadbandsPrices();

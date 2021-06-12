@@ -1,0 +1,45 @@
+@mixin Directions-For-Navbar($text-align) {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-around;
+    text-align: $text-align;
+}
+@mixin animation(){
+    @keyframes headbands-heading {
+        
+        0% {
+            background-position: 0 0;
+        }
+        50% {
+            background-position: 400% 0;
+        }
+        100% {
+            background-position: 0 0;
+        }
+    }
+}
+@mixin DisplayPrices1 {
+    @keyframes DisplayPricesOpen {
+        0% {
+            transform: translateX(-500px);
+        }
+        100% {
+            transform: translateX(0px);
+        }
+    }
+} 
+@mixin DisplayPrices2 {
+    @keyframes DisplayPricesClose {
+        0% {
+            transform: translateX(0);
+            position: relative;
+        }
+        98% {
+            position: absolute;
+        }
+        100% {
+            transform: translateX(-500px);
+        }
+    }
+} 
+    

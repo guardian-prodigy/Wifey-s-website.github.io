@@ -89,3 +89,20 @@
     }
     
 }
+@mixin screens($screenSize) {
+    @if $screenSize == mobile {
+        @media screen and(min-width: 400px){
+            @content;
+        }
+    }
+    @else if $screenSize == tablet {
+        @media screen and(min-width: 800px){
+            @content;
+        }
+    }
+    @else if $screenSize == desktop {
+        @media screen and(min-width: 800px){
+            @content;
+        }
+    }
+}

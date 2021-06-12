@@ -1,23 +1,6 @@
-@mixin Directions-For-Navbar($text-align) {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    justify-content: space-around;
-    text-align: $text-align;
-}
-@mixin animation(){
-    @keyframes headbands-heading {
-        
-        0% {
-            background-position: 0 0;
-        }
-        50% {
-            background-position: 400% 0;
-        }
-        100% {
-            background-position: 0 0;
-        }
-    }
-}
+@import "mixins";
+@import "basic";
+@import "keyframes";
 $heights-widths: (
     "height-fit-content": fit-content,
     "height-hundred": 100%,
@@ -27,31 +10,23 @@ $heights-widths: (
     "width-max-content": max-content,
 );
 
- $border-radius30: 30px;
-
-* {
-    margin: 0;
-    padding: 0;
-}
-html {
-    scroll-behavior: smooth;
-}
+$border-radius30: 30px;
 .body {
     background: black;
+    background-size: cover;
 }
-
 .total {
     min-height: 100vh;
-.back {
-    color: green;
-    margin: 10px;
-}
-.div-headbands-heading {
-    display: flex;
-    margin: 10px auto;
-    width: 95%;
-    padding: 0;
-    height: 100%;
+    .back {
+        color: green;
+        margin: 10px;
+    }
+    .div-headbands-heading {
+        display: flex;
+        margin: 10px auto;
+        width: 95%;
+        padding: 0;
+        height: 100%;
 
         .headbands-heading {
             width: 100%;
@@ -66,7 +41,7 @@ html {
             border-radius: 30px 30px 0 0;
         }
         .headbands-heading:before {
-            content: '';
+            content: "";
             position: absolute;
             top: -2px;
             left: -2px;
@@ -79,110 +54,230 @@ html {
             animation: headbands-heading 20s linear infinite alternate-reverse;
             @include animation();
         }
-}
-.div-navbar {
-    border: red dotted 2px;
-    border-radius: 0 0 30px 30px;
-    margin: 0 auto;
-    width: 95%;
+    }
+    .div-navbar-top {
+        border: red dotted 2px;
+        border-radius: 0 0 30px 30px;
+        margin: 0 auto;
+        width: 95%;
 
         .nav-headbands {
             @include Directions-For-Navbar(center);
 
             .sect {
                 color: white;
-                text-decoration:none;
+                text-decoration: none;
                 padding: 5px;
                 margin: 3px auto;
                 border-radius: $border-radius30;
-            }
-            .sect:hover {
-                background: linear-gradient(45deg, black, blue, black);
-                border-radius: $border-radius30;
-                margin: 3px 3px;
-                text-decoration:none;
-            }
-        }
-}
-.div-button-display-headbands {
-    display: grid;
-    justify-content: center;
-    margin: 10px auto;
-    border-radius: $border-radius30;
- .button-display-headbands {
-    padding: 5px;
-    background: black;
-    color: white;
-    border-radius: $border-radius30;
-    box-shadow: 0px 0px 20px red;
-}
-}
-.main-div1 {
-    display: grid;
-    grid-template-columns: auto auto;
-    width: 95%;
-    margin: 10px auto;
-    border: greenyellow 2px solid;
-    height: auto;
 
-    .main-div1-section1, .main-div1-section2 {
-        text-align: center;
-        margin: 5px auto;
-        .main-div1-images {
-            width: 80%;
-            height: auto;
-            margin: 0 auto;
-            border-radius: 20px;
-            
+                &:hover {
+                    background: linear-gradient(45deg, black, blue, black);
+                    border-radius: $border-radius30;
+                    margin: 5px;
+                    text-decoration: none;
+                }
+            }
         }
     }
-}
+    .div-button-display-headbands {
+        display: grid;
+        justify-content: center;
+        margin: 10px auto;
+        border-radius: $border-radius30;
+        .button-display-headbands-prices {
+            padding: 5px;
+            background: black;
+            color: white;
+            border-radius: $border-radius30;
+            box-shadow: 0px 0px 20px red;
+        }
+    }
+    .prices-for-headbands {
+        transform: translateX(-1000px);
+        position: absolute;
+        .price1, .price2 {
+            color: white;
+            font-size: 1rem;
+            font-family:sans-serif;
+            padding: 3px auto;
+        }
+    }
+    .prices-for-headbands.open1 {
+        display: grid;
+        animation: DisplayPricesOpen 1s ease-out 1 forwards;
+        @include DisplayPrices1;
+        position: relative;
+        transform: translateX(0);
+        justify-content: center;
+        width: fit-content;
+        margin: 0 auto;
+        padding: 5px;
+        border-radius: 10px;
+        background: linear-gradient(45deg, rgba(49, 185, 49, 0.589), rgba(12, 197, 12, 0.664), rgba(144, 238, 144, 0.603));
+    }
+    .prices-for-headbands.open2 {
+        display: grid;
+        animation: DisplayPricesClose 1s ease-in 1 both;
+        @include DisplayPrices2;
+        position: absolute;
+        justify-content: center;
+        width: fit-content;
+        margin: 0 auto;
+        padding: 5px;
+        border-radius: 10px;
+        background: linear-gradient(45deg, rgba(49, 185, 49, 0.589), rgba(12, 197, 12, 0.664), rgba(144, 238, 144, 0.603));
+    }
+    .main-div1 {
+        display: grid;
+        width: 95%;
+        margin: 10px auto;
+        transition: ease-in 1s all;
+        border: blue 2px dotted;
+        height: auto;
+        .main-div1-heading {
+            color: white;
+            font-size: 2rem;
+            font-family: cursive;
+            text-align: center;
+            background: linear-gradient(45deg, black, rgba(255, 0, 0, 0.089), black);
+            width: calc(50% + 10px);
+            margin: 3px auto;
+        }
+        .four-images-div-1 {
+            display: grid;
+            grid-template-columns: auto auto;
+
+            .main-div1-section1,
+            .main-div1-section2,
+            .main-div1-section3,
+            .main-div1-section4 {
+                text-align: center;
+                margin: 5px auto;
+                border: 2px rgba(255, 0, 0, 0.26) solid;
+                width: 90%;
+                height: auto;
+                .main-div1-images {
+                    width: 90%;
+                    height: auto;
+                    margin: 5px auto;
+                    border-radius: $border-radius30;
+                }
+            }
+        }
+    }
+    .main-div2 {
+        display: grid;
+        width: 95%;
+        margin: 10px auto;
+        border: blue 2px dotted;
+        height: auto;
+        .main-div2-heading {
+            color: white;
+            font-size: 2rem;
+            font-family: cursive;
+            text-align: center;
+            background: linear-gradient(45deg, black, rgba(255, 0, 0, 0.089), black);
+            width: calc(50% + 10px);
+            margin: 3px auto;
+        }
+        .four-images-div-2 {
+            display: grid;
+            grid-template-columns: auto auto;
+
+            .main-div2-section1,
+            .main-div2-section2,
+            .main-div2-section3,
+            .main-div2-section4 {
+                text-align: center;
+                margin: 5px auto;
+                border: 2px rgba(255, 0, 0, 0.404) solid;
+                width: 90%;
+                height: auto;
+                .main-div2-images {
+                    width: 90%;
+                    height: auto;
+                    margin: 5px auto;
+                    border-radius: $border-radius30;
+                }
+            }
+        }
+    }
+    .main-div3 {
+        display: grid;
+        width: 95%;
+        margin: 10px auto;
+        border: blue 2px dotted;
+        height: auto;
+        .main-div3-heading {
+            color: white;
+            font-size: 2rem;
+            font-family: cursive;
+            text-align: center;
+            background: linear-gradient(45deg, black, rgba(255, 0, 0, 0.089), black);
+            width: calc(50% + 10px);
+            margin: 3px auto;
+        }
+        .four-images-div-3 {
+            display: grid;
+            grid-template-columns: auto auto;
+
+            .main-div3-section1,
+            .main-div3-section2,
+            .main-div3-section3,
+            .main-div3-section4 {
+                text-align: center;
+                margin: 5px auto;
+                border: 2px rgba(255, 0, 0, 0.61) solid;
+                width: 90%;
+                height: auto;
+                .main-div3-images {
+                    width: 90%;
+                    height: auto;
+                    margin: 5px auto;
+                    border-radius: $border-radius30;
+                }
+            }
+        }
+    }
+    
 }
 .nav-bottom {
-    display: grid;
-    grid-template-columns: auto auto;
-    border: solid 2px blue;
-    margin: 0 auto;
-    width: 95%;
-     .bottomnav-section1 {
-         color: white;
-         text-align: start;
-         margin: auto 0 auto 10%;
-         padding: 5px;
-         
-         width: fit-content;
+    background: rgba(75, 69, 69, 0.5);
 
-         .cropped-pic {
-             border: red 2px dotted;
-             border-radius: 100px;
-             width:70%;
-             height: auto;
-             margin: 0 auto;
-         }
-     }
-     .bottomnav-section2 {
-         color: white;
-         text-align: center;
-         padding: 5px;
-         width: fit-content;
-         border: red 2px dotted;
-         height: fit-content; width: fit-content;
-         margin: 5px 5px 5px 0;
+    .bottomnav-section {
+        display: grid;
+        grid-template-columns: auto auto;
+        filter: blur(100%);
+        z-index: 1;
+        .section1 {
+            display: flex;
+            justify-content: flex-start;
+            
+            .whatsapp-icon {
+                width: $border-radius30;
+                height: $border-radius30;
+                margin: 0.5rem 5px;
+                border-radius: 2000px;
+                box-shadow: 0px 0px 10px rgba(21, 255, 0, 0.651);
+            }
+            .instagram-icon {
+                width: $border-radius30;
+                height: $border-radius30;
+                margin: 0.5rem 5px;
+                border-radius: 2000px;
+                box-shadow: 0px 0px 10px rgba(21, 255, 0, 0.651);
+            }
+        }
 
         .nav-bottom-heading {
-            color: greenyellow;
-            margin: 3px;
-            font-size: 1rem;
-            font-family: cursive;
+            color: white;
+            margin: 0.5rem auto 0 auto;
+            border-radius: 20px 20px 0 0;
+            box-shadow: 0px 0px 10px red;
+            width: fit-content;
+            padding: 5px;
+
         }
-         .p-bottom {
-             color: aqua;
-             font: 0.8em sans-serif;
-         }
-         .p-bottom-insta, .p-bottom-number {
-             color: white;
-             text-decoration: underline;
-         }
-        
-     }
+    }
 }

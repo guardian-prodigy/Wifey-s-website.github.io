@@ -29,6 +29,30 @@ html {
   width: 95%;
   padding: 0;
   height: 100%;
+  -webkit-animation: animation-headbands-heading 300ms ease-out 1 forwards;
+          animation: animation-headbands-heading 300ms ease-out 1 forwards;
+}
+
+@-webkit-keyframes animation-headbands-heading {
+  0% {
+    -webkit-transform: translate(-500px, -100px);
+            transform: translate(-500px, -100px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+
+@keyframes animation-headbands-heading {
+  0% {
+    -webkit-transform: translate(-500px, -100px);
+            transform: translate(-500px, -100px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
 }
 
 .total .div-headbands-heading .headbands-heading {
@@ -89,6 +113,34 @@ html {
   border-radius: 0 0 30px 30px;
   margin: 0 auto;
   width: 95%;
+  -webkit-animation: animation-nav-top 1s ease-out forwards;
+          animation: animation-nav-top 1s ease-out forwards;
+}
+
+@-webkit-keyframes animation-nav-top {
+  0% {
+    -webkit-transform: translate(-500px, -100px);
+            transform: translate(-500px, -100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    opacity: 100%;
+  }
+}
+
+@keyframes animation-nav-top {
+  0% {
+    -webkit-transform: translate(-500px, -100px);
+            transform: translate(-500px, -100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    opacity: 100%;
+  }
 }
 
 .total .div-navbar-top .nav-headbands {
@@ -107,6 +159,40 @@ html {
   padding: 5px;
   margin: 3px auto;
   border-radius: 30px;
+  -webkit-animation: animation-nav-top-items 1.2s ease-out forwards;
+          animation: animation-nav-top-items 1.2s ease-out forwards;
+}
+
+@-webkit-keyframes animation-nav-top-items {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(-700px, -300px);
+            transform: translate(-700px, -300px);
+  }
+  90% {
+    opacity: 30%;
+  }
+  100% {
+    opacity: 100%;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+
+@keyframes animation-nav-top-items {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(-700px, -300px);
+            transform: translate(-700px, -300px);
+  }
+  90% {
+    opacity: 30%;
+  }
+  100% {
+    opacity: 100%;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
 }
 
 .total .div-navbar-top .nav-headbands .sect:hover {
@@ -124,6 +210,40 @@ html {
           justify-content: center;
   margin: 10px auto;
   border-radius: 30px;
+  -webkit-animation: animation-Button-display-prices 1.4s ease-out forwards;
+          animation: animation-Button-display-prices 1.4s ease-out forwards;
+}
+
+@-webkit-keyframes animation-Button-display-prices {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(-700px, -400px);
+            transform: translate(-700px, -400px);
+  }
+  90% {
+    opacity: 30%;
+  }
+  100% {
+    opacity: 100%;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+
+@keyframes animation-Button-display-prices {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(-700px, -400px);
+            transform: translate(-700px, -400px);
+  }
+  90% {
+    opacity: 30%;
+  }
+  100% {
+    opacity: 100%;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
 }
 
 .total .div-button-display-headbands .button-display-headbands-prices {
@@ -131,8 +251,8 @@ html {
   background: black;
   color: white;
   border-radius: 30px;
-  -webkit-box-shadow: 0px 0px 20px red;
-          box-shadow: 0px 0px 20px red;
+  -webkit-box-shadow: 0px 0px 20px yellow;
+          box-shadow: 0px 0px 20px yellow;
 }
 
 .total .prices-for-headbands {
@@ -141,7 +261,8 @@ html {
   position: absolute;
 }
 
-.total .prices-for-headbands .price1, .total .prices-for-headbands .price2 {
+.total .prices-for-headbands .price1,
+.total .prices-for-headbands .price2 {
   color: white;
   font-size: 1rem;
   font-family: sans-serif;
@@ -257,6 +378,30 @@ html {
   transition: ease-in 1s all;
   border: blue 2px dotted;
   height: auto;
+  -webkit-animation: animation-main-div1 500ms ease-out 1 forwards;
+          animation: animation-main-div1 500ms ease-out 1 forwards;
+}
+
+@-webkit-keyframes animation-main-div1 {
+  0% {
+    -webkit-transform: translate(-500px, -100px);
+            transform: translate(-500px, -100px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+
+@keyframes animation-main-div1 {
+  0% {
+    -webkit-transform: translate(-500px, -100px);
+            transform: translate(-500px, -100px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
 }
 
 .total .main-div1 .main-div1-heading {
@@ -304,6 +449,30 @@ html {
   margin: 10px auto;
   border: blue 2px dotted;
   height: auto;
+  -webkit-animation: animation-main-div2 700ms ease-out 1 forwards;
+          animation: animation-main-div2 700ms ease-out 1 forwards;
+}
+
+@-webkit-keyframes animation-main-div2 {
+  0% {
+    -webkit-transform: translate(-500px, -100px);
+            transform: translate(-500px, -100px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+
+@keyframes animation-main-div2 {
+  0% {
+    -webkit-transform: translate(-500px, -100px);
+            transform: translate(-500px, -100px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
 }
 
 .total .main-div2 .main-div2-heading {
@@ -351,6 +520,30 @@ html {
   margin: 10px auto;
   border: blue 2px dotted;
   height: auto;
+  -webkit-animation: animation-main-div3 500ms ease-out 1 forwards;
+          animation: animation-main-div3 500ms ease-out 1 forwards;
+}
+
+@-webkit-keyframes animation-main-div3 {
+  0% {
+    -webkit-transform: translate(-500px, -100px);
+            transform: translate(-500px, -100px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+
+@keyframes animation-main-div3 {
+  0% {
+    -webkit-transform: translate(-500px, -100px);
+            transform: translate(-500px, -100px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
 }
 
 .total .main-div3 .main-div3-heading {
@@ -441,6 +634,6 @@ html {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  padding: 5px;
+  padding: 10px;
 }
 /*# sourceMappingURL=headbands.css.map */

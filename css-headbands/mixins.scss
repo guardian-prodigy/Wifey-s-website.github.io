@@ -47,4 +47,99 @@
         }
     }
 } 
-    
+@mixin Headbands-Heading {
+    @keyframes animation-headbands-heading {
+        0% {
+            transform: translate(-500px, -100px);
+        }
+        100% {
+            transform: translate(0, 0);
+        }
+    }
+}
+
+@mixin Nav-Top {
+    @keyframes animation-nav-top {
+        0% {
+            transform: translate(-500px, -100px);
+            opacity: 0;
+        }
+        100% {
+            transform: translate(0, 0);
+            opacity: 100%;
+        }
+    }
+}
+@mixin Nav-Top-Items {
+    @keyframes animation-nav-top-items {
+        0% {
+            opacity: 0;
+            transform: translate(-700px, -300px);
+            
+        }
+        90% {
+            opacity: 30%;
+        }
+        100% {
+            opacity: 100%;
+            transform: translate(0, 0);
+        }
+    }
+}
+@mixin Button-display-prices {
+    @keyframes animation-Button-display-prices {
+        0% {
+            opacity: 0;
+            transform: translate(-700px, -400px);
+            
+        }
+        90% {
+            opacity: 30%;
+        }
+        100% {
+            opacity: 100%;
+            transform: translate(0, 0);
+        }
+    }
+}
+
+@mixin Main-Div1 {
+    @keyframes animation-main-div1 {
+        0% {
+            transform: translate(-500px, -100px);
+        }
+        100% {
+            transform: translate(0, 0);
+        }
+    }
+}
+@mixin Main-Div1 {
+    @keyframes animation-main-div1 {
+        0% {
+            transform: translate(-500px, -100px);
+        }
+        100% {
+            transform: translate(0, 0);
+        }
+    }
+}
+@mixin Main-Div2 {
+    @keyframes animation-main-div2 {
+        0% {
+            transform: translate(-500px, -100px);
+        }
+        100% {
+            transform: translate(0, 0);
+        }
+    }
+}
+@mixin Main-Div3 {
+    @keyframes animation-main-div3 {
+        0% {
+            transform: translate(-500px, -100px);
+        }
+        100% {
+            transform: translate(0, 0);
+        }
+    }
+}

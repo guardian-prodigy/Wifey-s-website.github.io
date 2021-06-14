@@ -101,7 +101,7 @@
         }
     }
     @else if $screenSize == desktop {
-        @media screen and(min-width: 800px){
+        @media screen and(min-width: 1000px){
             @content;
         }
     }

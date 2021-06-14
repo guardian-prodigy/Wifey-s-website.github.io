@@ -151,7 +151,10 @@ html {
   }
 }
 
-#nav #nav1:hover, #nav #nav2:hover, #nav #nav3:hover, #nav #nav4:hover {
+#nav #nav1:hover,
+#nav #nav2:hover,
+#nav #nav3:hover,
+#nav #nav4:hover {
   background: linear-gradient(45deg, black, #08f308, black);
   width: calc(100% + 10px);
   text-align: center;
@@ -168,6 +171,40 @@ html {
   width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
+  -webkit-animation: animation-Button-display-prices 1.4s ease-out forwards;
+          animation: animation-Button-display-prices 1.4s ease-out forwards;
+}
+
+@-webkit-keyframes animation-Button-display-prices {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(-700px, -400px);
+            transform: translate(-700px, -400px);
+  }
+  90% {
+    opacity: 30%;
+  }
+  100% {
+    opacity: 100%;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+
+@keyframes animation-Button-display-prices {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(-700px, -400px);
+            transform: translate(-700px, -400px);
+  }
+  90% {
+    opacity: 30%;
+  }
+  100% {
+    opacity: 100%;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
 }
 
 .display-prices .button-to-display-prices {
@@ -722,7 +759,8 @@ html {
   }
 }
 
-.main-div .parent-1-2 .first-div, .main-div .parent-1-2 .second-div {
+.main-div .parent-1-2 .first-div,
+.main-div .parent-1-2 .second-div {
   text-align: center;
   border: solid 2px red;
   border-radius: 20px;
@@ -741,7 +779,8 @@ html {
           animation: nav-load-div1 1400ms ease-out;
 }
 
-.main-div .parent-1-2 .first-div #button-for-more-large-pon1, .main-div .parent-1-2 .second-div #button-for-more-large-pon1 {
+.main-div .parent-1-2 .first-div #button-for-more-large-pon1,
+.main-div .parent-1-2 .second-div #button-for-more-large-pon1 {
   color: white;
   padding: 5px;
   margin: 5px auto;
@@ -780,7 +819,8 @@ html {
   }
 }
 
-.main-div .parent-1-2 .first-div #button-for-more-large-pon2, .main-div .parent-1-2 .second-div #button-for-more-large-pon2 {
+.main-div .parent-1-2 .first-div #button-for-more-large-pon2,
+.main-div .parent-1-2 .second-div #button-for-more-large-pon2 {
   color: white;
   padding: 5px;
   margin: 5px auto;
@@ -807,7 +847,8 @@ html {
   }
 }
 
-.main-div .parent-1-2 .first-div #button-for-more-large-pon4, .main-div .parent-1-2 .second-div #button-for-more-large-pon4 {
+.main-div .parent-1-2 .first-div #button-for-more-large-pon4,
+.main-div .parent-1-2 .second-div #button-for-more-large-pon4 {
   color: white;
   padding: 5px;
   margin: 5px auto;
@@ -834,7 +875,8 @@ html {
   }
 }
 
-.main-div .parent-1-2 .first-div #button-for-more-large-pon5, .main-div .parent-1-2 .second-div #button-for-more-large-pon5 {
+.main-div .parent-1-2 .first-div #button-for-more-large-pon5,
+.main-div .parent-1-2 .second-div #button-for-more-large-pon5 {
   color: white;
   padding: 5px;
   margin: 5px auto;
@@ -861,21 +903,24 @@ html {
   }
 }
 
-.main-div .parent-1-2 .first-div .ponpon-img1, .main-div .parent-1-2 .second-div .ponpon-img1 {
+.main-div .parent-1-2 .first-div .ponpon-img1,
+.main-div .parent-1-2 .second-div .ponpon-img1 {
   width: 90%;
   height: 90%;
   border-radius: 20px;
   margin: 0 auto;
 }
 
-.main-div .parent-1-2 .first-div .ponpon-img2, .main-div .parent-1-2 .second-div .ponpon-img2 {
+.main-div .parent-1-2 .first-div .ponpon-img2,
+.main-div .parent-1-2 .second-div .ponpon-img2 {
   width: 90%;
   height: 90%;
   border-radius: 20px;
   margin: 0 auto;
 }
 
-.main-div .parent-1-2 .first-div .ponpon-img3, .main-div .parent-1-2 .second-div .ponpon-img3 {
+.main-div .parent-1-2 .first-div .ponpon-img3,
+.main-div .parent-1-2 .second-div .ponpon-img3 {
   width: 80%;
   height: 80%;
   border-radius: 20px;
@@ -884,7 +929,8 @@ html {
           filter: brightness(100%) saturate(200%);
 }
 
-.main-div .parent-1-2 .first-div .p, .main-div .parent-1-2 .second-div .p {
+.main-div .parent-1-2 .first-div .p,
+.main-div .parent-1-2 .second-div .p {
   color: white;
   text-align: center;
   font-size: 80%;
@@ -1215,7 +1261,10 @@ html {
           animation: nav-load-div1 2100ms ease-out;
 }
 
-#main-div3 .main-div-3 .div-1-1, #main-div3 .main-div-3 .div-2-2, #main-div3 .main-div-3 .div-3-3, #main-div3 .main-div-3 .div-4-4 {
+#main-div3 .main-div-3 .div-1-1,
+#main-div3 .main-div-3 .div-2-2,
+#main-div3 .main-div-3 .div-3-3,
+#main-div3 .main-div-3 .div-4-4 {
   margin: 10px 15px;
   text-align: center;
   border: solid 2px red;
@@ -1230,7 +1279,10 @@ html {
   padding: 5px;
 }
 
-#main-div3 .main-div-3 .div-1-1 .p3, #main-div3 .main-div-3 .div-2-2 .p3, #main-div3 .main-div-3 .div-3-3 .p3, #main-div3 .main-div-3 .div-4-4 .p3 {
+#main-div3 .main-div-3 .div-1-1 .p3,
+#main-div3 .main-div-3 .div-2-2 .p3,
+#main-div3 .main-div-3 .div-3-3 .p3,
+#main-div3 .main-div-3 .div-4-4 .p3 {
   color: white;
   text-align: center;
   font-size: 80%;
@@ -1244,9 +1296,12 @@ html {
 }
 
 #main-div3 .main-div-3 .div-1-1 .ponpon-img1-3,
-#main-div3 .main-div-3 .div-1-1 .ponpon-img2-3, #main-div3 .main-div-3 .div-2-2 .ponpon-img1-3,
-#main-div3 .main-div-3 .div-2-2 .ponpon-img2-3, #main-div3 .main-div-3 .div-3-3 .ponpon-img1-3,
-#main-div3 .main-div-3 .div-3-3 .ponpon-img2-3, #main-div3 .main-div-3 .div-4-4 .ponpon-img1-3,
+#main-div3 .main-div-3 .div-1-1 .ponpon-img2-3,
+#main-div3 .main-div-3 .div-2-2 .ponpon-img1-3,
+#main-div3 .main-div-3 .div-2-2 .ponpon-img2-3,
+#main-div3 .main-div-3 .div-3-3 .ponpon-img1-3,
+#main-div3 .main-div-3 .div-3-3 .ponpon-img2-3,
+#main-div3 .main-div-3 .div-4-4 .ponpon-img1-3,
 #main-div3 .main-div-3 .div-4-4 .ponpon-img2-3 {
   width: 90%;
   border-radius: 20px;
@@ -1254,9 +1309,12 @@ html {
 }
 
 #main-div3 .main-div-3 .div-1-1 .ponpon-img3-3,
-#main-div3 .main-div-3 .div-1-1 .ponpon-img4-3, #main-div3 .main-div-3 .div-2-2 .ponpon-img3-3,
-#main-div3 .main-div-3 .div-2-2 .ponpon-img4-3, #main-div3 .main-div-3 .div-3-3 .ponpon-img3-3,
-#main-div3 .main-div-3 .div-3-3 .ponpon-img4-3, #main-div3 .main-div-3 .div-4-4 .ponpon-img3-3,
+#main-div3 .main-div-3 .div-1-1 .ponpon-img4-3,
+#main-div3 .main-div-3 .div-2-2 .ponpon-img3-3,
+#main-div3 .main-div-3 .div-2-2 .ponpon-img4-3,
+#main-div3 .main-div-3 .div-3-3 .ponpon-img3-3,
+#main-div3 .main-div-3 .div-3-3 .ponpon-img4-3,
+#main-div3 .main-div-3 .div-4-4 .ponpon-img3-3,
 #main-div3 .main-div-3 .div-4-4 .ponpon-img4-3 {
   width: 90%;
   border-radius: 20px;
@@ -1463,8 +1521,8 @@ html {
 .nav-bottom .bottomnav-section1 .cropped-pic {
   border: red 2px dotted;
   border-radius: 100px;
-  width: 70%;
-  height: auto;
+  width: 5rem;
+  height: 5rem;
   margin: 0 auto;
 }
 
@@ -1472,15 +1530,13 @@ html {
   color: white;
   text-align: center;
   padding: 5px;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
   border: red 2px dotted;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
-  margin: 5px 5px 5px 0;
 }
 
 .nav-bottom .bottomnav-section2 .nav-bottom-heading {
@@ -1492,10 +1548,11 @@ html {
 
 .nav-bottom .bottomnav-section2 .p-bottom {
   color: aqua;
-  font: 0.8em sans-serif;
+  font: 1rem sans-serif;
 }
 
-.nav-bottom .bottomnav-section2 .p-bottom-insta, .nav-bottom .bottomnav-section2 .p-bottom-number {
+.nav-bottom .bottomnav-section2 .p-bottom-insta,
+.nav-bottom .bottomnav-section2 .p-bottom-number {
   color: white;
   text-decoration: underline;
 }

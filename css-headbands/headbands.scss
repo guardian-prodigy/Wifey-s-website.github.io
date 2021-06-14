@@ -150,7 +150,7 @@ $border-radius30: 30px;
         transition: ease-in 1s all;
         border: blue 2px dotted;
         height: auto;
-        animation: animation-main-div1 500ms ease-out 1 forwards;
+        animation: animation-main-div1 900ms ease-out 1 forwards;
         @include Main-Div1;
         .main-div1-heading {
             color: white;
@@ -189,7 +189,7 @@ $border-radius30: 30px;
         margin: 10px auto;
         border: blue 2px dotted;
         height: auto;
-        animation: animation-main-div2 700ms ease-out 1 forwards;
+        animation: animation-main-div2 1200ms ease-out 1 forwards;
         @include Main-Div2;
         .main-div2-heading {
             color: white;
@@ -228,7 +228,7 @@ $border-radius30: 30px;
         margin: 10px auto;
         border: blue 2px dotted;
         height: auto;
-        animation: animation-main-div3 500ms ease-out 1 forwards;
+        animation: animation-main-div3 1500ms ease-out 1 forwards;
         @include Main-Div3;
         .main-div3-heading {
             color: white;

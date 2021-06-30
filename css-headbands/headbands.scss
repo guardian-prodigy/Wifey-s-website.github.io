@@ -92,7 +92,7 @@ $border-radius30: 30px;
         .button-display-headbands-prices {
             padding: 5px;
             background: black;
-            color: white;
+            color: yellow;
             border-radius: $border-radius30;
             box-shadow: 0px 0px 20px yellow;
         }
@@ -165,6 +165,11 @@ $border-radius30: 30px;
             display: grid;
             grid-template-columns: auto auto;
 
+            .main-div1-section1 {
+                .rotate1 {
+                    transform: rotate(-90deg);
+                }
+            }
             .main-div1-section1,
             .main-div1-section2,
             .main-div1-section3,
@@ -174,6 +179,17 @@ $border-radius30: 30px;
                 border: 2px rgba(255, 0, 0, 0.26) solid;
                 width: 90%;
                 height: auto;
+                
+                .main-div1-prices {
+                    color: white;
+                    width: fit-content;
+                    text-align: center;
+                    margin: 0 auto;
+                    padding: 0.2rem;
+                    margin-bottom: 5px;
+                    border-radius: $border-radius30;
+                    background: linear-gradient(45deg, black, red, black);
+                }
                 .main-div1-images {
                     width: 90%;
                     height: auto;

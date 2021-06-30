@@ -249,7 +249,7 @@ html {
 .total .div-button-display-headbands .button-display-headbands-prices {
   padding: 5px;
   background: black;
-  color: white;
+  color: yellow;
   border-radius: 30px;
   -webkit-box-shadow: 0px 0px 20px yellow;
           box-shadow: 0px 0px 20px yellow;
@@ -421,6 +421,11 @@ html {
       grid-template-columns: auto auto;
 }
 
+.total .main-div1 .four-images-div-1 .main-div1-section1 .rotate1 {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
 .total .main-div1 .four-images-div-1 .main-div1-section1,
 .total .main-div1 .four-images-div-1 .main-div1-section2,
 .total .main-div1 .four-images-div-1 .main-div1-section3,
@@ -430,6 +435,22 @@ html {
   border: 2px rgba(255, 0, 0, 0.26) solid;
   width: 90%;
   height: auto;
+}
+
+.total .main-div1 .four-images-div-1 .main-div1-section1 .main-div1-prices,
+.total .main-div1 .four-images-div-1 .main-div1-section2 .main-div1-prices,
+.total .main-div1 .four-images-div-1 .main-div1-section3 .main-div1-prices,
+.total .main-div1 .four-images-div-1 .main-div1-section4 .main-div1-prices {
+  color: white;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0.2rem;
+  margin-bottom: 5px;
+  border-radius: 30px;
+  background: linear-gradient(45deg, black, red, black);
 }
 
 .total .main-div1 .four-images-div-1 .main-div1-section1 .main-div1-images,

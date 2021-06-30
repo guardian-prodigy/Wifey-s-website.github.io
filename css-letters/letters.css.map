@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACAA,AAAA,CAAC,CAAC;EACE,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;CACb;;AACD,AAAA,IAAI,CAAC;EACD,eAAe,EAAE,MAAM;CAC1B;;ADJD,AAAA,CAAC,CAAC;EACE,UAAU,EAAE,KAAK;CACpB",
+    "sources": [
+        "letters.scss",
+        "../css-headbands/basic.scss"
+    ],
+    "names": [],
+    "file": "letters.css"
+}

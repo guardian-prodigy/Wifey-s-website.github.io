@@ -10,7 +10,10 @@ function buttonforimg(button) {
     }
     document.getElementById("test-img").src = newImage;
 }
-function mode(button)  {
+
+
+class Button {
+    mode(button)  {
         let name;
         let age;
         let location;
@@ -40,5 +43,5 @@ function mode(button)  {
     document.getElementById("if-id-id3").innerHTML = "I am from " + location;
     document.getElementById("if-id-id4").innerHTML = paragraph;
 }
-
-
+}
+var button = new Button();

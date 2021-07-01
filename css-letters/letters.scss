@@ -58,12 +58,24 @@ body {
         justify-content: space-evenly;
         height: fit-content;
         border-radius: 0 0 20px 20px;
+        animation: animation-nav-top 500ms ease-out 1 forwards;
+        @include Nav-Top;
         .main-nav-top-bar {
             padding: 0.3rem;
             .a-tag-from-main-nav-top-bar {
                 font-size: 1rem;
                 color: rgba(255, 255, 255, 0.796);
                 text-decoration: none;
+                animation: animation-nav-top-items 700ms ease-out 1 forwards;
+                @include Nav-Top-Items;
+                &:hover {
+                    padding: 0.2rem;
+                    font-size: 1rem;
+                    border-radius: $border-radius30;
+                    color: rgba(255, 255, 255, 0.796);
+                    text-decoration: underline;
+                    background: rgba(255, 255, 0, 0.568);
+                }
             }
         }
     }
@@ -79,6 +91,8 @@ body {
         border-radius: $border-radius30;
         display: flex;
         justify-content: center;
+        animation: animation-main-div1 800ms ease-out 1 forwards;
+        @include Main-Div1;
     }
     .hidden-display-prices {
         display: none;
@@ -122,12 +136,16 @@ body {
         grid-template-columns: auto auto;
         margin: 1rem auto;
         width: 90%;
+        animation: animation-main-div1 900ms ease-out 1 forwards;
+        @include Main-Div1;
         @include border-for-letters;
         .div1-section-all {
             width: auto;
             margin: 0 auto;
             text-align: center;
             margin: 0.5rem;
+            animation: animation-main-div1 900ms ease-out 1 forwards;
+        @include Main-Div1;
             .div1-section-all-images {
                 width: 90%;
                 margin: 0 auto;
@@ -152,6 +170,8 @@ body {
         @include border-for-letters;
         margin: 1rem auto;
         width: 90%;
+        animation: animation-main-div2 1100ms ease-out 1 forwards;
+        @include Main-Div2;
         .div2-section1 {
             width: fit-content;
             margin: 0 auto;
@@ -164,39 +184,46 @@ body {
             border: 2px red solid;
             .div-arrows-translate-parent1 {
                 transform: translateY(40%);
-                
+
                 .arrow-pointing-right1 {
                     position: relative;
                     border: white solid;
-                    background: linear-gradient(to right bottom, black, black,  rgba(255, 255, 255, 0.788));
+                    background: linear-gradient(to right bottom, black, black, rgba(255, 255, 255, 0.788));
                     border-width: 0 0.3rem 0.3rem 0;
                     display: block;
                     padding: 1rem;
                     margin: 0 1rem 0 0;
                     transform: rotate(315deg);
                     cursor: pointer;
+                    &:hover {
+                        background: linear-gradient(to right bottom, black, black, rgb(6, 245, 213));
+                    }
                 }
                 .arrow-pointing-left1 {
                     position: relative;
                     border: white solid;
-                    background: linear-gradient(to left top, black, black,  rgba(255, 255, 255, 0.788));
+                    background: linear-gradient(to left top, black, black, rgba(255, 255, 255, 0.788));
                     margin: 0 0 0 1rem;
                     border-width: 0.3rem 0 0 0.3rem;
                     display: block;
                     padding: 1rem;
                     transform: rotate(315deg);
                     cursor: pointer;
+                    &:hover {
+                        background: linear-gradient(to left top, black, black, rgb(16, 215, 230));
+                    }
                 }
             }
             .div2-section-images1 {
                 border-radius: $border-radius30;
                 width: 90%;
-
+                padding: 1rem;
             }
         }
         .div2-section2 {
             width: fit-content;
-            margin: 0 auto;
+            margin: 1rem auto;
+
             text-align: center;
             width: 95%;
             justify-content: center;
@@ -208,32 +235,40 @@ body {
             .div-arrows-translate-parent2 {
                 position: relative;
                 transform: translateY(40%);
+
                 .arrow-pointing-right2 {
                     position: relative;
                     border: white solid;
-                    background: linear-gradient(to right bottom, black, black,  rgba(255, 255, 255, 0.788));
+                    background: linear-gradient(to right bottom, black, black, rgba(92, 60, 60, 0.788));
                     border-width: 0 0.3rem 0.3rem 0;
                     display: block;
                     padding: 1rem;
                     margin: 0 1rem 0 0;
                     transform: rotate(315deg);
                     cursor: pointer;
+                    &:hover {
+                        background: linear-gradient(to right bottom, black, black, rgb(14, 234, 241));
+                    }
                 }
                 .arrow-pointing-left2 {
                     position: relative;
                     border: white solid;
-                    background: linear-gradient(to left top, black, black,  rgba(255, 255, 255, 0.788));
+                    background: linear-gradient(to left top, black, black, rgba(255, 255, 255, 0.788));
                     margin: 0 0 0 1rem;
                     border-width: 0.3rem 0 0 0.3rem;
                     display: block;
                     padding: 1rem;
                     transform: rotate(315deg);
                     cursor: pointer;
+                    &:hover {
+                        background: linear-gradient(to left top, black, black, rgb(18, 235, 224));
+                    }
                 }
             }
             .div2-section-images2 {
                 border-radius: $border-radius30;
                 width: 90%;
+                margin: 1rem;
             }
         }
     }

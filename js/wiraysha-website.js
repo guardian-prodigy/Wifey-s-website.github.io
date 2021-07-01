@@ -61,7 +61,8 @@ function Item() {
             a4.id = "a1-id4"; a4.textContent = "Pon Shapes(coming sooon)";
             a4.className = "buttons"
             paragraph.appendChild(a4);
-            paragraph.style.display = "grid";document.getElementById('ww-nav1-pp').style.display = "none";
+            paragraph.style.display = "grid";
+            a4.setAttribute('href', 'letters.html');document.getElementById('ww-nav1-pp').style.display = "none";
             location = document.getElementById('map').style.display = "none";
         }
          else if (e.target != Items || button == 0) {

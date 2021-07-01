@@ -4,9 +4,8 @@
     justify-content: space-around;
     text-align: $text-align;
 }
-@mixin animation(){
+@mixin animation() {
     @keyframes headbands-heading {
-        
         0% {
             background-position: 0 0;
         }
@@ -29,7 +28,7 @@
             opacity: 100%;
         }
     }
-} 
+}
 @mixin DisplayPrices2 {
     @keyframes DisplayPricesClose {
         0% {
@@ -46,7 +45,7 @@
             opacity: 0;
         }
     }
-} 
+}
 @mixin Headbands-Heading {
     @keyframes animation-headbands-heading {
         0% {
@@ -75,7 +74,6 @@
         0% {
             opacity: 0;
             transform: translate(-700px, -300px);
-            
         }
         90% {
             opacity: 30%;
@@ -86,12 +84,11 @@
         }
     }
 }
-@mixin Button-display-prices {
-    @keyframes animation-Button-display-prices {
+@mixin Button-display-prices1 {
+    @keyframes animation-Button-display-prices1 {
         0% {
             opacity: 0;
             transform: translate(-700px, -400px);
-            
         }
         90% {
             opacity: 30%;
@@ -99,6 +96,24 @@
         100% {
             opacity: 100%;
             transform: translate(0, 0);
+        }
+    }
+}
+@mixin Button-display-prices2 {
+    @keyframes animation-Button-display-prices2 {
+        0% {
+            opacity: 100%;
+            transform: translate(0, 0);
+            display: grid;
+        }
+        90% {
+            opacity: 50%;
+        }
+        100% {
+            opacity: 0;
+            transform: translateX(-2000px);
+            display: none;
+            position: absolute;
         }
     }
 }

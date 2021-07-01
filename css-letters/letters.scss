@@ -8,7 +8,6 @@ body {
     background-size: cover;
 }
 .total {
-
     .back-letters {
         color: burlywood;
         margin: 0.5rem;
@@ -20,6 +19,7 @@ body {
         width: 95%;
         padding: 0;
         height: 100%;
+        font-family: cursive;
         animation: animation-headbands-heading 300ms ease-out 1 forwards;
         @include Headbands-Heading;
         .letters-header-top {
@@ -67,6 +67,56 @@ body {
             }
         }
     }
+    .button-for-displaying-prices-top {
+        margin: 0.5rem auto;
+        text-align: center;
+        color: rgb(255, 0, 0);
+        box-shadow: 0px 0px 20px red;
+        background: transparent;
+        filter: blur(100%);
+        padding: 0.2rem;
+        font-family: cursive;
+        border-radius: $border-radius30;
+        display: flex;
+        justify-content: center;
+    }
+    .hidden-display-prices {
+        display: none;
+    }
+    .hidden-display-prices.open1 {
+        display: grid;
+        grid-template-rows: auto auto auto auto auto auto;
+        background: linear-gradient(45deg, rgba(255, 0, 0, 0.493), rgba(255, 68, 0, 0.411), rgba(255, 0, 0, 0.685));
+        text-align: center;
+        width: fit-content;
+        padding: 1rem;
+        border-radius: $border-radius30;
+        margin: 0 auto;
+        @include Button-display-prices1;
+        animation: animation-Button-display-prices1 1s ease-out 1 forwards;
+
+        .hidden-price-paragraph {
+            color: white;
+            font-size: large;
+            margin: 0 auto;
+        }
+    }
+    .hidden-display-prices.open2 {
+        display: grid;
+        grid-template-rows: auto auto auto auto auto auto;
+        background: linear-gradient(45deg, rgba(255, 0, 0, 0.493), rgba(255, 68, 0, 0.411), rgba(255, 0, 0, 0.685));
+        text-align: center;
+        width: fit-content;
+        padding: 1rem;
+        border-radius: $border-radius30;
+        margin: 0 auto;
+        @include Button-display-prices2;
+        animation: animation-Button-display-prices2 1s ease-out 1 forwards;
+        .hidden-price-paragraph {
+            color: red;
+        }
+    }
+
     #div1 {
         display: grid;
         grid-template-columns: auto auto;
@@ -107,10 +157,83 @@ body {
             margin: 0 auto;
             text-align: center;
             width: 95%;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            justify-content: space-around;
 
-            .div2-section-images {
+            border: 2px red solid;
+            .div-arrows-translate-parent1 {
+                transform: translateY(40%);
+                
+                .arrow-pointing-right1 {
+                    position: relative;
+                    border: white solid;
+                    background: linear-gradient(to right bottom, black, black,  rgba(255, 255, 255, 0.788));
+                    border-width: 0 0.3rem 0.3rem 0;
+                    display: block;
+                    padding: 1rem;
+                    margin: 0 1rem 0 0;
+                    transform: rotate(315deg);
+                    cursor: pointer;
+                }
+                .arrow-pointing-left1 {
+                    position: relative;
+                    border: white solid;
+                    background: linear-gradient(to left top, black, black,  rgba(255, 255, 255, 0.788));
+                    margin: 0 0 0 1rem;
+                    border-width: 0.3rem 0 0 0.3rem;
+                    display: block;
+                    padding: 1rem;
+                    transform: rotate(315deg);
+                    cursor: pointer;
+                }
+            }
+            .div2-section-images1 {
                 border-radius: $border-radius30;
-                margin-top: 1rem;
+                width: 90%;
+
+            }
+        }
+        .div2-section2 {
+            width: fit-content;
+            margin: 0 auto;
+            text-align: center;
+            width: 95%;
+            justify-content: center;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            justify-content: space-around;
+            //margin: 1rem;
+            border: 2px red solid;
+            .div-arrows-translate-parent2 {
+                position: relative;
+                transform: translateY(40%);
+                .arrow-pointing-right2 {
+                    position: relative;
+                    border: white solid;
+                    background: linear-gradient(to right bottom, black, black,  rgba(255, 255, 255, 0.788));
+                    border-width: 0 0.3rem 0.3rem 0;
+                    display: block;
+                    padding: 1rem;
+                    margin: 0 1rem 0 0;
+                    transform: rotate(315deg);
+                    cursor: pointer;
+                }
+                .arrow-pointing-left2 {
+                    position: relative;
+                    border: white solid;
+                    background: linear-gradient(to left top, black, black,  rgba(255, 255, 255, 0.788));
+                    margin: 0 0 0 1rem;
+                    border-width: 0.3rem 0 0 0.3rem;
+                    display: block;
+                    padding: 1rem;
+                    transform: rotate(315deg);
+                    cursor: pointer;
+                }
+            }
+            .div2-section-images2 {
+                border-radius: $border-radius30;
+                width: 90%;
             }
         }
     }

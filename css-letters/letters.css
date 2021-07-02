@@ -371,10 +371,6 @@ body {
 }
 
 .total #div1 {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: auto auto;
-      grid-template-columns: auto auto;
   margin: 1rem auto;
   width: 90%;
   -webkit-animation: animation-main-div1 900ms ease-out 1 forwards;
@@ -395,7 +391,22 @@ body {
   }
 }
 
-.total #div1 .div1-section-all {
+.total #div1 .div1-header {
+  color: white;
+  font-size: 2rem;
+  font-family: cursive;
+  display: block;
+  text-align: center;
+}
+
+.total #div1 .main-div1-section-all {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+}
+
+.total #div1 .main-div1-section-all .div1-section-all {
   width: auto;
   margin: 0 auto;
   text-align: center;
@@ -415,13 +426,13 @@ body {
   }
 }
 
-.total #div1 .div1-section-all .div1-section-all-images {
+.total #div1 .main-div1-section-all .div1-section-all .div1-section-all-images {
   width: 90%;
   margin: 0 auto;
   border-radius: 30px;
 }
 
-.total #div1 .div1-section-all .div1-p-prices-for-chain-letters {
+.total #div1 .main-div1-section-all .div1-section-all .div1-p-prices-for-chain-letters {
   color: white;
   font-size: medium;
   width: -webkit-fit-content;
@@ -472,6 +483,12 @@ body {
   }
 }
 
+.total #div2 .div2-header {
+  color: white;
+  font-size: 2rem;
+  font-family: cursive;
+}
+
 .total #div2 .div2-section1 {
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -485,7 +502,6 @@ body {
       grid-template-columns: auto auto auto;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  border: 2px red solid;
 }
 
 .total #div2 .div2-section1 .div-arrows-translate-parent1 {
@@ -553,7 +569,6 @@ body {
       grid-template-columns: auto auto auto;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  border: 2px red solid;
 }
 
 .total #div2 .div2-section2 .div-arrows-translate-parent2 {

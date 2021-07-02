@@ -132,34 +132,45 @@ body {
     }
 
     #div1 {
-        display: grid;
-        grid-template-columns: auto auto;
         margin: 1rem auto;
         width: 90%;
         animation: animation-main-div1 900ms ease-out 1 forwards;
         @include Main-Div1;
         @include border-for-letters;
-        .div1-section-all {
-            width: auto;
-            margin: 0 auto;
+        .div1-header {
+            color: white;
+            font-size: 2rem;
+            font-family: cursive;
+            display: block;
             text-align: center;
-            margin: 0.5rem;
-            animation: animation-main-div1 900ms ease-out 1 forwards;
-        @include Main-Div1;
-            .div1-section-all-images {
-                width: 90%;
+        }
+        .main-div1-section-all {
+            display: grid;
+            grid-template-columns: auto auto;
+
+            .div1-section-all {
+                width: auto;
+
                 margin: 0 auto;
-                border-radius: $border-radius30;
-            }
-            .div1-p-prices-for-chain-letters {
-                color: white;
-                font-size: medium;
-                width: fit-content;
-                margin: 0 auto;
-                padding: 0.2rem;
-                background-color: transparent;
-                border-radius: $border-radius30;
-                box-shadow: 0px 0px 10px red;
+                text-align: center;
+                margin: 0.5rem;
+                animation: animation-main-div1 900ms ease-out 1 forwards;
+                @include Main-Div1;
+                .div1-section-all-images {
+                    width: 90%;
+                    margin: 0 auto;
+                    border-radius: $border-radius30;
+                }
+                .div1-p-prices-for-chain-letters {
+                    color: white;
+                    font-size: medium;
+                    width: fit-content;
+                    margin: 0 auto;
+                    padding: 0.2rem;
+                    background-color: transparent;
+                    border-radius: $border-radius30;
+                    box-shadow: 0px 0px 10px red;
+                }
             }
         }
     }
@@ -172,6 +183,11 @@ body {
         width: 90%;
         animation: animation-main-div2 1100ms ease-out 1 forwards;
         @include Main-Div2;
+        .div2-header {
+            color: white;
+            font-size: 2rem;
+            font-family: cursive;
+        }
         .div2-section1 {
             width: fit-content;
             margin: 0 auto;
@@ -181,7 +197,6 @@ body {
             grid-template-columns: auto auto auto;
             justify-content: space-around;
 
-            border: 2px red solid;
             .div-arrows-translate-parent1 {
                 transform: translateY(40%);
 
@@ -230,8 +245,7 @@ body {
             display: grid;
             grid-template-columns: auto auto auto;
             justify-content: space-around;
-            //margin: 1rem;
-            border: 2px red solid;
+
             .div-arrows-translate-parent2 {
                 position: relative;
                 transform: translateY(40%);

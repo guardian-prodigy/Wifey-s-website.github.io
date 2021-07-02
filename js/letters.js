@@ -13,111 +13,57 @@ function DisplayPrices() {
       button = 1;
     }
   });
-}
-DisplayPrices();
-function ArrowLeftAndRight1() {
-  function Arrow1Left() {
-    let button = document.querySelector(".arrow-pointing-left1");
-    let image = document.querySelector(".div2-section-images1");
-    let btn = 1;
-    button.addEventListener("click", (e) => {
-      if (e.target == button && btn == 1) {
-        image.setAttribute(
-          "src",
-          "./letters-images/LOVE-name-without-chain.jpeg"
-        );
-        btn = 2;
-      } else if (e.target == button && btn == 2) {
-        image.setAttribute("src", "./letters-images/3rd-name-letter.jpg");
-        btn = 3;
-      } else if (e.target == button && btn == 3) {
-        image.setAttribute("src", "./letters-images/4th-name-letter.jpg");
-        btn = 4;
-      } else if (e.target == button && btn == 4) {
-        image.setAttribute("src", "./letters-images/5th-name-letters.jpg");
-        btn = 1;
-      }
-    });
+}DisplayPrices()
+function DisplayAll4arrowsdiv2() {
+function DisplayArrowsBoth1() {
+  let slider_img = document.querySelector(".div2-section-images1");
+  let buttonleftarrow1 = document.querySelector('.arrow-pointing-left1');
+  let buttonrightarrow1 = document.querySelector('.arrow-pointing-right1');
+  let images = [
+    'LOVE-name-without-chain.jpeg', '3rd-name-letter.jpg', '4th-name-letter.jpg','5th-name-letters.jpg', '6th-name-letters.jpg', '7th-name-letters.jpg', '8th-name-letters.jpg'
+  ];
+  let i = 0;
+  buttonleftarrow1.addEventListener('click', left)
+  buttonrightarrow1.addEventListener('click', right)
+  function left() {
+    if (i <= 0) i = images.length;
+    i--;
+    return setImg();
   }
-  Arrow1Left();
+  function right() {
+    if (i >= images.length - 1) i = -1;
+    i++;
+    return setImg()
+  }
+  function setImg() {
+    return slider_img.setAttribute('src', 'letters-images/' + images[i]);
+  }
+}
+DisplayArrowsBoth1()
 
-  function Arrow1Right() {
-    let button = document.querySelector(".arrow-pointing-right1");
-    let image = document.querySelector(".div2-section-images1");
-    let btn = 4;
-    button.addEventListener("click", (e) => {
-      if (e.target == button && btn == 4) {
-        image.setAttribute("src", "./letters-images/5th-name-letters.jpg");
-        btn = 3;
-      } else if (e.target == button && btn == 3) {
-        image.setAttribute("src", "./letters-images/4th-name-letter.jpg");
-        btn = 2;
-      } else if (e.target == button && btn == 2) {
-        image.setAttribute("src", "./letters-images/3rd-name-letter.jpg");
-        btn = 1;
-      } else if (e.target == button && btn == 1) {
-        image.setAttribute(
-          "src",
-          "./letters-images/LOVE-name-without-chain.jpeg"
-        );
-        btn = 4;
-      }
-      Arrow1Left();
-    });
+function DisplayArrowsBoth2() {
+  let slider_img = document.querySelector(".div2-section-images2");
+  let buttonleftarrow2 = document.querySelector('.arrow-pointing-left2');
+  let buttonrightarrow2 = document.querySelector('.arrow-pointing-right2');
+  let images = [
+    'LOVE-name-without-chain.jpeg', '3rd-name-letter.jpg', '4th-name-letter.jpg','5th-name-letters.jpg', '6th-name-letters.jpg', '7th-name-letters.jpg', '8th-name-letters.jpg'
+  ];
+  let i = 0;
+  buttonleftarrow2.addEventListener('click', left)
+  buttonrightarrow2.addEventListener('click', right)
+  function left() {
+    if (i <= 0) i = images.length;
+    i--;
+    return setImg();
   }
-  Arrow1Right();
+  function right() {
+    if (i >= images.length - 1) i = -1;
+    i++;
+    return setImg()
+  }
+  function setImg() {
+    return slider_img.setAttribute('src', 'letters-images/' + images[i]);
+  }
 }
-ArrowLeftAndRight1()
-function ArrowLeftAndRight2() {
-  function Arrow2Left() {
-    let button = document.querySelector(".arrow-pointing-left2");
-    let image = document.querySelector(".div2-section-images2");
-    let btn = 1;
-    button.addEventListener("click", (e) => {
-      if (e.target == button && btn == 1) {
-        image.setAttribute(
-          "src",
-          "./letters-images/LOVE-name-without-chain.jpeg"
-        );
-        btn = 2;
-      } else if (e.target == button && btn == 2) {
-        image.setAttribute("src", "./letters-images/3rd-name-letter.jpg");
-        btn = 3;
-      } else if (e.target == button && btn == 3) {
-        image.setAttribute("src", "./letters-images/4th-name-letter.jpg");
-        btn = 4;
-      } else if (e.target == button && btn == 4) {
-        image.setAttribute("src", "./letters-images/5th-name-letters.jpg");
-        btn = 1;
-      }
-    });
-  }
-  Arrow2Left();
-
-  function Arrow2Right() {
-    let button = document.querySelector(".arrow-pointing-right2");
-    let image = document.querySelector(".div2-section-images2");
-    let btn = 4;
-    button.addEventListener("click", (e) => {
-      if (e.target == button && btn == 4) {
-        image.setAttribute("src", "./letters-images/5th-name-letters.jpg");
-        btn = 3;
-      } else if (e.target == button && btn == 3) {
-        image.setAttribute("src", "./letters-images/4th-name-letter.jpg");
-        btn = 2;
-      } else if (e.target == button && btn == 2) {
-        image.setAttribute("src", "./letters-images/3rd-name-letter.jpg");
-        btn = 1;
-      } else if (e.target == button && btn == 1) {
-        image.setAttribute(
-          "src",
-          "./letters-images/LOVE-name-without-chain.jpeg"
-        );
-        btn = 4;
-      }
-      Arrow2Left();
-    });
-  }
-  Arrow2Right();
-}
-ArrowLeftAndRight2()
+DisplayArrowsBoth2()
+}DisplayAll4arrowsdiv2()

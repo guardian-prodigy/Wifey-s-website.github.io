@@ -161,6 +161,7 @@ body {
 .total .nav-top .main-nav-top-bar .a-tag-from-main-nav-top-bar {
   font-size: 1rem;
   color: rgba(255, 255, 255, 0.796);
+  font-family: sans-serif;
   text-decoration: none;
   -webkit-animation: animation-nav-top-items 700ms ease-out 1 forwards;
           animation: animation-nav-top-items 700ms ease-out 1 forwards;
@@ -427,7 +428,7 @@ body {
 }
 
 .total #div1 .main-div1-section-all .div1-section-all .div1-section-all-images {
-  width: 90%;
+  width: 95%;
   margin: 0 auto;
   border-radius: 30px;
 }

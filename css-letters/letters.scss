@@ -214,6 +214,17 @@ body {
                 margin: 1rem auto;
             }
         }
+        .extra-information-under-e-z {
+            .text-under-the-additional-letters {
+                color: white;
+                margin: 0.2rem 2rem;
+                text-align: center;
+                font-size: 1rem;
+                font-style: italic;
+                
+
+            }
+        }
     }
     #div2 {
         display: grid;
@@ -275,11 +286,7 @@ body {
                 width: 90%;
                 padding: 1rem;
             }
-            .extra-information-under-e-z {
-                .text-under-the-additional-letters {
-                    color: white;
-                }
-            }
+            
         }
         .div2-section2 {
             width: fit-content;

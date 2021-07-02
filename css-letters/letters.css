@@ -504,6 +504,14 @@ body {
   margin: 1rem auto;
 }
 
+.total #div1 .extra-information-under-e-z .text-under-the-additional-letters {
+  color: white;
+  margin: 0.2rem 2rem;
+  text-align: center;
+  font-size: 1rem;
+  font-style: italic;
+}
+
 .total #div2 {
   display: -ms-grid;
   display: grid;
@@ -609,10 +617,6 @@ body {
   border-radius: 30px;
   width: 90%;
   padding: 1rem;
-}
-
-.total #div2 .div2-section1 .extra-information-under-e-z .text-under-the-additional-letters {
-  color: white;
 }
 
 .total #div2 .div2-section2 {

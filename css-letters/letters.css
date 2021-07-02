@@ -504,11 +504,15 @@ body {
   margin: 1rem auto;
 }
 
+.total #div1 .extra-information-under-e-z {
+  background: linear-gradient(45deg, black, rgba(0, 0, 255, 0.705), black);
+}
+
 .total #div1 .extra-information-under-e-z .text-under-the-additional-letters {
   color: white;
   margin: 0.2rem 2rem;
   text-align: center;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-style: italic;
 }
 
@@ -685,6 +689,18 @@ body {
   border-radius: 30px;
   width: 90%;
   margin: 1rem;
+}
+
+.total #div2 .extra-information-under-names {
+  background: linear-gradient(45deg, black, rgba(0, 0, 255, 0.705), black);
+}
+
+.total #div2 .extra-information-under-names .text-under-the-additional-names {
+  color: white;
+  margin: 0.2rem 2rem;
+  text-align: center;
+  font-size: 1.2rem;
+  font-style: italic;
 }
 
 .nav-bottom {

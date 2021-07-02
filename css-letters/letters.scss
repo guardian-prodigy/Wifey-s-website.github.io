@@ -215,11 +215,12 @@ body {
             }
         }
         .extra-information-under-e-z {
+            background: linear-gradient(45deg, black, rgba(0, 0, 255, 0.705), black);
             .text-under-the-additional-letters {
                 color: white;
                 margin: 0.2rem 2rem;
                 text-align: center;
-                font-size: 1rem;
+                font-size: 1.2rem;
                 font-style: italic;
                 
 
@@ -336,6 +337,18 @@ body {
                 border-radius: $border-radius30;
                 width: 90%;
                 margin: 1rem;
+            }
+        }
+        .extra-information-under-names {
+            background: linear-gradient(45deg, black, rgba(0, 0, 255, 0.705), black);
+            .text-under-the-additional-names {
+                color: white;
+                margin: 0.2rem 2rem;
+                text-align: center;
+                font-size: 1.2rem;
+                font-style: italic;
+                
+
             }
         }
     }

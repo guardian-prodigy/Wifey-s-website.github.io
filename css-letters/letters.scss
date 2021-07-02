@@ -173,6 +173,47 @@ body {
                 }
             }
         }
+        .main-div1-section-2 {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            justify-content: space-around;
+            .parent-to-arrow-for-e-z {
+                position: relative;
+                transform: translateY(40%);
+                .left-arrow-for-letter-e-z {
+                    position: relative;
+                    border: white solid;
+                    background: linear-gradient(to left top, black, black, rgba(255, 255, 255, 0.788));
+                    margin: 0 0 0 1rem;
+                    border-width: 0.3rem 0 0 0.3rem;
+                    display: block;
+                    padding: 1rem;
+                    transform: rotate(315deg);
+                    cursor: pointer;
+                    &:hover {
+                        background: linear-gradient(to left top, black, black, rgb(230, 59, 16));
+                    }
+                }
+                .right-arrow-for-letter-e-z {
+                    position: relative;
+                    border: white solid;
+                    background: linear-gradient(to right bottom, black, black, rgba(255, 255, 255, 0.788));
+                    border-width: 0 0.3rem 0.3rem 0;
+                    display: block;
+                    padding: 1rem;
+                    margin: 0 1rem 0 0;
+                    transform: rotate(315deg);
+                    cursor: pointer;
+                    &:hover {
+                        background: linear-gradient(to right bottom, black, black, rgb(236, 31, 16));
+                    }
+                }
+            }
+            .extra-image-letter-e-z {
+                border-radius: $border-radius30;
+                margin: 1rem auto;
+            }
+        }
     }
     #div2 {
         display: grid;
@@ -233,6 +274,11 @@ body {
                 border-radius: $border-radius30;
                 width: 90%;
                 padding: 1rem;
+            }
+            .extra-information-under-e-z {
+                .text-under-the-additional-letters {
+                    color: white;
+                }
             }
         }
         .div2-section2 {

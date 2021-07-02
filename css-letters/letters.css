@@ -446,6 +446,64 @@ body {
           box-shadow: 0px 0px 10px red;
 }
 
+.total #div1 .main-div1-section-2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.total #div1 .main-div1-section-2 .parent-to-arrow-for-e-z {
+  position: relative;
+  -webkit-transform: translateY(40%);
+          transform: translateY(40%);
+}
+
+.total #div1 .main-div1-section-2 .parent-to-arrow-for-e-z .left-arrow-for-letter-e-z {
+  position: relative;
+  border: white solid;
+  background: -webkit-gradient(linear, right bottom, left top, from(black), color-stop(black), to(rgba(255, 255, 255, 0.788)));
+  background: linear-gradient(to left top, black, black, rgba(255, 255, 255, 0.788));
+  margin: 0 0 0 1rem;
+  border-width: 0.3rem 0 0 0.3rem;
+  display: block;
+  padding: 1rem;
+  -webkit-transform: rotate(315deg);
+          transform: rotate(315deg);
+  cursor: pointer;
+}
+
+.total #div1 .main-div1-section-2 .parent-to-arrow-for-e-z .left-arrow-for-letter-e-z:hover {
+  background: -webkit-gradient(linear, right bottom, left top, from(black), color-stop(black), to(#e63b10));
+  background: linear-gradient(to left top, black, black, #e63b10);
+}
+
+.total #div1 .main-div1-section-2 .parent-to-arrow-for-e-z .right-arrow-for-letter-e-z {
+  position: relative;
+  border: white solid;
+  background: -webkit-gradient(linear, left top, right bottom, from(black), color-stop(black), to(rgba(255, 255, 255, 0.788)));
+  background: linear-gradient(to right bottom, black, black, rgba(255, 255, 255, 0.788));
+  border-width: 0 0.3rem 0.3rem 0;
+  display: block;
+  padding: 1rem;
+  margin: 0 1rem 0 0;
+  -webkit-transform: rotate(315deg);
+          transform: rotate(315deg);
+  cursor: pointer;
+}
+
+.total #div1 .main-div1-section-2 .parent-to-arrow-for-e-z .right-arrow-for-letter-e-z:hover {
+  background: -webkit-gradient(linear, left top, right bottom, from(black), color-stop(black), to(#ec1f10));
+  background: linear-gradient(to right bottom, black, black, #ec1f10);
+}
+
+.total #div1 .main-div1-section-2 .extra-image-letter-e-z {
+  border-radius: 30px;
+  margin: 1rem auto;
+}
+
 .total #div2 {
   display: -ms-grid;
   display: grid;
@@ -551,6 +609,10 @@ body {
   border-radius: 30px;
   width: 90%;
   padding: 1rem;
+}
+
+.total #div2 .div2-section1 .extra-information-under-e-z .text-under-the-additional-letters {
+  color: white;
 }
 
 .total #div2 .div2-section2 {

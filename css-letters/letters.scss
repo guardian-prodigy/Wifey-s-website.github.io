@@ -1,5 +1,6 @@
 @import "../css-headbands/basic.scss";
 @import "../css-headbands/mixins.scss";
+@import "../css-ponponetjes/mixins.scss";
 
 $border-radius30: 30px;
 
@@ -8,11 +9,6 @@ body {
     background-size: cover;
 }
 .total {
-    .back-letters {
-        color: burlywood;
-        margin: 0.5rem;
-        font-weight: 600;
-    }
     .div-letters-header-top {
         display: flex;
         margin: 10px auto;
@@ -56,19 +52,22 @@ body {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
-        height: fit-content;
+        height: auto;
         border-radius: 0 0 20px 20px;
         animation: animation-nav-top 500ms ease-out 1 forwards;
         @include Nav-Top;
         .main-nav-top-bar {
-            padding: 0.3rem;
+            margin: auto;
             .a-tag-from-main-nav-top-bar {
                 font-size: 1rem;
+                padding: 0.3rem;
                 color: rgba(255, 255, 255, 0.796);
-                font-family:sans-serif;
+                font-family: sans-serif;
                 text-decoration: none;
+
                 animation: animation-nav-top-items 700ms ease-out 1 forwards;
                 @include Nav-Top-Items;
+
                 &:hover {
                     padding: 0.2rem;
                     font-size: 1rem;
@@ -77,6 +76,19 @@ body {
                     text-decoration: underline;
                     background: rgba(255, 255, 0, 0.568);
                 }
+            }
+            .white-cart {
+                width: 1.5rem;
+                cursor: pointer;
+                animation: animation-nav-top-items 700ms ease-out 1 forwards;
+                @include Nav-Top-Items;
+                transform: translateY(50%);
+                &:hover {
+                    filter: brightness(150%);
+                }
+            }
+            .number-for-items-in-cart {
+                color: white;
             }
         }
     }
@@ -172,6 +184,9 @@ body {
                     border-radius: $border-radius30;
                     box-shadow: 0px 0px 10px red;
                 }
+                .add-to-cart-letters {
+                    @include button-for-more-large-pon-letters-a-b;
+                }
             }
         }
         .main-div1-section-2 {
@@ -187,7 +202,7 @@ body {
                     background: linear-gradient(to left top, black, black, rgba(255, 255, 255, 0.788));
                     margin: 0 0 0 1rem;
                     border-width: 0.3rem 0 0 0.3rem;
-                    display: block;
+                    display: inline-block;
                     padding: 1rem;
                     transform: rotate(315deg);
                     cursor: pointer;
@@ -200,7 +215,7 @@ body {
                     border: white solid;
                     background: linear-gradient(to right bottom, black, black, rgba(255, 255, 255, 0.788));
                     border-width: 0 0.3rem 0.3rem 0;
-                    display: block;
+                    display: inline-block;
                     padding: 1rem;
                     margin: 0 1rem 0 0;
                     transform: rotate(315deg);
@@ -223,8 +238,6 @@ body {
                 text-align: center;
                 font-size: 1.2rem;
                 font-style: italic;
-                
-
             }
         }
     }
@@ -259,9 +272,9 @@ body {
                     border: white solid;
                     background: linear-gradient(to right bottom, black, black, rgba(255, 255, 255, 0.788));
                     border-width: 0 0.3rem 0.3rem 0;
-                    display: block;
+                    display: inline-block;
                     padding: 1rem;
-                    margin: 0 1rem 0 0;
+                    margin: 0 1rem;
                     transform: rotate(315deg);
                     cursor: pointer;
                     &:hover {
@@ -274,7 +287,7 @@ body {
                     background: linear-gradient(to left top, black, black, rgba(255, 255, 255, 0.788));
                     margin: 0 0 0 1rem;
                     border-width: 0.3rem 0 0 0.3rem;
-                    display: block;
+                    display: inline-block;
                     padding: 1rem;
                     transform: rotate(315deg);
                     cursor: pointer;
@@ -288,7 +301,6 @@ body {
                 width: 90%;
                 padding: 1rem;
             }
-            
         }
         .div2-section2 {
             width: fit-content;
@@ -348,8 +360,6 @@ body {
                 text-align: center;
                 font-size: 1.2rem;
                 font-style: italic;
-                
-
             }
         }
     }
@@ -385,6 +395,7 @@ body {
 
         .nav-bottom-heading {
             color: white;
+            position: absolute;
             margin: 0.5rem auto 0 auto;
             border-radius: 20px 20px 0 0;
             box-shadow: 0px 0px 10px red;

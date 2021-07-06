@@ -107,9 +107,12 @@ function DisplayExtralettersEZ() {
   function right() {
     if (i >= images.length - 1) i = -1;
     i++;
-    return setImg()
+    return setImg();
   }
   function setImg() {
     return slider_img.setAttribute('src', 'letters-images/' + images[i]);
   }
 } DisplayExtralettersEZ()
+
+
+

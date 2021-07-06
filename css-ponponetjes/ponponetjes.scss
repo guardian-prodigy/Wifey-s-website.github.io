@@ -112,7 +112,6 @@ html {
         padding: 5px;
         border-radius: 30px;
         box-shadow: 0px 0px 20px orangered;
-        
     }
 }
 .paragraph-for-prices {
@@ -288,15 +287,9 @@ html {
             width: fit-content;
             margin: 5px 10px;
             animation: nav-load-div1 1400ms ease-out;
-            #button-for-more-large-pon1 {
-                @include button-for-more-large-pon();
-            }
-            #button-for-more-large-pon2 {
-                @include button-for-more-large-pon();
-            }
-            #button-for-more-large-pon4 {
-                @include button-for-more-large-pon();
-            }
+            #button-for-more-large-pon1,
+            #button-for-more-large-pon2,
+            #button-for-more-large-pon4,
             #button-for-more-large-pon5 {
                 @include button-for-more-large-pon();
             }
@@ -609,7 +602,6 @@ html {
         border: red 2px dotted;
         height: fit-content;
         width: fit-content;
-        
 
         .nav-bottom-heading {
             color: greenyellow;

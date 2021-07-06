@@ -87,21 +87,42 @@
             background-position: 0 0;
         }
     }
-    
+}
+@mixin button-for-more-large-pon-letters-a-b {
+    color: white;
+    margin: 0.5rem;
+    padding: 0.2rem;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+    box-shadow: 0px 0px 10px rgb(0, 4, 255);
+    background: linear-gradient(45deg, black, red, black);
+    animation: button-for-more-large-pon3 50s linear infinite alternate-reverse;
+    background-size: 400%;
+    @keyframes button-for-more-large-pon3 {
+        0% {
+            background-position: 0 0;
+        }
+        50% {
+            background-position: 400% 0;
+        }
+        100% {
+            background-position: 0 0;
+        }
+    }
 }
 @mixin screens($screenSize) {
     @if $screenSize == mobile {
-        @media screen and(min-width: 400px){
+        @media screen and(min-width: 400px) {
             @content;
         }
-    }
-    @else if $screenSize == tablet {
-        @media screen and(min-width: 800px){
+    } @else if $screenSize == tablet {
+        @media screen and(min-width: 800px) {
             @content;
         }
-    }
-    @else if $screenSize == desktop {
-        @media screen and(min-width: 1000px){
+    } @else if $screenSize == desktop {
+        @media screen and(min-width: 1000px) {
             @content;
         }
     }

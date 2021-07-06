@@ -62,7 +62,7 @@ function Item() {
             a4.className = "buttons"
             paragraph.appendChild(a4);
             paragraph.style.display = "grid";
-            a4.setAttribute('href', 'letters.html');document.getElementById('ww-nav1-pp').style.display = "none";
+            a4.setAttribute('href', 'cart-letters.html');document.getElementById('ww-nav1-pp').style.display = "none";
             location = document.getElementById('map').style.display = "none";
         }
          else if (e.target != Items || button == 0) {

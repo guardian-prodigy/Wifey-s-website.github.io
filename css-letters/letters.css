@@ -1,6 +1,8 @@
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html {
@@ -10,12 +12,6 @@ html {
 body {
   background: black;
   background-size: cover;
-}
-
-.total .back-letters {
-  color: burlywood;
-  margin: 0.5rem;
-  font-weight: 600;
 }
 
 .total .div-letters-header-top {
@@ -120,9 +116,7 @@ body {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  height: auto;
   border-radius: 0 0 20px 20px;
   -webkit-animation: animation-nav-top 500ms ease-out 1 forwards;
           animation: animation-nav-top 500ms ease-out 1 forwards;
@@ -155,11 +149,12 @@ body {
 }
 
 .total .nav-top .main-nav-top-bar {
-  padding: 0.3rem;
+  margin: auto;
 }
 
 .total .nav-top .main-nav-top-bar .a-tag-from-main-nav-top-bar {
   font-size: 1rem;
+  padding: 0.3rem;
   color: rgba(255, 255, 255, 0.796);
   font-family: sans-serif;
   text-decoration: none;
@@ -206,6 +201,40 @@ body {
   color: rgba(255, 255, 255, 0.796);
   text-decoration: underline;
   background: rgba(255, 255, 0, 0.568);
+}
+
+.total .nav-top .main-nav-top-bar .white-cart {
+  width: 1.5rem;
+  cursor: pointer;
+  -webkit-animation: animation-nav-top-items 700ms ease-out 1 forwards;
+          animation: animation-nav-top-items 700ms ease-out 1 forwards;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+}
+
+@keyframes animation-nav-top-items {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(-700px, -300px);
+            transform: translate(-700px, -300px);
+  }
+  90% {
+    opacity: 30%;
+  }
+  100% {
+    opacity: 100%;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+
+.total .nav-top .main-nav-top-bar .white-cart:hover {
+  -webkit-filter: brightness(150%);
+          filter: brightness(150%);
+}
+
+.total .nav-top .main-nav-top-bar .number-for-items-in-cart {
+  color: white;
 }
 
 .total .button-for-displaying-prices-top {
@@ -447,6 +476,45 @@ body {
           box-shadow: 0px 0px 10px red;
 }
 
+.total #div1 .main-div1-section-all .div1-section-all .add-to-cart-letters {
+  color: white;
+  margin: 0.5rem;
+  padding: 0.2rem;
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  position: relative;
+  -webkit-box-shadow: 0px 0px 10px #0004ff;
+          box-shadow: 0px 0px 10px #0004ff;
+  background: linear-gradient(45deg, black, red, black);
+  animation: button-for-more-large-pon3 50s linear infinite alternate-reverse;
+  background-size: 400%;
+}
+
+@-webkit-keyframes button-for-more-large-pon3 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+@keyframes button-for-more-large-pon3 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
 .total #div1 .main-div1-section-2 {
   display: -ms-grid;
   display: grid;
@@ -469,7 +537,7 @@ body {
   background: linear-gradient(to left top, black, black, rgba(255, 255, 255, 0.788));
   margin: 0 0 0 1rem;
   border-width: 0.3rem 0 0 0.3rem;
-  display: block;
+  display: inline-block;
   padding: 1rem;
   -webkit-transform: rotate(315deg);
           transform: rotate(315deg);
@@ -487,7 +555,7 @@ body {
   background: -webkit-gradient(linear, left top, right bottom, from(black), color-stop(black), to(rgba(255, 255, 255, 0.788)));
   background: linear-gradient(to right bottom, black, black, rgba(255, 255, 255, 0.788));
   border-width: 0 0.3rem 0.3rem 0;
-  display: block;
+  display: inline-block;
   padding: 1rem;
   margin: 0 1rem 0 0;
   -webkit-transform: rotate(315deg);
@@ -586,9 +654,9 @@ body {
   background: -webkit-gradient(linear, left top, right bottom, from(black), color-stop(black), to(rgba(255, 255, 255, 0.788)));
   background: linear-gradient(to right bottom, black, black, rgba(255, 255, 255, 0.788));
   border-width: 0 0.3rem 0.3rem 0;
-  display: block;
+  display: inline-block;
   padding: 1rem;
-  margin: 0 1rem 0 0;
+  margin: 0 1rem;
   -webkit-transform: rotate(315deg);
           transform: rotate(315deg);
   cursor: pointer;
@@ -606,7 +674,7 @@ body {
   background: linear-gradient(to left top, black, black, rgba(255, 255, 255, 0.788));
   margin: 0 0 0 1rem;
   border-width: 0.3rem 0 0 0.3rem;
-  display: block;
+  display: inline-block;
   padding: 1rem;
   -webkit-transform: rotate(315deg);
           transform: rotate(315deg);
@@ -748,6 +816,7 @@ body {
 
 .nav-bottom .bottomnav-section .nav-bottom-heading {
   color: white;
+  position: absolute;
   margin: 0.5rem auto 0 auto;
   border-radius: 20px 20px 0 0;
   -webkit-box-shadow: 0px 0px 10px red;
